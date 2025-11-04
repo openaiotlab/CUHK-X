@@ -9,7 +9,7 @@
 ## 🎯 Key Contributions
 
 - **First Multimodal HAU Dataset**: CUHK-X is the first dataset to integrate understanding and reasoning across multiple modalities for human action analysis
-- **Large-Scale & Diverse**: 36,414 samples from 30 participants across diverse environments with 7 synchronized modalities
+- **Large-Scale & Diverse**: 58,445 samples from 30 participants across diverse environments with 7 synchronized modalities
 - **Novel Evaluation Framework**: Three comprehensive benchmarks (HAR, HAU, HARn) with 8 distinct tasks
 - **LLM-Empowered Annotation**: Innovative prompt-based scene creation framework for logical and spatio-temporal representation
 
