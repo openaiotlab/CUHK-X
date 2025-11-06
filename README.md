@@ -211,8 +211,7 @@ If you use CUHK-X in your research, please cite our paper:
 
 For dataset access, questions, or collaborations:
 - **Email**: syjiang [AT] ie.cuhk.edu.hk
-- **Project Page**: [cuhkx.html](cuhkx.html)
-- **GitHub**: [CUHK-X Repository](https://github.com/your-username/CUHK-X)
+- **Project Page**: [CUHK-X](https://siyang-jiang.github.io/CUHK-X/)
 
 ## 🔗 Related Work
 
