@@ -218,7 +218,6 @@ For dataset access, questions, or collaborations:
 
 - **PGADA**: [Perturbation-Guided Adversarial Alignment](https://github.com/siyang-jiang/PGADA)
 - **ArtFL**: [Federated Learning with Multi-Scale Training](https://github.com/siyang-jiang/ArtFL)
-- **LLM-FL**: [LLM-Empowered Federated Learning](https://github.com/siyang-jiang/LLMFL)
 
 ## 📄 License
 
