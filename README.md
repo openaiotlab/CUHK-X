@@ -198,14 +198,14 @@ CUHK-X aims to advance research in:
 
 If you use CUHK-X in your research, please cite our paper:
 
-```bibtex
+<!-- ```bibtex
 @inproceedings{jiang2025cuhkx,
   title={CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning},
   author={Jiang, Siyang and others},
   booktitle={Proceedings of the 26th International Conference on Sensing, Communication, and Networking (SenSys)},
   year={2025}
 }
-```
+``` -->
 
 ## 👥 Contact
 
