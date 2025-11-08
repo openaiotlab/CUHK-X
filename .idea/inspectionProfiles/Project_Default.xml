@@ -1,0 +1,95 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="148" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="70">
+            <item index="0" class="java.lang.String" itemvalue="httpx" />
+            <item index="1" class="java.lang.String" itemvalue="huggingface-hub" />
+            <item index="2" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="3" class="java.lang.String" itemvalue="python-dateutil" />
+            <item index="4" class="java.lang.String" itemvalue="h11" />
+            <item index="5" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="6" class="java.lang.String" itemvalue="torchvision" />
+            <item index="7" class="java.lang.String" itemvalue="markdown-it-py" />
+            <item index="8" class="java.lang.String" itemvalue="qwen-vl-utils" />
+            <item index="9" class="java.lang.String" itemvalue="fsspec" />
+            <item index="10" class="java.lang.String" itemvalue="semantic-version" />
+            <item index="11" class="java.lang.String" itemvalue="filelock" />
+            <item index="12" class="java.lang.String" itemvalue="gradio_client" />
+            <item index="13" class="java.lang.String" itemvalue="Pygments" />
+            <item index="14" class="java.lang.String" itemvalue="safetensors" />
+            <item index="15" class="java.lang.String" itemvalue="starlette" />
+            <item index="16" class="java.lang.String" itemvalue="certifi" />
+            <item index="17" class="java.lang.String" itemvalue="safehttpx" />
+            <item index="18" class="java.lang.String" itemvalue="anyio" />
+            <item index="19" class="java.lang.String" itemvalue="accelerate" />
+            <item index="20" class="java.lang.String" itemvalue="uvicorn" />
+            <item index="21" class="java.lang.String" itemvalue="sympy" />
+            <item index="22" class="java.lang.String" itemvalue="torchaudio" />
+            <item index="23" class="java.lang.String" itemvalue="tokenizers" />
+            <item index="24" class="java.lang.String" itemvalue="pydantic" />
+            <item index="25" class="java.lang.String" itemvalue="transformers-stream-generator" />
+            <item index="26" class="java.lang.String" itemvalue="orjson" />
+            <item index="27" class="java.lang.String" itemvalue="pydub" />
+            <item index="28" class="java.lang.String" itemvalue="click" />
+            <item index="29" class="java.lang.String" itemvalue="psutil" />
+            <item index="30" class="java.lang.String" itemvalue="regex" />
+            <item index="31" class="java.lang.String" itemvalue="pydantic_core" />
+            <item index="32" class="java.lang.String" itemvalue="av" />
+            <item index="33" class="java.lang.String" itemvalue="charset-normalizer" />
+            <item index="34" class="java.lang.String" itemvalue="ffmpy" />
+            <item index="35" class="java.lang.String" itemvalue="httpcore" />
+            <item index="36" class="java.lang.String" itemvalue="idna" />
+            <item index="37" class="java.lang.String" itemvalue="shellingham" />
+            <item index="38" class="java.lang.String" itemvalue="modelscope" />
+            <item index="39" class="java.lang.String" itemvalue="gradio" />
+            <item index="40" class="java.lang.String" itemvalue="networkx" />
+            <item index="41" class="java.lang.String" itemvalue="numpy" />
+            <item index="42" class="java.lang.String" itemvalue="requests" />
+            <item index="43" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="44" class="java.lang.String" itemvalue="sniffio" />
+            <item index="45" class="java.lang.String" itemvalue="typing-inspection" />
+            <item index="46" class="java.lang.String" itemvalue="exceptiongroup" />
+            <item index="47" class="java.lang.String" itemvalue="tomlkit" />
+            <item index="48" class="java.lang.String" itemvalue="mdurl" />
+            <item index="49" class="java.lang.String" itemvalue="urllib3" />
+            <item index="50" class="java.lang.String" itemvalue="websockets" />
+            <item index="51" class="java.lang.String" itemvalue="annotated-types" />
+            <item index="52" class="java.lang.String" itemvalue="six" />
+            <item index="53" class="java.lang.String" itemvalue="typer" />
+            <item index="54" class="java.lang.String" itemvalue="aiofiles" />
+            <item index="55" class="java.lang.String" itemvalue="tzdata" />
+            <item index="56" class="java.lang.String" itemvalue="rich" />
+            <item index="57" class="java.lang.String" itemvalue="packaging" />
+            <item index="58" class="java.lang.String" itemvalue="torch" />
+            <item index="59" class="java.lang.String" itemvalue="python-multipart" />
+            <item index="60" class="java.lang.String" itemvalue="pandas" />
+            <item index="61" class="java.lang.String" itemvalue="tqdm" />
+            <item index="62" class="java.lang.String" itemvalue="fastapi" />
+            <item index="63" class="java.lang.String" itemvalue="colorama" />
+            <item index="64" class="java.lang.String" itemvalue="mpmath" />
+            <item index="65" class="java.lang.String" itemvalue="ruff" />
+            <item index="66" class="java.lang.String" itemvalue="typing_extensions" />
+            <item index="67" class="java.lang.String" itemvalue="pillow" />
+            <item index="68" class="java.lang.String" itemvalue="pytz" />
+            <item index="69" class="java.lang.String" itemvalue="decord" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="pandas.core.indexing._iLocIndexer.*" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
