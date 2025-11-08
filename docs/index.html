@@ -82,34 +82,41 @@
             font-style: italic;
         }
 
-        /* 校徽列表容器： flex 布局实现水平排列 */
-        .affiliation-list {
+        /* 校徽卡片容器：水平排列+居中，自动换行 */
+        .affiliation-cards {
             display: flex;
-            flex-wrap: wrap; /* 屏幕较小时自动换行 */
-            gap: 20px; /* 校徽之间的间距 */
+            flex-wrap: wrap;
+            gap: 25px; /* 卡片之间的间距 */
             margin: 20px 0;
-            align-items: center;
+            justify-content: center;
         }
 
-        /* 单个校徽+名称的容器 */
-        .affiliation-item {
+        /* 单个校徽卡片：固定宽度，垂直排列 */
+        .affiliation-card {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            gap: 8px; /* 校徽与文字的间距 */
+            text-align: center;
+            width: 160px; /* 卡片统一宽度，可调整 */
         }
 
-        /* 校徽图片样式：可根据实际图片尺寸调整 */
-        .affiliation-logo {
-            width: 40px;
-            height: 40px;
-            object-fit: contain; /* 保持图片比例 */
+        /* 核心：强制图片统一尺寸，保持比例不拉伸 */
+        .affiliation-image {
+            width: 140px; /* 所有图片统一宽度 */
+            height: 100px; /* 所有图片统一高度 */
+            object-fit: contain; /* 关键属性：按比例裁剪，填满容器（不拉伸） */
+            object-position: center; /* 裁剪时居中显示核心内容 */
+            border-radius: 4px; /* 可选：添加圆角，更美观 */
+            margin-bottom: 8px;
         }
 
-        /* 学校名称文字样式 */
-        .affiliation-item span {
-            font-size: 14px;
-            font-weight: 500;
+        /* 学校名称样式 */
+        .affiliation-name {
+            font-size: 15px;
+            font-weight: 600;
+            white-space: nowrap; /* 避免文字换行 */
         }
+
 
         .hero .links a {
             display: inline-block;
@@ -306,26 +313,31 @@
         Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen.
     </p>
     <!-- 新增校徽+学校名称的容器 -->
-    <div class="affiliation-list">
-        <div class="affiliation-item">
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/CUHK-logo.png" alt="CUHK Logo" class="affiliation-logo">
-            <span>CUHK</span>
+    <div class="affiliation-cards">
+        <div class="affiliation-card">
+            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/CUHK-logo.png" alt="CUHK Logo"
+                 class="affiliation-image">
+            <span class="affiliation">CUHK</span>
         </div>
-        <div class="affiliation-item">
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/UIUC-logo.webp" alt="UIUC Logo" class="affiliation-logo">
-            <span>UIUC</span>
+        <div class="affiliation-card">
+            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/UIUC-logo.webp" alt="UIUC Logo"
+                 class="affiliation-image">
+            <span class="affiliation">UIUC</span>
         </div>
-        <div class="affiliation-item">
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/columbia-logo.png" alt="Columbia University Logo" class="affiliation-logo">
-            <span>Columbia University</span>
+        <div class="affiliation-card">
+            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/columbia-logo.png"
+                 alt="Columbia University Logo" class="affiliation-image">
+            <span class="affiliation">Columbia University</span>
         </div>
-        <div class="affiliation-item">
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/PITT-logo.webp" alt="Pitt University Logo" class="affiliation-logo">
-            <span>Pitt University</span>
+        <div class="affiliation-card">
+            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/PITT-logo.webp"
+                 alt="Pitt University Logo" class="affiliation-image">
+            <span class="affiliation">Pitt University</span>
         </div>
-        <div class="affiliation-item">
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/ESF-logo.jpg" alt="ESF Sha Tin College Logo" class="affiliation-logo">
-            <span>ESF Sha Tin College</span>
+        <div class="affiliation-card">
+            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/ESF-logo.jpg"
+                 alt="ESF Sha Tin College Logo" class="affiliation-image">
+            <span class="affiliation">ESF Sha Tin College</span>
         </div>
     </div>
 
