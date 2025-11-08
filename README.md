@@ -4,7 +4,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-Available-green)](https://your-dataset-link.com)
 [![Website](https://img.shields.io/badge/Project-Page-blue)](cuhkx.html)
 
-> **CUHK-X** is a comprehensive multimodal dataset containing **36,414 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
+> **CUHK-X** is a comprehensive multimodal dataset containing **58,445 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
 
 ## 🎯 Key Contributions
 
