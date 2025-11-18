@@ -3,7 +3,7 @@
 ## Overview
 
 This example project provides a complete script for training image classification models with example data. You can download the data from the link:     
-The script supports multiple data modalities (e.g., RGB, Depth, Infrared, and Thermal) and offers flexible data loading, preprocessing, training, and evaluation functionalities.
+The script supports multiple data modalities (e.g., RGB, Depth, Infrared) and offers flexible data loading, preprocessing, training, and evaluation functionalities.
 
 ## Features
 
@@ -62,7 +62,7 @@ python train_models_cross_multi.py \
 ## Parameter Description
 
 - `--dataset_root`: Path to the root directory containing image data.
-- `--data`: Select the data modality (e.g., RGB, Depth, Infrared, Thermal).
+- `--data`: Select the data modality (e.g., RGB, Depth, Infrared).
 - `--epochs`: Number of training epochs.
 - `--gpu`: GPU device number to use.
 - `--network`: Choose the network architecture (e.g., ResNet or ViT).
