@@ -25,7 +25,7 @@
 - **Skeleton**: 3D pose estimation data
 
 ### Statistics
-- **Total Samples**: 36,414 annotated action samples
+- **Total Samples**: 58,445 annotated action samples
 - **Participants**: 30 diverse subjects
 - **Environments**: 2 (indoor/outdoor) with varying conditions
 - **Actions**: 40+ different action categories
