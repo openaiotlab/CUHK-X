@@ -8,7 +8,8 @@
 
 ## 🏆 News
 
-- **[Nov 2025]** 🎉 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** We are honored to receive this recognition for our work on multimodal human action recognition, understanding, and reasoning.
+- **[Nov 2025]** 🎉 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** 
+<!-- We are honored to receive this recognition for our work on multimodal human action recognition, understanding, and reasoning. -->
 
 ## 🎯 Key Contributions
 
