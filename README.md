@@ -1,10 +1,14 @@
-# CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning
+# A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning (CUHK-X)
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/your-arxiv-id)
 [![Dataset](https://img.shields.io/badge/Dataset-Available-green)](https://your-dataset-link.com)
 [![Website](https://img.shields.io/badge/Project-Page-blue)](cuhkx.html)
 
 > **CUHK-X** is a comprehensive multimodal dataset containing **58,445 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
+
+## 🏆 News
+
+- **[Nov 2025]** 🎉 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** We are honored to receive this recognition for our work on multimodal human action recognition, understanding, and reasoning.
 
 ## 🎯 Key Contributions
 
