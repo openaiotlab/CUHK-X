@@ -346,6 +346,7 @@
         <a href="../paper/cuhkx.pdf">[Paper]</a>
         <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/">[Dataset]</a>
         <a href="https://github.com/siyang-jiang/CUHK-X">[Code]</a>
+        <a href="../20251104ACPBest_pre.pdf" target="_blank">[Reward]</a>
     </div>
 </header>
 
@@ -463,57 +464,54 @@
         CUHK-X represents a significant advancement in multimodal human activity datasets, featuring:
     </p>
     <ul>
-        <li><strong>Seven Synchronized Modalities:</strong> RGB, Infrared (IR), Depth, Thermal, IMU, mmWave Radar, and
-            Skeleton data
-        </li>
+        <li><strong>Seven Synchronized Modalities:</strong> RGB, Infrared (IR), Depth, Thermal, IMU, mmWave Radar, and Skeleton data</li>
         <li><strong>Large-Scale:</strong> 58,445 annotated action samples from 30 diverse participants</li>
-        <li><strong>Dual Data Structure:</strong> Both singular actions (30,000+ samples) and sequential activities for
-            temporal reasoning
-        </li>
+        <li><strong>Dual Data Structure:</strong> Both singular actions (30,000+ samples) and sequential activities for temporal reasoning</li>
         <li><strong>Rich Annotations:</strong> LLM-generated captions with human-in-the-loop validation</li>
         <li><strong>Environmental Diversity:</strong> Indoor and outdoor settings with varying conditions</li>
     </ul>
 
     <h3>Modality Specifications</h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0;">
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>🎥 RGB Video</h4>
+    <div class="modalities-grid">
+        <div class="modality-card">
+            <div class="modality-icon">🎥 RGB Video</div>
             <p>Standard color video recordings for traditional visual analysis</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>🌡️ Infrared (IR)</h4>
+        <div class="modality-card">
+            <div class="modality-icon">🌡️ Infrared (IR)</div>
             <p>Thermal imaging for robustness to lighting conditions</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>📏 Depth</h4>
+        <div class="modality-card">
+            <div class="modality-icon">📏 Depth</div>
             <p>3D spatial information from depth cameras</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>🔥 Thermal</h4>
+        <div class="modality-card">
+            <div class="modality-icon">🔥 Thermal</div>
             <p>Heat signature analysis for unique behavioral cues</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>📱 IMU</h4>
+        <div class="modality-card">
+            <div class="modality-icon">📱 IMU</div>
             <p>Inertial Measurement Unit for motion dynamics</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>📡 mmWave Radar</h4>
+        <div class="modality-card">
+            <div class="modality-icon">📡 mmWave Radar</div>
             <p>Privacy-preserving motion detection</p>
         </div>
-        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px;">
-            <h4>🦴 Skeleton</h4>
+        <div class="modality-card">
+            <div class="modality-icon">🦴 Skeleton</div>
             <p>3D pose estimation and joint tracking</p>
         </div>
     </div>
 
-    <div class="scroll-container">
+    <div class="media-container">
         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/download.png"
              alt="Dataset overview showing modality examples">
     </div>
-
-    <div class="scroll-container">
+    <p></p>
+    <div>
+        <h3>Action categories and distribution</h3>
         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/images/action.png"
-             alt="Action categories and distribution" class="small-image">
+             alt="Action categories and distribution" height="600">
     </div>
 </section>
 
@@ -551,6 +549,15 @@
             <p class="caption">RGB</p>
             <video controls class="preview" preload="metadata">
                 <source src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/videos/RGB.mp4"
+                        type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="video-block">
+            <p class="caption">RGB</p>
+            <video controls class="preview" preload="metadata">
+                <source src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/videos/radar.mp4"
                         type="video/mp4">
                 Your browser does not support the video tag.
             </video>
