@@ -6,9 +6,9 @@
 
 > **CUHK-X** is a comprehensive multimodal dataset containing **58,445 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
 
-## 🏆 News
+## 🎉 News
 
-- **[Nov 2025]** 🎉 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** 
+- **[Nov 2025]** 🏆 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** 
 <!-- We are honored to receive this recognition for our work on multimodal human action recognition, understanding, and reasoning. -->
 
 ## 🎯 Key Contributions
