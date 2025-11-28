@@ -41,12 +41,12 @@ You can dowanload dataset(GT_folder, LM_video, LM_data) in the homepage [CUHK-X]
 
 ### 3.2 Download Models
 ```bash
-huggingface-cli download Qwen/Qwen2.5-VL-3B-Instruct --local_dir Models/Qwen2.5-VL-3B-Instruct
-huggingface-cli download Qwen/Qwen2.5-VL-7B-Instruct --local_dir Models/Qwen2.5-VL-7B-Instruct
-huggingface-cli download OpenGVLab/InternVL2-2B --local_dir Models/InternVL2-2B
-huggingface-cli download OpenGVLab/InternVL2-8B --local_dir Models/InternVL2-8B
-huggingface-cli download OpenGVLab/VideoChat-R1_7B --local_dir Models/VideoChat-R1_7B
-huggingface-cli download LanguageBind/Video-LLaVA-7B-hf --local_dir Models/Video-LLaVA-7B-hf
+huggingface-cli download Qwen/Qwen2.5-VL-3B-Instruct --local-dir Models/Qwen2.5-VL-3B-Instruct
+huggingface-cli download Qwen/Qwen2.5-VL-7B-Instruct --local-dir Models/Qwen2.5-VL-7B-Instruct
+huggingface-cli download OpenGVLab/InternVL2-2B --local-dir Models/InternVL2-2B
+huggingface-cli download OpenGVLab/InternVL2-8B --local-dir Models/InternVL2-8B
+huggingface-cli download OpenGVLab/VideoChat-R1_7B --local-dir Models/VideoChat-R1_7B
+huggingface-cli download LanguageBind/Video-LLaVA-7B-hf --local-dir Models/Video-LLaVA-7B-hf
 ```
 
 ## 4. Run experiments and Calculate evaluation scores
