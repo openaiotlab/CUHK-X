@@ -1,1 +1,0 @@
-python3 inference.py --api_key "###" --base_url "###"

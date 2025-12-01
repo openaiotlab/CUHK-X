@@ -1,0 +1,52 @@
+Path,Logic,vlm_result
+LM_video/Depth/user1/1-1-1/Depth.mp4,Leisurely,B
+LM_video/Depth/user1/1-1-2/Depth.mp4,Calmly,A
+LM_video/Depth/user1/1-1-3/Depth.mp4,Hastily,C
+LM_video/Depth/user1/1-2-1/Depth.mp4,Slowly,C
+LM_video/Depth/user1/1-2-2/Depth.mp4,Precisely,C
+LM_video/Depth/user1/1-2-3/Depth.mp4,Hastily,C
+LM_video/Depth/user1/2-1-1/Depth.mp4,Gently,C
+LM_video/Depth/user1/2-1-2/Depth.mp4,Neatly,C
+LM_video/Depth/user1/2-1-3/Depth.mp4,Hastily,B
+LM_video/Depth/user1/2-2-1/Depth.mp4,Slowly,C
+LM_video/Depth/user1/2-2-2/Depth.mp4,Steadily,C
+LM_video/Depth/user1/2-2-3/Depth.mp4,Quickly,C
+LM_video/Depth/user1/3-1-1/Depth.mp4,Leisurely,A
+LM_video/Depth/user1/3-1-2/Depth.mp4,Steadily,C
+LM_video/Depth/user1/3-1-3/Depth.mp4,Hurriedly,(B) Leisurely
+LM_video/Depth/user1/3-2-1/Depth.mp4,Casually,(B) Meticulously
+LM_video/Depth/user1/3-2-2/Depth.mp4,Meticulously,C
+LM_video/Depth/user1/3-2-3/Depth.mp4,Hurriedly,C
+LM_video/Depth/user1/4-1-1/Depth.mp4,Casually,(B) Seriously
+LM_video/Depth/user1/4-1-2/Depth.mp4,Seriously,C
+LM_video/Depth/user1/4-1-3/Depth.mp4,Quickly,C
+LM_video/Depth/user1/5-1-1/Depth.mp4,Gently,C
+LM_video/Depth/user1/5-1-2/Depth.mp4,Steadily,B
+LM_video/Depth/user1/5-1-3/Depth.mp4,Anxiously,(A) Anxiously
+LM_video/Depth/user1/6-1-1/Depth.mp4,Slowly,C
+LM_video/Depth/user1/6-1-2/Depth.mp4,Evenly,C
+LM_video/Depth/user1/6-1-3/Depth.mp4,Quickly,C
+LM_video/Depth/user1/6-2-1/Depth.mp4,Leisurely,B
+LM_video/Depth/user1/6-2-2/Depth.mp4,Orderly,C
+LM_video/Depth/user1/6-2-3/Depth.mp4,Hurriedly,B
+LM_video/Depth/user1/7-1-1/Depth.mp4,Slowly,C
+LM_video/Depth/user1/7-1-2/Depth.mp4,Calmly,(A) Calmly
+LM_video/Depth/user1/7-1-3/Depth.mp4,Anxiously,C
+LM_video/Depth/user2/1-1-1/Depth.mp4,Gently,C
+LM_video/Depth/user2/1-1-2/Depth.mp4,Orderly,(B) Frantically
+LM_video/Depth/user2/1-1-3/Depth.mp4,Frantically,C
+LM_video/Depth/user2/1-2-1/Depth.mp4,Leisurely,A
+LM_video/Depth/user2/1-2-2/Depth.mp4,Steadily,C
+LM_video/Depth/user2/1-2-3/Depth.mp4,Rapidly,B
+LM_video/Depth/user2/2-1-1/Depth.mp4,Carefully,B
+LM_video/Depth/user2/2-1-2/Depth.mp4,Calmly,(A) Calmly
+LM_video/Depth/user2/2-1-3/Depth.mp4,Quickly,C
+LM_video/Depth/user2/2-2-1/Depth.mp4,Leisurely,B
+LM_video/Depth/user2/2-2-2/Depth.mp4,Methodically,C
+LM_video/Depth/user2/2-2-3/Depth.mp4,Frantically,C
+LM_video/Depth/user2/3-1-1/Depth.mp4,Slowly,C
+LM_video/Depth/user2/3-1-2/Depth.mp4,Meticulously,C
+LM_video/Depth/user2/3-1-3/Depth.mp4,Eagerly,C
+LM_video/Depth/user2/3-2-2/Depth.mp4,Seriously,C
+LM_video/Depth/user2/3-2-3/Depth.mp4,Nervously,B
+LM_video/Depth/user2/4-1-1/Depth.mp4,Leisurely,(B) Calmly
