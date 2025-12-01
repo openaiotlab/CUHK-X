@@ -211,18 +211,6 @@
             color: #333;
         }
 
-        .image-block {
-            text-align: center;
-            margin-top: 30px;
-        }
-
-        .image-block .caption {
-            font-weight: bold;
-            margin-bottom: 8px;
-            font-size: 1rem;
-            color: #333;
-        }
-
         /* ========= Scrollable Image ========= */
         .scroll-container {
             max-width: 100%;
@@ -397,8 +385,21 @@
         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/hardware.png"
              alt="Hardware setup showing the multi-sensor configuration" class="preview">
     </div>
+    <p>
+        We spans a multi-room home and supports three tasks: HAR, HAU (captioning task), and HARn (question
+        answering task), integrating diverse modalities, including RGB, depth, thermal, infrared, IMU, skeleton, and
+        mmWave, to enable robust perception and reasoning in complex indoor contexts.
+    </p>
     <div class="media">
-        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/background.png"
+        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/room-env.png"
+             alt="Background " class="preview">
+    </div>
+    <p>
+        Layout with room-wise visual annotations (Bedroom, Kitchen, Bathroom, and Living Room) showing corresponding
+        example images and sensor placements. The icon indicates the location of the ambient sensor:
+    </p>
+    <div class="media">
+        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/multi-room.png"
              alt="Background " class="preview">
     </div>
 </section>
@@ -511,29 +512,47 @@
     <p></p>
     <div>
         <h3>Action categories and distribution</h3>
+        <h4> Categories </h4>
+        <ul>
+            <li>Personal Care (6 actions): Washing face, Brushing teeth, Combing hair, Undressing, Wiping hands, Getting Dressed</li>
+            <li>Eating and Drinking (6 actions): Drinking, Eating, Grabbing utensils, Pouring, Stirring, Peeling fruit</li>
+            <li>Household (5 actions): Sweeping, Mopping, Washing dishes, Wiping surface, Folding clothes</li>
+            <li>Working (6 actions): Typing on a keyboard, Writing, Calling, Checking the time, Reading, Turning a page</li>
+            <li>Socializing and Leisure (5 actions): Taking a selfie, Playing board games, Watching TV, Using a phone, Listening to the music with headphones</li>
+            <li>Sports and Exercises (9 actions): Walking, Lunges, Sitting down, Lying down, Standing up, Stretching, Jumping jacks, Squats, Running</li>
+            <li>Caring and Helping (3 actions): Taking medicine, Checking body temperature, Massaging oneself</li>
+        </ul>
         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/action.png"
              alt="Action categories and distribution" height="600">
+
+        <h4>Distribution</h4>
+        <ul>
+            <li>Distribution Feature: The dataset follows a long-tail distribution (a small number of actions account for a large proportion of occurrences, while most are infrequent), consistent with the common imbalance of real-world datasets.</li>
+            <li>Category Diversity: Covers basic daily activities, work-related tasks, household chores, and physical exercises, providing a rich foundation for human activity recognition.</li>
+            <li>Data Scale:
+                <ul>
+                    <li>Each participant contributes over 30 minutes of footage with more than 100 samples.</li>
+                    <li>Vision modality includes 4,029 clips (total duration: 19 hours and 29 minutes).</li>
+                </ul>
+            </li>
+        </ul>
+        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/action_frequency.png"
+             alt="Action frequency">
     </div>
 </section>
 
 <section id="data-visualization">
     <h2>Data Visualization</h2>
+    <p>This is a sample example that includes seven modalities: RGB, IR, Thermal, Depth, Skeleton, Radar, and IMU,
+       which were recorded at the same time.</p>
     <div class="video-container">
         <div class="video-block">
-            <p class="caption">Thermal</p>
+            <p class="caption">Video</p>
             <video controls class="preview" preload="metadata">
                 <source src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/videos/all_modality.mp4"
                         type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div>
-    </div>
-
-    <div class="media">
-        <div class="image-block">
-            <p class="caption">IMU</p>
-            <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/gyro.png"
-                 alt="IMU sensor data visualization" class="preview">
         </div>
     </div>
 </section>
