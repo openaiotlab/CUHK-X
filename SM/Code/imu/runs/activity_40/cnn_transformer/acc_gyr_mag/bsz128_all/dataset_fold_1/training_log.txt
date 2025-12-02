@@ -1,0 +1,3443 @@
+Training Log - 20251130_025517
+============================================================
+Data Path: data_imu/activity_40/dataset_fold_1.csv
+Modalities: acc_gyr_mag
+Sample Length: 30
+Batch Size: 128
+Learning Rate: 0.001
+Num Epochs: 200
+Device: cuda
+============================================================
+
+
+Epoch 1/200
+Training metrics:
+accuracy: 9.23
+f1: 3.86
+precision: 4.17
+recall: 4.51
+roc_auc: 59.82
+loss: 3.76
+Testing metrics:
+accuracy: 16.23
+f1: 2.91
+precision: 2.07
+recall: 6.42
+roc_auc: 75.85
+loss: 3.21
+Learning rate: 0.001000
+New best accuracy: 16.23%
+
+Epoch 2/200
+Training metrics:
+accuracy: 21.08
+f1: 12.43
+precision: 14.12
+recall: 12.85
+roc_auc: 77.71
+loss: 2.93
+Testing metrics:
+accuracy: 23.22
+f1: 12.70
+precision: 20.00
+recall: 14.59
+roc_auc: 83.45
+loss: 2.78
+Learning rate: 0.001000
+New best accuracy: 23.22%
+
+Epoch 3/200
+Training metrics:
+accuracy: 33.63
+f1: 26.42
+precision: 28.00
+recall: 26.72
+roc_auc: 87.29
+loss: 2.35
+Testing metrics:
+accuracy: 29.43
+f1: 18.60
+precision: 21.30
+recall: 21.11
+roc_auc: 87.55
+loss: 2.60
+Learning rate: 0.001000
+New best accuracy: 29.43%
+
+Epoch 4/200
+Training metrics:
+accuracy: 41.85
+f1: 36.81
+precision: 38.28
+recall: 36.51
+roc_auc: 91.76
+loss: 1.99
+Testing metrics:
+accuracy: 33.26
+f1: 24.66
+precision: 32.59
+recall: 27.85
+roc_auc: 88.81
+loss: 2.52
+Learning rate: 0.001000
+New best accuracy: 33.26%
+
+Epoch 5/200
+Training metrics:
+accuracy: 49.38
+f1: 47.21
+precision: 48.88
+recall: 46.73
+roc_auc: 94.09
+loss: 1.72
+Testing metrics:
+accuracy: 32.69
+f1: 24.09
+precision: 30.04
+recall: 25.53
+roc_auc: 88.70
+loss: 2.47
+Learning rate: 0.001000
+
+Epoch 6/200
+Training metrics:
+accuracy: 59.03
+f1: 57.96
+precision: 59.34
+recall: 57.33
+roc_auc: 96.51
+loss: 1.35
+Testing metrics:
+accuracy: 34.50
+f1: 26.44
+precision: 31.01
+recall: 28.03
+roc_auc: 89.00
+loss: 2.57
+Learning rate: 0.001000
+New best accuracy: 34.50%
+
+Epoch 7/200
+Training metrics:
+accuracy: 68.23
+f1: 67.98
+precision: 69.14
+recall: 67.30
+roc_auc: 98.03
+loss: 1.04
+Testing metrics:
+accuracy: 35.40
+f1: 27.40
+precision: 30.54
+recall: 29.22
+roc_auc: 89.75
+loss: 2.55
+Learning rate: 0.001000
+New best accuracy: 35.40%
+
+Epoch 8/200
+Training metrics:
+accuracy: 76.41
+f1: 76.76
+precision: 77.52
+recall: 76.41
+roc_auc: 98.95
+loss: 0.78
+Testing metrics:
+accuracy: 36.30
+f1: 30.64
+precision: 36.32
+recall: 30.05
+roc_auc: 89.69
+loss: 2.68
+Learning rate: 0.001000
+New best accuracy: 36.30%
+
+Epoch 9/200
+Training metrics:
+accuracy: 81.60
+f1: 82.65
+precision: 83.24
+recall: 82.27
+roc_auc: 99.27
+loss: 0.63
+Testing metrics:
+accuracy: 36.98
+f1: 30.75
+precision: 35.07
+recall: 31.70
+roc_auc: 89.75
+loss: 2.78
+Learning rate: 0.001000
+New best accuracy: 36.98%
+
+Epoch 10/200
+Training metrics:
+accuracy: 84.88
+f1: 85.87
+precision: 85.95
+recall: 85.93
+roc_auc: 99.57
+loss: 0.51
+Testing metrics:
+accuracy: 38.22
+f1: 31.20
+precision: 36.74
+recall: 31.29
+roc_auc: 89.37
+loss: 2.85
+Learning rate: 0.001000
+New best accuracy: 38.22%
+
+Epoch 11/200
+Training metrics:
+accuracy: 87.64
+f1: 88.74
+precision: 88.90
+recall: 88.66
+roc_auc: 99.65
+loss: 0.42
+Testing metrics:
+accuracy: 37.77
+f1: 29.70
+precision: 32.43
+recall: 29.99
+roc_auc: 89.12
+loss: 2.97
+Learning rate: 0.001000
+
+Epoch 12/200
+Training metrics:
+accuracy: 90.55
+f1: 91.13
+precision: 91.16
+recall: 91.18
+roc_auc: 99.74
+loss: 0.35
+Testing metrics:
+accuracy: 40.02
+f1: 32.57
+precision: 34.26
+recall: 33.09
+roc_auc: 89.44
+loss: 2.95
+Learning rate: 0.001000
+New best accuracy: 40.02%
+
+Epoch 13/200
+Training metrics:
+accuracy: 92.33
+f1: 92.98
+precision: 93.19
+recall: 92.85
+roc_auc: 99.86
+loss: 0.27
+Testing metrics:
+accuracy: 39.80
+f1: 31.25
+precision: 33.88
+recall: 31.73
+roc_auc: 89.42
+loss: 3.10
+Learning rate: 0.001000
+
+Epoch 14/200
+Training metrics:
+accuracy: 91.87
+f1: 92.80
+precision: 92.96
+recall: 92.70
+roc_auc: 99.83
+loss: 0.28
+Testing metrics:
+accuracy: 39.35
+f1: 31.82
+precision: 33.60
+recall: 32.39
+roc_auc: 89.51
+loss: 3.12
+Learning rate: 0.001000
+
+Epoch 15/200
+Training metrics:
+accuracy: 93.74
+f1: 94.24
+precision: 94.40
+recall: 94.13
+roc_auc: 99.90
+loss: 0.22
+Testing metrics:
+accuracy: 39.80
+f1: 34.25
+precision: 40.35
+recall: 33.29
+roc_auc: 89.27
+loss: 3.15
+Learning rate: 0.001000
+
+Epoch 16/200
+Training metrics:
+accuracy: 95.01
+f1: 95.49
+precision: 95.62
+recall: 95.38
+roc_auc: 99.91
+loss: 0.19
+Testing metrics:
+accuracy: 39.68
+f1: 32.80
+precision: 38.27
+recall: 32.09
+roc_auc: 89.14
+loss: 3.20
+Learning rate: 0.001000
+
+Epoch 17/200
+Training metrics:
+accuracy: 97.15
+f1: 97.43
+precision: 97.41
+recall: 97.47
+roc_auc: 99.95
+loss: 0.12
+Testing metrics:
+accuracy: 42.50
+f1: 35.96
+precision: 39.30
+recall: 35.25
+roc_auc: 89.79
+loss: 3.06
+Learning rate: 0.000500
+New best accuracy: 42.50%
+
+Epoch 18/200
+Training metrics:
+accuracy: 98.19
+f1: 98.29
+precision: 98.34
+recall: 98.26
+roc_auc: 99.98
+loss: 0.08
+Testing metrics:
+accuracy: 43.40
+f1: 36.79
+precision: 39.25
+recall: 36.20
+roc_auc: 90.10
+loss: 3.03
+Learning rate: 0.000500
+New best accuracy: 43.40%
+
+Epoch 19/200
+Training metrics:
+accuracy: 98.31
+f1: 98.36
+precision: 98.40
+recall: 98.32
+roc_auc: 99.98
+loss: 0.08
+Testing metrics:
+accuracy: 42.95
+f1: 37.19
+precision: 39.61
+recall: 36.84
+roc_auc: 90.10
+loss: 3.06
+Learning rate: 0.000500
+
+Epoch 20/200
+Training metrics:
+accuracy: 98.25
+f1: 98.30
+precision: 98.33
+recall: 98.28
+roc_auc: 99.98
+loss: 0.07
+Testing metrics:
+accuracy: 43.07
+f1: 36.70
+precision: 40.33
+recall: 36.04
+roc_auc: 89.90
+loss: 3.12
+Learning rate: 0.000500
+
+Epoch 21/200
+Training metrics:
+accuracy: 98.70
+f1: 98.75
+precision: 98.79
+recall: 98.72
+roc_auc: 99.99
+loss: 0.06
+Testing metrics:
+accuracy: 43.18
+f1: 37.74
+precision: 40.32
+recall: 37.43
+roc_auc: 89.91
+loss: 3.18
+Learning rate: 0.000500
+
+Epoch 22/200
+Training metrics:
+accuracy: 98.70
+f1: 98.81
+precision: 98.75
+recall: 98.88
+roc_auc: 99.98
+loss: 0.06
+Testing metrics:
+accuracy: 41.71
+f1: 34.68
+precision: 37.89
+recall: 33.97
+roc_auc: 89.69
+loss: 3.20
+Learning rate: 0.000500
+
+Epoch 23/200
+Training metrics:
+accuracy: 98.90
+f1: 98.95
+precision: 99.01
+recall: 98.90
+roc_auc: 99.99
+loss: 0.05
+Testing metrics:
+accuracy: 43.29
+f1: 36.98
+precision: 38.89
+recall: 36.81
+roc_auc: 90.11
+loss: 3.19
+Learning rate: 0.000500
+
+Epoch 24/200
+Training metrics:
+accuracy: 98.70
+f1: 98.74
+precision: 98.71
+recall: 98.79
+roc_auc: 99.99
+loss: 0.06
+Testing metrics:
+accuracy: 43.74
+f1: 37.05
+precision: 40.28
+recall: 36.37
+roc_auc: 90.23
+loss: 3.18
+Learning rate: 0.000500
+New best accuracy: 43.74%
+
+Epoch 25/200
+Training metrics:
+accuracy: 98.53
+f1: 98.57
+precision: 98.61
+recall: 98.53
+roc_auc: 99.98
+loss: 0.06
+Testing metrics:
+accuracy: 43.86
+f1: 36.69
+precision: 39.41
+recall: 36.55
+roc_auc: 90.16
+loss: 3.20
+Learning rate: 0.000500
+New best accuracy: 43.86%
+
+Epoch 26/200
+Training metrics:
+accuracy: 98.45
+f1: 98.57
+precision: 98.56
+recall: 98.58
+roc_auc: 99.98
+loss: 0.06
+Testing metrics:
+accuracy: 43.52
+f1: 37.05
+precision: 39.49
+recall: 36.74
+roc_auc: 90.10
+loss: 3.26
+Learning rate: 0.000500
+
+Epoch 27/200
+Training metrics:
+accuracy: 98.65
+f1: 98.74
+precision: 98.77
+recall: 98.71
+roc_auc: 99.98
+loss: 0.06
+Testing metrics:
+accuracy: 43.18
+f1: 36.53
+precision: 40.49
+recall: 35.82
+roc_auc: 89.95
+loss: 3.31
+Learning rate: 0.000500
+
+Epoch 28/200
+Training metrics:
+accuracy: 98.84
+f1: 98.86
+precision: 98.86
+recall: 98.88
+roc_auc: 99.99
+loss: 0.04
+Testing metrics:
+accuracy: 44.42
+f1: 38.61
+precision: 41.20
+recall: 37.85
+roc_auc: 90.32
+loss: 3.17
+Learning rate: 0.000250
+New best accuracy: 44.42%
+
+Epoch 29/200
+Training metrics:
+accuracy: 98.67
+f1: 98.72
+precision: 98.79
+recall: 98.66
+roc_auc: 99.99
+loss: 0.05
+Testing metrics:
+accuracy: 44.98
+f1: 38.96
+precision: 41.93
+recall: 38.18
+roc_auc: 90.31
+loss: 3.19
+Learning rate: 0.000250
+New best accuracy: 44.98%
+
+Epoch 30/200
+Training metrics:
+accuracy: 98.96
+f1: 99.01
+precision: 99.00
+recall: 99.03
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.76
+f1: 38.69
+precision: 41.14
+recall: 37.97
+roc_auc: 90.31
+loss: 3.22
+Learning rate: 0.000250
+
+Epoch 31/200
+Training metrics:
+accuracy: 98.96
+f1: 99.02
+precision: 99.02
+recall: 99.04
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.64
+f1: 38.77
+precision: 41.32
+recall: 38.17
+roc_auc: 90.41
+loss: 3.20
+Learning rate: 0.000250
+
+Epoch 32/200
+Training metrics:
+accuracy: 98.70
+f1: 98.77
+precision: 98.79
+recall: 98.75
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.64
+f1: 38.33
+precision: 40.52
+recall: 37.82
+roc_auc: 90.41
+loss: 3.21
+Learning rate: 0.000250
+
+Epoch 33/200
+Training metrics:
+accuracy: 98.84
+f1: 98.91
+precision: 98.89
+recall: 98.94
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.08
+f1: 37.71
+precision: 40.85
+recall: 36.88
+roc_auc: 90.22
+loss: 3.24
+Learning rate: 0.000250
+
+Epoch 34/200
+Training metrics:
+accuracy: 98.84
+f1: 98.84
+precision: 98.86
+recall: 98.82
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 43.29
+f1: 37.07
+precision: 39.47
+recall: 36.64
+roc_auc: 90.53
+loss: 3.23
+Learning rate: 0.000250
+
+Epoch 35/200
+Training metrics:
+accuracy: 98.56
+f1: 98.55
+precision: 98.56
+recall: 98.55
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.42
+f1: 37.77
+precision: 40.95
+recall: 36.99
+roc_auc: 90.40
+loss: 3.24
+Learning rate: 0.000250
+
+Epoch 36/200
+Training metrics:
+accuracy: 98.70
+f1: 98.75
+precision: 98.79
+recall: 98.72
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.53
+f1: 38.32
+precision: 40.83
+recall: 37.70
+roc_auc: 90.45
+loss: 3.24
+Learning rate: 0.000250
+
+Epoch 37/200
+Training metrics:
+accuracy: 98.90
+f1: 98.97
+precision: 98.96
+recall: 98.98
+roc_auc: 100.00
+loss: 0.04
+Testing metrics:
+accuracy: 44.87
+f1: 39.06
+precision: 41.86
+recall: 38.31
+roc_auc: 90.44
+loss: 3.25
+Learning rate: 0.000250
+
+Epoch 38/200
+Training metrics:
+accuracy: 98.67
+f1: 98.74
+precision: 98.70
+recall: 98.78
+roc_auc: 99.99
+loss: 0.04
+Testing metrics:
+accuracy: 44.19
+f1: 37.71
+precision: 40.13
+recall: 36.97
+roc_auc: 90.40
+loss: 3.26
+Learning rate: 0.000250
+
+Epoch 39/200
+Training metrics:
+accuracy: 99.04
+f1: 99.09
+precision: 99.17
+recall: 99.03
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.31
+f1: 37.61
+precision: 39.54
+recall: 37.16
+roc_auc: 90.40
+loss: 3.25
+Learning rate: 0.000125
+
+Epoch 40/200
+Training metrics:
+accuracy: 99.01
+f1: 99.08
+precision: 99.14
+recall: 99.03
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.76
+f1: 38.89
+precision: 40.77
+recall: 38.39
+roc_auc: 90.41
+loss: 3.25
+Learning rate: 0.000125
+
+Epoch 41/200
+Training metrics:
+accuracy: 98.93
+f1: 98.97
+precision: 98.91
+recall: 99.03
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.64
+f1: 38.36
+precision: 40.42
+recall: 37.83
+roc_auc: 90.49
+loss: 3.24
+Learning rate: 0.000125
+
+Epoch 42/200
+Training metrics:
+accuracy: 98.98
+f1: 99.00
+precision: 99.01
+recall: 99.01
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 43.97
+f1: 38.15
+precision: 40.61
+recall: 37.35
+roc_auc: 90.42
+loss: 3.26
+Learning rate: 0.000125
+
+Epoch 43/200
+Training metrics:
+accuracy: 99.15
+f1: 99.15
+precision: 99.14
+recall: 99.16
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.64
+f1: 38.55
+precision: 41.06
+recall: 37.73
+roc_auc: 90.55
+loss: 3.25
+Learning rate: 0.000125
+
+Epoch 44/200
+Training metrics:
+accuracy: 98.93
+f1: 98.94
+precision: 98.94
+recall: 98.96
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.87
+f1: 38.58
+precision: 40.21
+recall: 38.31
+roc_auc: 90.59
+loss: 3.25
+Learning rate: 0.000125
+
+Epoch 45/200
+Training metrics:
+accuracy: 98.93
+f1: 98.97
+precision: 99.02
+recall: 98.92
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.87
+f1: 38.88
+precision: 40.86
+recall: 38.32
+roc_auc: 90.50
+loss: 3.26
+Learning rate: 0.000125
+
+Epoch 46/200
+Training metrics:
+accuracy: 98.93
+f1: 98.97
+precision: 98.95
+recall: 98.99
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.87
+f1: 38.74
+precision: 40.71
+recall: 38.35
+roc_auc: 90.49
+loss: 3.26
+Learning rate: 0.000125
+
+Epoch 47/200
+Training metrics:
+accuracy: 98.96
+f1: 99.01
+precision: 99.02
+recall: 99.01
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.64
+f1: 38.42
+precision: 40.89
+recall: 37.86
+roc_auc: 90.48
+loss: 3.27
+Learning rate: 0.000125
+
+Epoch 48/200
+Training metrics:
+accuracy: 98.98
+f1: 98.96
+precision: 98.97
+recall: 98.95
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.87
+f1: 38.33
+precision: 40.26
+recall: 37.90
+roc_auc: 90.51
+loss: 3.26
+Learning rate: 0.000125
+
+Epoch 49/200
+Training metrics:
+accuracy: 98.84
+f1: 98.88
+precision: 98.82
+recall: 98.96
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.76
+f1: 38.13
+precision: 40.49
+recall: 37.58
+roc_auc: 90.53
+loss: 3.26
+Learning rate: 0.000125
+
+Epoch 50/200
+Training metrics:
+accuracy: 99.01
+f1: 99.10
+precision: 99.14
+recall: 99.07
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.77
+f1: 39.60
+precision: 41.56
+recall: 39.14
+roc_auc: 90.61
+loss: 3.25
+Learning rate: 0.000063
+New best accuracy: 45.77%
+
+Epoch 51/200
+Training metrics:
+accuracy: 98.93
+f1: 98.91
+precision: 98.89
+recall: 98.94
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.10
+f1: 38.89
+precision: 41.34
+recall: 38.22
+roc_auc: 90.61
+loss: 3.25
+Learning rate: 0.000063
+
+Epoch 52/200
+Training metrics:
+accuracy: 98.79
+f1: 98.82
+precision: 98.85
+recall: 98.80
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.32
+f1: 39.17
+precision: 41.34
+recall: 38.59
+roc_auc: 90.65
+loss: 3.24
+Learning rate: 0.000063
+
+Epoch 53/200
+Training metrics:
+accuracy: 98.90
+f1: 98.90
+precision: 98.92
+recall: 98.90
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 44.64
+f1: 38.56
+precision: 40.72
+recall: 38.12
+roc_auc: 90.56
+loss: 3.25
+Learning rate: 0.000063
+
+Epoch 54/200
+Training metrics:
+accuracy: 98.98
+f1: 98.97
+precision: 98.97
+recall: 98.98
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.64
+f1: 38.78
+precision: 41.29
+recall: 37.98
+roc_auc: 90.59
+loss: 3.25
+Learning rate: 0.000063
+
+Epoch 55/200
+Training metrics:
+accuracy: 99.15
+f1: 99.15
+precision: 99.18
+recall: 99.12
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.10
+f1: 39.11
+precision: 41.39
+recall: 38.42
+roc_auc: 90.62
+loss: 3.26
+Learning rate: 0.000063
+
+Epoch 56/200
+Training metrics:
+accuracy: 98.93
+f1: 98.99
+precision: 99.02
+recall: 98.98
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.43
+f1: 39.29
+precision: 41.64
+recall: 38.65
+roc_auc: 90.61
+loss: 3.25
+Learning rate: 0.000063
+
+Epoch 57/200
+Training metrics:
+accuracy: 99.18
+f1: 99.21
+precision: 99.26
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.34
+precision: 41.44
+recall: 38.84
+roc_auc: 90.64
+loss: 3.26
+Learning rate: 0.000063
+
+Epoch 58/200
+Training metrics:
+accuracy: 99.01
+f1: 99.07
+precision: 99.12
+recall: 99.02
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 46.11
+f1: 40.06
+precision: 42.25
+recall: 39.51
+roc_auc: 90.67
+loss: 3.25
+Learning rate: 0.000063
+New best accuracy: 46.11%
+
+Epoch 59/200
+Training metrics:
+accuracy: 98.84
+f1: 98.87
+precision: 98.85
+recall: 98.89
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.77
+f1: 39.76
+precision: 41.89
+recall: 39.18
+roc_auc: 90.62
+loss: 3.26
+Learning rate: 0.000063
+
+Epoch 60/200
+Training metrics:
+accuracy: 98.87
+f1: 98.92
+precision: 98.89
+recall: 98.94
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.21
+f1: 39.05
+precision: 40.86
+recall: 38.63
+roc_auc: 90.70
+loss: 3.25
+Learning rate: 0.000063
+
+Epoch 61/200
+Training metrics:
+accuracy: 99.24
+f1: 99.24
+precision: 99.27
+recall: 99.22
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.32
+precision: 41.45
+recall: 38.67
+roc_auc: 90.68
+loss: 3.26
+Learning rate: 0.000031
+
+Epoch 62/200
+Training metrics:
+accuracy: 99.13
+f1: 99.16
+precision: 99.19
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.56
+precision: 41.58
+recall: 39.01
+roc_auc: 90.63
+loss: 3.26
+Learning rate: 0.000031
+
+Epoch 63/200
+Training metrics:
+accuracy: 98.93
+f1: 98.99
+precision: 99.02
+recall: 98.96
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.87
+precision: 41.85
+recall: 39.41
+roc_auc: 90.62
+loss: 3.27
+Learning rate: 0.000031
+
+Epoch 64/200
+Training metrics:
+accuracy: 99.01
+f1: 99.05
+precision: 99.06
+recall: 99.05
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.39
+precision: 41.41
+recall: 38.86
+roc_auc: 90.65
+loss: 3.26
+Learning rate: 0.000031
+
+Epoch 65/200
+Training metrics:
+accuracy: 98.98
+f1: 98.99
+precision: 98.98
+recall: 99.01
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.23
+precision: 41.50
+recall: 38.59
+roc_auc: 90.67
+loss: 3.26
+Learning rate: 0.000031
+
+Epoch 66/200
+Training metrics:
+accuracy: 98.96
+f1: 98.97
+precision: 98.96
+recall: 98.98
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.10
+precision: 41.15
+recall: 38.48
+roc_auc: 90.61
+loss: 3.27
+Learning rate: 0.000031
+
+Epoch 67/200
+Training metrics:
+accuracy: 99.01
+f1: 99.09
+precision: 99.10
+recall: 99.08
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.32
+f1: 39.44
+precision: 41.69
+recall: 38.75
+roc_auc: 90.72
+loss: 3.27
+Learning rate: 0.000031
+
+Epoch 68/200
+Training metrics:
+accuracy: 99.07
+f1: 99.11
+precision: 99.07
+recall: 99.16
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.98
+f1: 39.15
+precision: 41.63
+recall: 38.30
+roc_auc: 90.69
+loss: 3.27
+Learning rate: 0.000031
+
+Epoch 69/200
+Training metrics:
+accuracy: 98.93
+f1: 98.98
+precision: 99.01
+recall: 98.95
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.30
+precision: 41.41
+recall: 38.66
+roc_auc: 90.64
+loss: 3.28
+Learning rate: 0.000031
+
+Epoch 70/200
+Training metrics:
+accuracy: 98.90
+f1: 98.98
+precision: 98.92
+recall: 99.03
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.09
+precision: 41.19
+recall: 38.58
+roc_auc: 90.65
+loss: 3.28
+Learning rate: 0.000031
+
+Epoch 71/200
+Training metrics:
+accuracy: 98.93
+f1: 98.98
+precision: 99.03
+recall: 98.94
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.50
+precision: 41.38
+recall: 38.94
+roc_auc: 90.69
+loss: 3.27
+Learning rate: 0.000031
+
+Epoch 72/200
+Training metrics:
+accuracy: 98.98
+f1: 99.05
+precision: 99.02
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.21
+precision: 41.53
+recall: 38.50
+roc_auc: 90.68
+loss: 3.27
+Learning rate: 0.000016
+
+Epoch 73/200
+Training metrics:
+accuracy: 99.01
+f1: 99.07
+precision: 99.07
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 38.99
+precision: 41.17
+recall: 38.34
+roc_auc: 90.65
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 74/200
+Training metrics:
+accuracy: 98.98
+f1: 98.99
+precision: 99.03
+recall: 98.96
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.22
+precision: 41.56
+recall: 38.49
+roc_auc: 90.59
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 75/200
+Training metrics:
+accuracy: 99.18
+f1: 99.18
+precision: 99.16
+recall: 99.20
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.50
+precision: 41.81
+recall: 38.78
+roc_auc: 90.63
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 76/200
+Training metrics:
+accuracy: 98.84
+f1: 98.88
+precision: 98.90
+recall: 98.86
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.87
+f1: 38.95
+precision: 41.28
+recall: 38.18
+roc_auc: 90.68
+loss: 3.27
+Learning rate: 0.000016
+
+Epoch 77/200
+Training metrics:
+accuracy: 99.13
+f1: 99.10
+precision: 99.08
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.08
+precision: 41.38
+recall: 38.32
+roc_auc: 90.68
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 78/200
+Training metrics:
+accuracy: 99.18
+f1: 99.24
+precision: 99.31
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.33
+precision: 41.73
+recall: 38.64
+roc_auc: 90.67
+loss: 3.27
+Learning rate: 0.000016
+
+Epoch 79/200
+Training metrics:
+accuracy: 99.29
+f1: 99.32
+precision: 99.32
+recall: 99.32
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.87
+f1: 38.62
+precision: 40.65
+recall: 38.05
+roc_auc: 90.64
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 80/200
+Training metrics:
+accuracy: 98.96
+f1: 98.94
+precision: 98.96
+recall: 98.94
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.37
+precision: 41.60
+recall: 38.71
+roc_auc: 90.67
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 81/200
+Training metrics:
+accuracy: 99.13
+f1: 99.12
+precision: 99.11
+recall: 99.12
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.14
+precision: 41.47
+recall: 38.46
+roc_auc: 90.65
+loss: 3.28
+Learning rate: 0.000016
+
+Epoch 82/200
+Training metrics:
+accuracy: 99.10
+f1: 99.11
+precision: 99.10
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.23
+precision: 41.57
+recall: 38.55
+roc_auc: 90.72
+loss: 3.27
+Learning rate: 0.000016
+
+Epoch 83/200
+Training metrics:
+accuracy: 99.10
+f1: 99.10
+precision: 99.15
+recall: 99.05
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.83
+precision: 41.96
+recall: 39.35
+roc_auc: 90.70
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 84/200
+Training metrics:
+accuracy: 99.04
+f1: 99.04
+precision: 99.04
+recall: 99.05
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.22
+precision: 41.63
+recall: 38.49
+roc_auc: 90.64
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 85/200
+Training metrics:
+accuracy: 99.29
+f1: 99.35
+precision: 99.32
+recall: 99.39
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.70
+precision: 41.94
+recall: 39.07
+roc_auc: 90.72
+loss: 3.27
+Learning rate: 0.000008
+
+Epoch 86/200
+Training metrics:
+accuracy: 99.24
+f1: 99.27
+precision: 99.28
+recall: 99.28
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.19
+precision: 41.54
+recall: 38.52
+roc_auc: 90.66
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 87/200
+Training metrics:
+accuracy: 98.98
+f1: 98.99
+precision: 98.99
+recall: 99.00
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.28
+precision: 41.78
+recall: 38.45
+roc_auc: 90.65
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 88/200
+Training metrics:
+accuracy: 98.96
+f1: 98.99
+precision: 98.99
+recall: 98.99
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.17
+precision: 41.26
+recall: 38.58
+roc_auc: 90.68
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 89/200
+Training metrics:
+accuracy: 99.15
+f1: 99.19
+precision: 99.19
+recall: 99.19
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.43
+precision: 41.15
+recall: 39.04
+roc_auc: 90.70
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 90/200
+Training metrics:
+accuracy: 98.98
+f1: 99.02
+precision: 99.06
+recall: 98.98
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.30
+precision: 41.15
+recall: 38.78
+roc_auc: 90.62
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 91/200
+Training metrics:
+accuracy: 99.04
+f1: 99.05
+precision: 99.07
+recall: 99.03
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.06
+precision: 41.53
+recall: 38.27
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000008
+
+Epoch 92/200
+Training metrics:
+accuracy: 99.18
+f1: 99.20
+precision: 99.19
+recall: 99.22
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.69
+precision: 42.00
+recall: 39.14
+roc_auc: 90.71
+loss: 3.29
+Learning rate: 0.000008
+
+Epoch 93/200
+Training metrics:
+accuracy: 99.07
+f1: 99.10
+precision: 99.13
+recall: 99.07
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.66
+precision: 41.59
+recall: 39.23
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000008
+
+Epoch 94/200
+Training metrics:
+accuracy: 99.13
+f1: 99.14
+precision: 99.15
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.51
+precision: 41.75
+recall: 38.97
+roc_auc: 90.66
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 95/200
+Training metrics:
+accuracy: 99.07
+f1: 99.10
+precision: 99.11
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.29
+precision: 41.74
+recall: 38.60
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 96/200
+Training metrics:
+accuracy: 98.87
+f1: 98.87
+precision: 98.88
+recall: 98.87
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.32
+f1: 39.50
+precision: 41.91
+recall: 38.78
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000004
+
+Epoch 97/200
+Training metrics:
+accuracy: 99.10
+f1: 99.08
+precision: 99.12
+recall: 99.05
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.43
+precision: 41.61
+recall: 38.84
+roc_auc: 90.72
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 98/200
+Training metrics:
+accuracy: 98.87
+f1: 98.90
+precision: 98.89
+recall: 98.92
+roc_auc: 100.00
+loss: 0.03
+Testing metrics:
+accuracy: 45.89
+f1: 39.88
+precision: 42.13
+recall: 39.24
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 99/200
+Training metrics:
+accuracy: 99.13
+f1: 99.18
+precision: 99.19
+recall: 99.18
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.58
+precision: 41.95
+recall: 38.89
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 100/200
+Training metrics:
+accuracy: 99.10
+f1: 99.13
+precision: 99.18
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.37
+precision: 41.75
+recall: 38.64
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 101/200
+Training metrics:
+accuracy: 99.01
+f1: 99.04
+precision: 99.01
+recall: 99.07
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.47
+precision: 41.70
+recall: 38.79
+roc_auc: 90.67
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 102/200
+Training metrics:
+accuracy: 99.04
+f1: 99.11
+precision: 99.14
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.28
+precision: 41.58
+recall: 38.68
+roc_auc: 90.70
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 103/200
+Training metrics:
+accuracy: 98.98
+f1: 99.02
+precision: 99.07
+recall: 98.98
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.40
+precision: 41.75
+recall: 38.85
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000004
+
+Epoch 104/200
+Training metrics:
+accuracy: 99.15
+f1: 99.12
+precision: 99.11
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.30
+precision: 41.71
+recall: 38.67
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000004
+
+Epoch 105/200
+Training metrics:
+accuracy: 99.07
+f1: 99.10
+precision: 99.13
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.54
+precision: 41.78
+recall: 38.88
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 106/200
+Training metrics:
+accuracy: 99.07
+f1: 99.05
+precision: 99.05
+recall: 99.06
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 38.76
+precision: 41.34
+recall: 37.98
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 107/200
+Training metrics:
+accuracy: 99.04
+f1: 99.13
+precision: 99.10
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.77
+precision: 42.00
+recall: 39.21
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 108/200
+Training metrics:
+accuracy: 99.10
+f1: 99.11
+precision: 99.13
+recall: 99.10
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.06
+precision: 41.41
+recall: 38.44
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 109/200
+Training metrics:
+accuracy: 98.93
+f1: 99.02
+precision: 98.97
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.32
+precision: 41.53
+recall: 38.76
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 110/200
+Training metrics:
+accuracy: 99.13
+f1: 99.17
+precision: 99.15
+recall: 99.21
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.85
+precision: 42.06
+recall: 39.28
+roc_auc: 90.70
+loss: 3.28
+Learning rate: 0.000002
+
+Epoch 111/200
+Training metrics:
+accuracy: 99.18
+f1: 99.24
+precision: 99.26
+recall: 99.24
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.40
+precision: 41.79
+recall: 38.73
+roc_auc: 90.62
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 112/200
+Training metrics:
+accuracy: 98.90
+f1: 98.93
+precision: 98.93
+recall: 98.94
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.35
+precision: 41.79
+recall: 38.64
+roc_auc: 90.63
+loss: 3.30
+Learning rate: 0.000002
+
+Epoch 113/200
+Training metrics:
+accuracy: 99.10
+f1: 99.15
+precision: 99.14
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.74
+precision: 42.11
+recall: 39.14
+roc_auc: 90.72
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 114/200
+Training metrics:
+accuracy: 99.10
+f1: 99.15
+precision: 99.13
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.35
+precision: 41.79
+recall: 38.65
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 115/200
+Training metrics:
+accuracy: 99.10
+f1: 99.10
+precision: 99.09
+recall: 99.11
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.69
+precision: 41.94
+recall: 39.05
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000002
+
+Epoch 116/200
+Training metrics:
+accuracy: 98.81
+f1: 98.84
+precision: 98.86
+recall: 98.82
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.51
+precision: 41.72
+recall: 38.92
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 117/200
+Training metrics:
+accuracy: 99.10
+f1: 99.14
+precision: 99.17
+recall: 99.11
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.73
+precision: 41.67
+recall: 39.35
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000001
+
+Epoch 118/200
+Training metrics:
+accuracy: 99.10
+f1: 99.09
+precision: 99.11
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.95
+precision: 42.20
+recall: 39.35
+roc_auc: 90.67
+loss: 3.28
+Learning rate: 0.000001
+
+Epoch 119/200
+Training metrics:
+accuracy: 99.27
+f1: 99.28
+precision: 99.25
+recall: 99.31
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.56
+precision: 41.91
+recall: 38.90
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 120/200
+Training metrics:
+accuracy: 99.24
+f1: 99.26
+precision: 99.29
+recall: 99.23
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.49
+precision: 41.77
+recall: 38.89
+roc_auc: 90.62
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 121/200
+Training metrics:
+accuracy: 99.24
+f1: 99.24
+precision: 99.30
+recall: 99.19
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.79
+precision: 42.09
+recall: 39.12
+roc_auc: 90.61
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 122/200
+Training metrics:
+accuracy: 99.10
+f1: 99.15
+precision: 99.17
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.51
+precision: 41.88
+recall: 38.82
+roc_auc: 90.67
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 123/200
+Training metrics:
+accuracy: 98.84
+f1: 98.91
+precision: 98.90
+recall: 98.93
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.20
+precision: 41.66
+recall: 38.42
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000001
+
+Epoch 124/200
+Training metrics:
+accuracy: 99.04
+f1: 99.04
+precision: 99.01
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.94
+precision: 41.80
+recall: 39.58
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 125/200
+Training metrics:
+accuracy: 99.01
+f1: 99.06
+precision: 99.09
+recall: 99.03
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.58
+precision: 41.56
+recall: 39.10
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 126/200
+Training metrics:
+accuracy: 99.07
+f1: 99.09
+precision: 99.10
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.74
+precision: 41.92
+recall: 39.19
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000001
+
+Epoch 127/200
+Training metrics:
+accuracy: 99.32
+f1: 99.33
+precision: 99.32
+recall: 99.33
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.52
+precision: 41.79
+recall: 38.85
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 128/200
+Training metrics:
+accuracy: 99.32
+f1: 99.34
+precision: 99.28
+recall: 99.39
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.91
+precision: 42.14
+recall: 39.40
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 129/200
+Training metrics:
+accuracy: 99.24
+f1: 99.30
+precision: 99.31
+recall: 99.29
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.87
+f1: 38.87
+precision: 41.35
+recall: 38.15
+roc_auc: 90.67
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 130/200
+Training metrics:
+accuracy: 99.13
+f1: 99.21
+precision: 99.20
+recall: 99.22
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.66
+precision: 41.82
+recall: 39.10
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 131/200
+Training metrics:
+accuracy: 99.18
+f1: 99.21
+precision: 99.16
+recall: 99.25
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.81
+precision: 41.87
+recall: 39.22
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 132/200
+Training metrics:
+accuracy: 99.04
+f1: 99.08
+precision: 99.08
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.42
+precision: 41.70
+recall: 38.75
+roc_auc: 90.63
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 133/200
+Training metrics:
+accuracy: 99.18
+f1: 99.24
+precision: 99.25
+recall: 99.24
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.37
+precision: 41.77
+recall: 38.81
+roc_auc: 90.73
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 134/200
+Training metrics:
+accuracy: 99.07
+f1: 99.10
+precision: 99.13
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.78
+precision: 41.87
+recall: 39.27
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 135/200
+Training metrics:
+accuracy: 99.01
+f1: 99.07
+precision: 99.08
+recall: 99.07
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.10
+precision: 41.53
+recall: 38.41
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 136/200
+Training metrics:
+accuracy: 99.01
+f1: 99.11
+precision: 99.08
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.18
+precision: 41.29
+recall: 38.59
+roc_auc: 90.64
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 137/200
+Training metrics:
+accuracy: 99.10
+f1: 99.17
+precision: 99.19
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.70
+precision: 41.99
+recall: 39.10
+roc_auc: 90.66
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 138/200
+Training metrics:
+accuracy: 99.24
+f1: 99.24
+precision: 99.28
+recall: 99.21
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.35
+precision: 41.71
+recall: 38.74
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 139/200
+Training metrics:
+accuracy: 99.15
+f1: 99.16
+precision: 99.15
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.11
+f1: 40.00
+precision: 42.37
+recall: 39.37
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 140/200
+Training metrics:
+accuracy: 98.79
+f1: 98.82
+precision: 98.85
+recall: 98.79
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.66
+precision: 41.97
+recall: 39.03
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 141/200
+Training metrics:
+accuracy: 99.01
+f1: 99.03
+precision: 99.06
+recall: 99.02
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.69
+precision: 42.01
+recall: 39.07
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 142/200
+Training metrics:
+accuracy: 98.81
+f1: 98.87
+precision: 98.84
+recall: 98.91
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.35
+precision: 41.67
+recall: 38.71
+roc_auc: 90.67
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 143/200
+Training metrics:
+accuracy: 99.04
+f1: 99.08
+precision: 99.14
+recall: 99.03
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.30
+precision: 41.73
+recall: 38.58
+roc_auc: 90.63
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 144/200
+Training metrics:
+accuracy: 99.07
+f1: 99.09
+precision: 99.05
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.00
+precision: 41.49
+recall: 38.33
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 145/200
+Training metrics:
+accuracy: 99.04
+f1: 99.08
+precision: 99.08
+recall: 99.09
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.22
+f1: 40.13
+precision: 42.20
+recall: 39.65
+roc_auc: 90.71
+loss: 3.29
+Learning rate: 0.000000
+New best accuracy: 46.22%
+
+Epoch 146/200
+Training metrics:
+accuracy: 98.98
+f1: 99.00
+precision: 98.99
+recall: 99.01
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.46
+precision: 41.64
+recall: 38.92
+roc_auc: 90.68
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 147/200
+Training metrics:
+accuracy: 99.04
+f1: 99.02
+precision: 99.01
+recall: 99.04
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.76
+precision: 41.99
+recall: 39.15
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 148/200
+Training metrics:
+accuracy: 99.10
+f1: 99.15
+precision: 99.15
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.52
+precision: 41.79
+recall: 38.89
+roc_auc: 90.67
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 149/200
+Training metrics:
+accuracy: 99.24
+f1: 99.18
+precision: 99.22
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.85
+precision: 41.93
+recall: 39.37
+roc_auc: 90.67
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 150/200
+Training metrics:
+accuracy: 99.21
+f1: 99.22
+precision: 99.21
+recall: 99.22
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.24
+precision: 41.85
+recall: 38.53
+roc_auc: 90.69
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 151/200
+Training metrics:
+accuracy: 99.27
+f1: 99.28
+precision: 99.29
+recall: 99.28
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.46
+precision: 41.51
+recall: 38.92
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 152/200
+Training metrics:
+accuracy: 98.93
+f1: 99.02
+precision: 99.04
+recall: 99.01
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.36
+precision: 41.64
+recall: 38.73
+roc_auc: 90.61
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 153/200
+Training metrics:
+accuracy: 98.87
+f1: 98.91
+precision: 98.92
+recall: 98.92
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.62
+precision: 41.94
+recall: 38.99
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 154/200
+Training metrics:
+accuracy: 99.15
+f1: 99.18
+precision: 99.23
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.34
+precision: 41.87
+recall: 38.61
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 155/200
+Training metrics:
+accuracy: 99.21
+f1: 99.28
+precision: 99.26
+recall: 99.30
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.16
+precision: 41.69
+recall: 38.42
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 156/200
+Training metrics:
+accuracy: 98.84
+f1: 98.89
+precision: 98.90
+recall: 98.88
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.81
+precision: 42.07
+recall: 39.18
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 157/200
+Training metrics:
+accuracy: 99.21
+f1: 99.24
+precision: 99.25
+recall: 99.23
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.73
+precision: 42.11
+recall: 39.02
+roc_auc: 90.66
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 158/200
+Training metrics:
+accuracy: 99.21
+f1: 99.27
+precision: 99.28
+recall: 99.26
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.81
+precision: 42.05
+recall: 39.27
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 159/200
+Training metrics:
+accuracy: 99.04
+f1: 99.07
+precision: 99.11
+recall: 99.04
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.98
+f1: 39.10
+precision: 41.70
+recall: 38.31
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 160/200
+Training metrics:
+accuracy: 99.15
+f1: 99.19
+precision: 99.24
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.41
+precision: 41.47
+recall: 38.86
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 161/200
+Training metrics:
+accuracy: 99.07
+f1: 99.12
+precision: 99.12
+recall: 99.11
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.75
+precision: 42.06
+recall: 39.03
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 162/200
+Training metrics:
+accuracy: 99.15
+f1: 99.20
+precision: 99.23
+recall: 99.19
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.27
+precision: 41.26
+recall: 38.70
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 163/200
+Training metrics:
+accuracy: 98.93
+f1: 98.94
+precision: 98.90
+recall: 98.98
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.62
+precision: 41.96
+recall: 38.97
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 164/200
+Training metrics:
+accuracy: 98.87
+f1: 98.92
+precision: 98.97
+recall: 98.88
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.68
+precision: 41.99
+recall: 39.03
+roc_auc: 90.67
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 165/200
+Training metrics:
+accuracy: 99.21
+f1: 99.24
+precision: 99.24
+recall: 99.25
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.37
+precision: 41.78
+recall: 38.66
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 166/200
+Training metrics:
+accuracy: 99.35
+f1: 99.34
+precision: 99.37
+recall: 99.34
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.47
+precision: 41.85
+recall: 38.75
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 167/200
+Training metrics:
+accuracy: 99.07
+f1: 99.12
+precision: 99.15
+recall: 99.10
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 38.92
+precision: 41.45
+recall: 38.23
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 168/200
+Training metrics:
+accuracy: 99.01
+f1: 99.06
+precision: 99.06
+recall: 99.07
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.92
+precision: 41.72
+recall: 39.55
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 169/200
+Training metrics:
+accuracy: 99.24
+f1: 99.25
+precision: 99.25
+recall: 99.26
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.51
+precision: 41.82
+recall: 38.84
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 170/200
+Training metrics:
+accuracy: 99.18
+f1: 99.19
+precision: 99.16
+recall: 99.23
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 39.23
+precision: 41.63
+recall: 38.56
+roc_auc: 90.66
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 171/200
+Training metrics:
+accuracy: 98.96
+f1: 98.97
+precision: 99.00
+recall: 98.94
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.11
+f1: 39.96
+precision: 42.28
+recall: 39.25
+roc_auc: 90.61
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 172/200
+Training metrics:
+accuracy: 99.15
+f1: 99.18
+precision: 99.21
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.87
+f1: 38.99
+precision: 41.63
+recall: 38.17
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 173/200
+Training metrics:
+accuracy: 99.18
+f1: 99.23
+precision: 99.18
+recall: 99.28
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.93
+precision: 42.25
+recall: 39.26
+roc_auc: 90.69
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 174/200
+Training metrics:
+accuracy: 98.93
+f1: 99.01
+precision: 99.03
+recall: 98.99
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.42
+precision: 41.79
+recall: 38.72
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 175/200
+Training metrics:
+accuracy: 99.35
+f1: 99.35
+precision: 99.34
+recall: 99.36
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.86
+precision: 41.99
+recall: 39.33
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 176/200
+Training metrics:
+accuracy: 98.96
+f1: 99.03
+precision: 99.04
+recall: 99.02
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.28
+precision: 41.59
+recall: 38.62
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 177/200
+Training metrics:
+accuracy: 99.13
+f1: 99.16
+precision: 99.15
+recall: 99.17
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.44
+precision: 41.72
+recall: 38.92
+roc_auc: 90.72
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 178/200
+Training metrics:
+accuracy: 99.10
+f1: 99.13
+precision: 99.17
+recall: 99.10
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.41
+precision: 41.57
+recall: 38.82
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 179/200
+Training metrics:
+accuracy: 99.13
+f1: 99.16
+precision: 99.19
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.75
+precision: 41.78
+recall: 39.22
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 180/200
+Training metrics:
+accuracy: 99.04
+f1: 99.03
+precision: 99.05
+recall: 99.01
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.38
+precision: 41.82
+recall: 38.66
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 181/200
+Training metrics:
+accuracy: 99.10
+f1: 99.12
+precision: 99.10
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.51
+precision: 41.92
+recall: 38.79
+roc_auc: 90.65
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 182/200
+Training metrics:
+accuracy: 99.15
+f1: 99.14
+precision: 99.15
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.00
+f1: 39.88
+precision: 42.07
+recall: 39.26
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 183/200
+Training metrics:
+accuracy: 99.01
+f1: 99.07
+precision: 99.01
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.83
+precision: 41.97
+recall: 39.34
+roc_auc: 90.71
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 184/200
+Training metrics:
+accuracy: 99.24
+f1: 99.26
+precision: 99.28
+recall: 99.24
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 46.22
+f1: 39.99
+precision: 42.14
+recall: 39.41
+roc_auc: 90.63
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 185/200
+Training metrics:
+accuracy: 99.15
+f1: 99.18
+precision: 99.16
+recall: 99.20
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.63
+precision: 41.80
+recall: 39.09
+roc_auc: 90.67
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 186/200
+Training metrics:
+accuracy: 99.13
+f1: 99.15
+precision: 99.14
+recall: 99.19
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 44.98
+f1: 38.97
+precision: 41.38
+recall: 38.32
+roc_auc: 90.67
+loss: 3.30
+Learning rate: 0.000000
+
+Epoch 187/200
+Training metrics:
+accuracy: 99.07
+f1: 99.14
+precision: 99.15
+recall: 99.13
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.67
+precision: 41.98
+recall: 38.97
+roc_auc: 90.66
+loss: 3.28
+Learning rate: 0.000000
+
+Epoch 188/200
+Training metrics:
+accuracy: 99.29
+f1: 99.34
+precision: 99.35
+recall: 99.34
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.59
+precision: 41.78
+recall: 39.01
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 189/200
+Training metrics:
+accuracy: 99.07
+f1: 99.15
+precision: 99.15
+recall: 99.16
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.55
+precision: 41.90
+recall: 38.92
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 190/200
+Training metrics:
+accuracy: 99.18
+f1: 99.25
+precision: 99.29
+recall: 99.21
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.10
+f1: 38.96
+precision: 41.42
+recall: 38.32
+roc_auc: 90.70
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 191/200
+Training metrics:
+accuracy: 99.13
+f1: 99.08
+precision: 99.11
+recall: 99.06
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.89
+f1: 39.95
+precision: 42.10
+recall: 39.42
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 192/200
+Training metrics:
+accuracy: 99.21
+f1: 99.21
+precision: 99.23
+recall: 99.20
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.07
+precision: 41.53
+recall: 38.35
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 193/200
+Training metrics:
+accuracy: 99.07
+f1: 99.09
+precision: 99.10
+recall: 99.08
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.66
+f1: 39.33
+precision: 41.61
+recall: 38.76
+roc_auc: 90.68
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 194/200
+Training metrics:
+accuracy: 99.15
+f1: 99.16
+precision: 99.18
+recall: 99.15
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.33
+precision: 41.78
+recall: 38.57
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 195/200
+Training metrics:
+accuracy: 99.04
+f1: 99.10
+precision: 99.10
+recall: 99.11
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.55
+f1: 39.52
+precision: 41.54
+recall: 39.02
+roc_auc: 90.66
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 196/200
+Training metrics:
+accuracy: 98.98
+f1: 99.07
+precision: 99.04
+recall: 99.10
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.32
+f1: 39.07
+precision: 41.60
+recall: 38.37
+roc_auc: 90.71
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 197/200
+Training metrics:
+accuracy: 99.07
+f1: 99.13
+precision: 99.08
+recall: 99.18
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.00
+precision: 40.95
+recall: 38.48
+roc_auc: 90.64
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 198/200
+Training metrics:
+accuracy: 99.15
+f1: 99.19
+precision: 99.16
+recall: 99.23
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.21
+f1: 39.33
+precision: 41.52
+recall: 38.77
+roc_auc: 90.67
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 199/200
+Training metrics:
+accuracy: 99.13
+f1: 99.15
+precision: 99.18
+recall: 99.14
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.43
+f1: 39.30
+precision: 41.71
+recall: 38.59
+roc_auc: 90.69
+loss: 3.29
+Learning rate: 0.000000
+
+Epoch 200/200
+Training metrics:
+accuracy: 99.24
+f1: 99.27
+precision: 99.24
+recall: 99.30
+roc_auc: 100.00
+loss: 0.02
+Testing metrics:
+accuracy: 45.77
+f1: 39.64
+precision: 41.79
+recall: 39.01
+roc_auc: 90.67
+loss: 3.28
+Learning rate: 0.000000
+
+============================================================
+Training Completed
+Best Epoch: 145
+Best Accuracy: 46.22%
+Best Metrics:
+  accuracy: 46.22
+  f1: 40.13
+  precision: 42.20
+  recall: 39.65
+  roc_auc: 90.71
+  loss: 3.29
+============================================================

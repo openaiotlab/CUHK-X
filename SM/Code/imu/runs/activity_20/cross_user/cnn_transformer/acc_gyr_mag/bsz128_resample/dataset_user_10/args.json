@@ -1,0 +1,11 @@
+{
+    "data_path": "dataset/activity_20/dataset_user_10.csv",
+    "modalities": "acc_gyr_mag",
+    "sample_length": 30,
+    "batch_size": 128,
+    "num_epochs": 200,
+    "learning_rate": 0.001,
+    "device": "cuda",
+    "random_init": false,
+    "experiment_name": "activity_20/cross_user/cnn_transformer/acc_gyr_mag/bsz128_resample"
+}

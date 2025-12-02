@@ -3,7 +3,7 @@
 ## Overview
 
 This example project provides a complete script for training image classification models with example data. You can download the data from the link:     
-The script supports multiple data modalities (e.g., RGB, Depth, Infrared) and offers flexible data loading, preprocessing, training, and evaluation functionalities.
+The script supports multiple data modalities (e.g., RGB, Depth, Infrared, and Thermal) and offers flexible data loading, preprocessing, training, and evaluation functionalities.
 
 ## Features
 
@@ -14,10 +14,17 @@ The script supports multiple data modalities (e.g., RGB, Depth, Infrared) and of
 
 ## Installation
 
-Ensure you have Python 3.6 or higher installed, and then install the required libraries:
+Ensure you have Python 3.8 or higher installed, and then install the required libraries:
+
+
 
 ```bash
-pip install numpy torch torchvision tqdm scikit-learn Pillow
+
+conda create -n cuhkx python=3.9
+
+conda activate cuhkx
+
+pip -r requirements.txt
 ```
 
 ## Dataset Preparation
@@ -37,12 +44,18 @@ dataset_root/
     │   └── label2/
     └── ...
 ```
+Where the labels always mapping action name 
 
 ## Usage
 
 Run the following command to start training:
 
 ```bash
+unified training for "rgb/depth/ir/thermal"
+
+cd YOUR/PATH/rgb
+# where four modes of data training contained in this folder
+
 python train_models_cross_multi.py \
   --dataset_root /path/to/dataset \  # Root directory of the dataset
   --data rgb \                        # Data modality: rgb, depth, ir, thermal
@@ -52,32 +65,73 @@ python train_models_cross_multi.py \
   --weights pretrained \               # Weight initialization: pretrained or scratch
   --batch_size 64 \                   # Batch size for training
   --learning_rate 0.001 \             # Learning rate for the optimizer
-  --split_mode cross \                # Data splitting mode: cross or intra
+  --split_mode intra \                # Data splitting mode: cross_subject or intra(80%/20%)
   --oversample \                       # Enable minority class oversampling
-  --labels "10,30" \                  # Label frequency rank range
+  --labels "10,30" \                  # Label frequency rank range or you can choose all labels
   --log_dir /path/to/log_dir \        # Log output directory
-  --cross_user_id 5                   # Test user ID in cross mode
+  --cross_user_id                    # Test user ID in cross_user mode
+
+or you can adjust the train_mudels_multi_intra.sh parameter to train
+bash train_models_multi_intra.sh
 ```
 
-## Parameter Description
+```bash
+or you can directly run the bash for the rgb modes:
 
-- `--dataset_root`: Path to the root directory containing image data.
-- `--data`: Select the data modality (e.g., RGB, Depth, Infrared).
-- `--epochs`: Number of training epochs.
-- `--gpu`: GPU device number to use.
-- `--network`: Choose the network architecture (e.g., ResNet or ViT).
-- `--weights`: Specify weight initialization method (pretrained or scratch).
-- `--batch_size`: Batch size for each training iteration.
-- `--learning_rate`: Learning rate for the optimizer.
-- `--split_mode`: Choose data splitting mode (cross-user or random split).
-- `--oversample`: Enable oversampling for minority classes.
-- `--labels`: Specify label frequency rank range, supports formats like '10,30' or '0' or 'all'.
-- `--log_dir`: Directory for saving log files.
-- `--cross_user_id`: Specify the user ID for testing in cross mode.
+cd cross_subject
+# 1. fast baseline cross_subject training
+bash train_supervised_44.sh
 
-## Logging
+# 2. resampled cross_subject training 
+bash train_supervised_lt.sh
 
-Logs generated during training will be saved in the specified `log_dir`, facilitating analysis and debugging.
+# 3. cross_subject for all actions contrastive learning 
+bash train_contra_all_users_44.sh
+
+# 4. cross_subject for resampled actions contrastive learning 
+bash train_10_users_contra.sh
+
+# 5. cross_subject for resampled actions without different env contrastive learning 
+bash train_10_users_contra_remove_env.sh
+
+ 
+```
+
+```bash
+# for skeleton
+
+cd skeleton
+
+#cross_trial/intra dataset
+
+CUDA_VISIBLE_DEVICES=4,6 python train.py --train_dir cross_trial_train.txt --test_dir cross_trial_test.txt --config ./configs/dstformer.yaml
+
+if you want to adjust the parameters of imu scripts, see the readme.md under folder of imu
+
+```
+
+```bash
+# for radar
+
+cd radar
+
+bash ./train_radar_mix.sh
+
+if you want to adjust the parameters of imu scripts, see the readme.md under folder of radar
+```
+
+```bash
+# for imu
+
+cd imu
+
+# run cross trail
+
+bash ./command_accgyrmag_transformer_crosstrail.sh
+
+if you want to adjust the parameters of imu scripts, see the readme.md under folder of imu
+```
+
 
 ## License
 

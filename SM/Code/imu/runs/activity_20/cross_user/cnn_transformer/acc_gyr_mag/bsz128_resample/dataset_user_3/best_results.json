@@ -1,0 +1,70 @@
+{
+    "timestamp": "20251128_101003",
+    "best_metrics": {
+        "accuracy": 33.33333333333333,
+        "f1": 18.93491124260355,
+        "precision": 17.69230769230769,
+        "recall": 23.076923076923077,
+        "roc_auc": NaN,
+        "loss": 2.80823016166687
+    },
+    "best_epoch": 3,
+    "best_predictions": [
+        6,
+        11,
+        11,
+        11,
+        11,
+        11,
+        2,
+        14,
+        11,
+        11,
+        11,
+        11,
+        7,
+        11,
+        3
+    ],
+    "best_labels": [
+        7,
+        9,
+        10,
+        11,
+        11,
+        11,
+        2,
+        14,
+        15,
+        16,
+        17,
+        17,
+        18,
+        18,
+        4
+    ],
+    "args": {
+        "data_path": "dataset/activity_20/dataset_user_3.csv",
+        "modalities": "acc_gyr_mag",
+        "sample_length": 30,
+        "batch_size": 128,
+        "num_epochs": 200,
+        "learning_rate": 0.001,
+        "device": "cuda",
+        "random_init": false,
+        "experiment_name": "activity_20/cross_user/cnn_transformer/acc_gyr_mag/bsz128_resample"
+    },
+    "training_config": {
+        "num_epochs": 200,
+        "batch_size": 128,
+        "learning_rate": 0.001,
+        "sample_length": 30,
+        "device": "cuda",
+        "in_channels": 45,
+        "out_size": 20,
+        "data_path": "dataset/activity_20/dataset_user_3.csv",
+        "modalities": "acc_gyr_mag",
+        "random_init": false,
+        "experiment_name": "activity_20/cross_user/cnn_transformer/acc_gyr_mag/bsz128_resample"
+    }
+}

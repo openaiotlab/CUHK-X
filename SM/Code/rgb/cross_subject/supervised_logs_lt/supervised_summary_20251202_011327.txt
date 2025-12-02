@@ -1,0 +1,7 @@
+纯监督学习训练摘要 - 20251202_011327
+================================
+user1: Test Acc: 43.49%
+user7: Test Acc: 36.25%
+user13: Test Acc: 52.65%
+user20: Test Acc: 44.72%
+user26: Test Acc: 49.79%

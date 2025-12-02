@@ -1,0 +1,93 @@
+_wandb:
+    value:
+        cli_version: 0.23.0
+        e:
+            tnmfgg2m2rjj3w19wxqfz5eelq2k2cmq:
+                args:
+                    - --train_dir
+                    - cross_subject_trial_train_20users.txt
+                    - --test_dir
+                    - cross_subject_trial_test_20users.txt
+                    - --config
+                    - ./configs/dstformer.yaml
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "15118265438208"
+                        used: "13588407242752"
+                email: lbh836578@gmail.com
+                executable: /home/siyang/miniconda3/envs/cuhkx-example/bin/python
+                gpu: NVIDIA RTX A6000
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-9357b12b-4dae-70f2-d980-f9c936546fe6
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-25bac560-689f-8f9d-0d2f-959f5f217da8
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-f09fe27c-bbc4-6a69-2898-48c7ef2d1358
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-63ad2ddd-ffbc-fca9-a2e3-a1598c13eba5
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-2465b6e2-5471-f93d-3753-e13250242d53
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-a8bae519-23a5-e876-87cb-938c31aca339
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-ca86a9b6-8c88-148f-3d1d-28169764f2a0
+                    - architecture: Ampere
+                      cudaCores: 10752
+                      memoryTotal: "51527024640"
+                      name: NVIDIA RTX A6000
+                      uuid: GPU-db9bda99-ee2e-89e6-3524-46ff02785383
+                host: aiot-a6000-hk01
+                memory:
+                    total: "540696489984"
+                os: Linux-5.15.0-139-generic-x86_64-with-glibc2.31
+                program: /aiot-nvme-15T-x2-hk01/siyang/CUHK-X-example/SM/Code/skeleton/train.py
+                python: CPython 3.9.25
+                root: /aiot-nvme-15T-x2-hk01/siyang/CUHK-X-example/SM/Code/skeleton
+                startedAt: "2025-11-27T03:14:56.353365Z"
+                writerId: tnmfgg2m2rjj3w19wxqfz5eelq2k2cmq
+        m: []
+        python_version: 3.9.25
+        t:
+            "1":
+                - 1
+                - 5
+                - 53
+            "2":
+                - 1
+                - 5
+                - 53
+            "3":
+                - 13
+                - 61
+            "4": 3.9.25
+            "5": 0.23.0
+            "12": 0.23.0
+            "13": linux-x86_64
