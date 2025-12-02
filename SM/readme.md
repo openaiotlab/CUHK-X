@@ -1,158 +1,223 @@
-# Example CUHK-X Image Classification Model Training Script
+<div align="center">
 
-## Overview
+# 🎯 CUHK-X Multi-Modal Action For Small Model Recognition
 
-This example project provides a complete script for training image classification models with example data. You can download the data from the link:     
-The script supports multiple data modalities (e.g., RGB, Depth, Infrared, and Thermal) and offers flexible data loading, preprocessing, training, and evaluation functionalities.
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![CUHK](https://img.shields.io/badge/CUHK-Research-purple.svg)](https://www.cuhk.edu.hk/)
 
-## Features
+**A comprehensive framework for multi-modal action recognition supporting RGB, Depth, Infrared, Thermal, Skeleton, Radar, and IMU data.**
 
-- Supports various network architectures (e.g., ResNet and Vision Transformer).
-- Automatic handling of class imbalance issues (optional oversampling).
-- Detailed logging to monitor the training process.
-- Supports cross-user and intra-split data partitioning modes.
+[📖 Overview](#-overview) •
+[✨ Features](#-features) •
+[🚀 Quick Start](#-quick-start) •
+[📁 Dataset](#-dataset-preparation) •
+[💻 Usage](#-usage) •
+[📧 Contact](#-contact)
 
-## Installation
+</div>
 
-Ensure you have Python 3.8 or higher installed, and then install the required libraries:
+---
 
+## 📖 Overview
 
+This project provides a complete training pipeline for **multi-modal action recognition** models. It supports various data modalities and offers flexible data loading, preprocessing, training, and evaluation functionalities.
+
+> 📥 **Dataset Download**: [Coming Soon]
+
+---
+
+## ✨ Features
+
+| Feature | Description |
+|---------|-------------|
+| 🏗️ **Multiple Architectures** | ResNet (18/34/50), Vision Transformer (ViT) |
+| 📊 **Multi-Modal Support** | RGB, Depth, Infrared, Thermal, Skeleton, Radar, IMU |
+| ⚖️ **Class Imbalance Handling** | Optional oversampling for minority classes |
+| 📝 **Comprehensive Logging** | Detailed training process monitoring |
+| 🔀 **Flexible Data Splitting** | Cross-user and intra-split partitioning modes |
+| 🎯 **Contrastive Learning** | Support for self-supervised pre-training |
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.9+
+- CUDA-compatible GPU (recommended)
+
+### Installation
 
 ```bash
-
+# Create conda environment
 conda create -n cuhkx python=3.9
-
 conda activate cuhkx
 
-pip -r requirements.txt
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-## Dataset Preparation
+---
 
-Make sure your dataset directory structure is as follows:
+## 📁 Dataset Preparation
+
+Organize your dataset with the following structure:
 
 ```
 dataset_root/
-    ├── RGB/
-    │   ├── label1/
-    │   │   ├── user1/
-    │   │   │   ├── sequence1/
-    │   │   │   │   ├── image1.jpg
-    │   │   │   │   └── image2.jpg
-    │   │   │   └── sequence2/
-    │   │   └── user2/
-    │   └── label2/
-    └── ...
+├──  RGB/
+│   ├──  label1/
+│   │   ├──  user1/
+│   │   │   ├──  sequence1/
+│   │   │   │   ├──  image1.jpg
+│   │   │   │   └──  image2.jpg
+│   │   │   └──  sequence2/
+│   │   └──  user2/
+│   └──  label2/
+├──  Depth/
+├──  IR/
+├──  Thermal/
+└── ...
 ```
-Where the labels always mapping action name 
 
-## Usage
+> 💡 **Note**: Labels correspond to action names.
 
-Run the following command to start training:
+---
+
+## 💻 Usage
+
+### 🎨 RGB / Depth / IR / Thermal Training
+
+<details>
+<summary><b>🔧 Option 1: Command Line</b></summary>
 
 ```bash
-unified training for "rgb/depth/ir/thermal"
-
 cd YOUR/PATH/rgb
-# where four modes of data training contained in this folder
 
 python train_models_cross_multi.py \
-  --dataset_root /path/to/dataset \  # Root directory of the dataset
-  --data rgb \                        # Data modality: rgb, depth, ir, thermal
-  --epochs 15 \                       # Number of training epochs
-  --gpu 0 \                           # GPU device number to use
-  --network resnet50 \                # Network architecture: resnet18, resnet34, resnet50, vit_b_16
-  --weights pretrained \               # Weight initialization: pretrained or scratch
-  --batch_size 64 \                   # Batch size for training
-  --learning_rate 0.001 \             # Learning rate for the optimizer
-  --split_mode intra \                # Data splitting mode: cross_subject or intra(80%/20%)
-  --oversample \                       # Enable minority class oversampling
-  --labels "10,30" \                  # Label frequency rank range or you can choose all labels
-  --log_dir /path/to/log_dir \        # Log output directory
-  --cross_user_id                    # Test user ID in cross_user mode
+  --dataset_root /path/to/dataset \
+  --data rgb \
+  --epochs 15 \
+  --gpu 0 \
+  --network resnet50 \
+  --weights pretrained \
+  --batch_size 64 \
+  --learning_rate 0.001 \
+  --split_mode intra \
+  --oversample \
+  --labels "10,30" \
+  --log_dir /path/to/log_dir \
+  --cross_user_id 1
+```
 
-or you can adjust the train_mudels_multi_intra.sh parameter to train
+</details>
+
+<details>
+<summary><b>📜 Option 2: Shell Script</b></summary>
+
+```bash
 bash train_models_multi_intra.sh
 ```
 
+</details>
+
+#### 📋 Parameter Reference
+
+| Parameter | Description | Options |
+|-----------|-------------|---------|
+| `--dataset_root` | Root directory of the dataset | Path |
+| `--data` | Data modality | `rgb`, `depth`, `ir`, `thermal` |
+| `--epochs` | Number of training epochs | Integer (default: 15) |
+| `--gpu` | GPU device number | Integer |
+| `--network` | Network architecture | `resnet18`, `resnet34`, `resnet50`, `vit_b_16` |
+| `--weights` | Weight initialization | `pretrained`, `scratch` |
+| `--batch_size` | Batch size for training | Integer (default: 64) |
+| `--learning_rate` | Learning rate | Float (default: 0.001) |
+| `--split_mode` | Data splitting mode | `cross_subject`, `intra` |
+| `--oversample` | Enable minority class oversampling | Flag |
+| `--labels` | Label frequency rank range | String (e.g., "10,30") or "all" |
+| `--cross_user_id` | Test user ID in cross_user mode | Integer |
+
+---
+
+### 🎯 Cross-Subject Training (RGB)
+
 ```bash
-or you can directly run the bash for the rgb modes:
-
 cd cross_subject
-# 1. fast baseline cross_subject training
-bash train_supervised_44.sh
-
-# 2. resampled cross_subject training 
-bash train_supervised_lt.sh
-
-# 3. cross_subject for all actions contrastive learning 
-bash train_contra_all_users_44.sh
-
-# 4. cross_subject for resampled actions contrastive learning 
-bash train_10_users_contra.sh
-
-# 5. cross_subject for resampled actions without different env contrastive learning 
-bash train_10_users_contra_remove_env.sh
-
- 
 ```
 
-```bash
-# for skeleton
+| Script | Description |
+|--------|-------------|
+| `train_supervised_44.sh` | Fast baseline cross-subject training |
+| `train_supervised_lt.sh` | Resampled cross-subject training |
+| `train_contra_all_users_44.sh` | Contrastive learning (all actions) |
+| `train_10_users_contra.sh` | Contrastive learning (resampled actions) |
+| `train_10_users_contra_remove_env.sh` | Contrastive learning (without env variation) |
 
+---
+
+### 🦴 Skeleton Training
+
+```bash
 cd skeleton
 
-#cross_trial/intra dataset
-
-CUDA_VISIBLE_DEVICES=4,6 python train.py --train_dir cross_trial_train.txt --test_dir cross_trial_test.txt --config ./configs/dstformer.yaml
-
-if you want to adjust the parameters of imu scripts, see the readme.md under folder of imu
-
+CUDA_VISIBLE_DEVICES=4,6 python train.py \
+  --train_dir cross_trial_train.txt \
+  --test_dir cross_trial_test.txt \
+  --config ./configs/dstformer.yaml
 ```
 
-```bash
-# for radar
+> 📖 See `skeleton/readme.md` for detailed configuration.
 
+---
+
+### 📡 Radar Training
+
+```bash
 cd radar
 
 bash ./train_radar_mix.sh
-
-if you want to adjust the parameters of imu scripts, see the readme.md under folder of radar
 ```
+
+
+---
+
+### 📱 IMU Training
 
 ```bash
-# for imu
-
 cd imu
 
-# run cross trail
-
 bash ./command_accgyrmag_transformer_crosstrail.sh
-
-if you want to adjust the parameters of imu scripts, see the readme.md under folder of imu
 ```
 
+> 📖 See `imu/readme.md` for detailed configuration.
 
-## License
+---
+
+## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
+---
 
-For any questions or suggestions, please contact [syjiang@ie.cuhk.edu.hk].
-```
+## 📧 Contact
 
-### Explanation of Sections
+<div align="center">
 
-- **Overview**: Briefly describes the purpose and functionality of the project.
-- **Features**: Lists the main functionalities offered by the script.
-- **Installation**: Provides commands for installing the necessary libraries.
-- **Dataset Preparation**: Describes the required directory structure for the dataset.
-- **Usage**: Offers a command to run the script, including comments for each parameter.
-- **Parameter Description**: Explains the purpose of each command-line argument.
-- **Logging**: Details how logs are handled during training.
-- **License**: States the licensing information for the project.
-- **Contribution**: Invites contributions and explains how to contribute.
-- **Contact**: Provides contact information for users to reach out with questions or feedback.
+**For questions or suggestions, please contact:**
 
-Feel free to adjust the content to better fit your project’s needs or personal preferences!
+📮 **Email**: [syjiang@ie.cuhk.edu.hk](mailto:syjiang@ie.cuhk.edu.hk)
+
+🏫 **The Chinese University of Hong Kong**
+
+</div>
+
+---
+
+<div align="center">
+
+⭐ **If you find this project helpful, please consider giving it a star!** ⭐
+
+</div>
