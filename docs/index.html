@@ -432,6 +432,11 @@
             border-radius: var(--radius-lg);
             overflow: hidden;
             box-shadow: var(--shadow-lg);
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
         }
 
         .media-container img {
@@ -1027,7 +1032,7 @@
             <!-- Dataset Overview Image -->
             <div class="media-container animate-in delay-3">
                 <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/download.png"
-                     alt="Dataset overview showing modality examples">
+                     alt="Dataset overview showing modality examples" style="width: 70%; height: auto;">
             </div>
 
             <!-- Action Categories and Distribution -->
@@ -1068,9 +1073,9 @@
                     </div>
 
                     <!-- Action Categories Image -->
-                    <div class="media-container animate-in" style="margin: 2rem 0;">
+                    <div class="media-container animate-in">
                         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/action.png"
-                             alt="Action categories and distribution">
+                             alt="Action categories and distribution" style="width: 50%; height: auto;">
                     </div>
                 </div>
 
@@ -1113,12 +1118,6 @@
             <div class="media-container animate-in delay-2">
                 <video controls preload="metadata" style="width: 100%; height: auto; display: block;">
                     <source src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/videos/all_modality.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-            </div>
-            <div>
-                <video controls preload="metadata" style="width: 100%; height: auto; display: block;">
-                    <source src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/videos/imu.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -1187,56 +1186,6 @@
                         <li><strong>Context Understanding:</strong> Critical for next action prediction accuracy</li>
                     </ul>
                 </div>
-            </div>
-
-            <!-- Challenging Aspects -->
-            <div class="animate-in delay-3" style="margin: 3rem 0;">
-                <h3>Challenging Aspects</h3>
-                <p style="margin-bottom: 1.5rem;">Our analysis identifies several key challenges in multimodal human activity recognition and reasoning:</p>
-
-                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
-                    <div style="background: white; border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm); border-left: 4px solid var(--danger);">
-                        <div style="font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--danger);">●</span> Cross-Domain Shift
-                        </div>
-                        <p style="margin: 0; color: var(--gray-dark);">Performance drops markedly in cross-domain scenarios (similar to state-of-the-art ~60%)</p>
-                    </div>
-
-                    <div style="background: white; border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm); border-left: 4px solid var(--warning);">
-                        <div style="font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--warning);">●</span> Long-Tail Distribution
-                        </div>
-                        <p style="margin: 0; color: var(--gray-dark);">Realistic but challenging class imbalance affects rare action recognition</p>
-                    </div>
-
-                    <div style="background: white; border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm); border-left: 4px solid var(--secondary);">
-                        <div style="font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--secondary);">●</span> Subject Variability
-                        </div>
-                        <p style="margin: 0; color: var(--gray-dark);">Individual differences create significant challenges for generalization</p>
-                    </div>
-
-                    <div style="background: white; border-radius: var(--radius-md); padding: 1.5rem; box-shadow: var(--shadow-sm); border-left: 4px solid var(--accent);">
-                        <div style="font-weight: 700; color: var(--dark); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
-                            <span style="color: var(--accent);">●</span> Temporal Complexity
-                        </div>
-                        <p style="margin: 0; color: var(--gray-dark);">Sequential reasoning requires sophisticated understanding of action progression</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Model Performance Analysis -->
-            <div class="animate-in delay-4" style="margin: 3rem 0;">
-                <h3>Model Performance Analysis</h3>
-                <p>
-                    Our evaluation of state-of-the-art models reveals that <strong>larger models (7B parameters)</strong>
-                    consistently outperform
-                    smaller ones across all benchmarks. <strong>QwenVL-7B</strong> and <strong>VLLaVA-7B</strong> demonstrate
-                    superior capabilities,
-                    particularly in complex reasoning tasks. Interestingly, <strong>Depth and IR modalities</strong> often provide
-                    richer information
-                    than RGB for understanding and reasoning tasks, highlighting the value of multimodal approaches.
-                </p>
             </div>
         </div>
     </section>
