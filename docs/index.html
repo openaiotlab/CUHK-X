@@ -515,7 +515,6 @@
         /* ========= Results Section ========= */
         .results-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
             gap: 2rem;
             margin: 3rem 0;
         }
@@ -1110,7 +1109,7 @@
                 <h2>Data Visualization</h2>
             </div>
             <p class="animate-in delay-1" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
-                This is a sample example that includes seven modalities: RGB, IR, Thermal, Depth, Skeleton, Radar, and IMU, which were recorded at the same time.
+                This is an example that includes seven modalities: RGB, IR, Thermal, Depth, Skeleton, Radar, and IMU, which were recorded at the same time.
             </p>
 
             <div class="media-container animate-in delay-2">
@@ -1136,30 +1135,66 @@
 
             <div class="results-grid">
                 <div class="result-card animate-in">
-                    <h4>🎯 HAR Performance (Cross-Subject LOSO)</h4>
+                    <h4>🎯 HAR Performance (Cross-Subject)</h4>
                     <table class="result-table">
                         <thead>
                             <tr>
                                 <th>Modality</th>
-                                <th>Baseline</th>
-                                <th>Best</th>
+                                <th>Accuracy</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1-Score</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>RGB</td>
-                                <td>45.2%</td>
-                                <td><strong>56.56%</strong></td>
+                                <td>90.89%</td>
+                                <td>92.24%</td>
+                                <td>91.02%</td>
+                                <td>91.28%</td>
+                            </tr>
+                            <tr>
+                                <td>Depth</td>
+                                <td>90.46%</td>
+                                <td>91.76%</td>
+                                <td>90.75%</td>
+                                <td>90.93%</td>
+                            </tr>
+                            <tr>
+                                <td>IR</td>
+                                <td>90.22%</td>
+                                <td>91.53%</td>
+                                <td>89.94%</td>
+                                <td>90.46%</td>
+                            </tr>
+                            <tr>
+                                <td>Thermal</td>
+                                <td>92.57%</td>
+                                <td>93.54%</td>
+                                <td>93.50%</td>
+                                <td>93.36%</td>
+                            </tr>
+                            <tr>
+                                <td>mmWave</td>
+                                <td>46.63%</td>
+                                <td>48.29%</td>
+                                <td>46.63%</td>
+                                <td>44.53%</td>
                             </tr>
                             <tr>
                                 <td>IMU</td>
-                                <td>38.7%</td>
-                                <td>48.9%</td>
+                                <td>45.52%</td>
+                                <td>40.84%</td>
+                                <td>38.00%</td>
+                                <td>38.32%</td>
                             </tr>
                             <tr>
                                 <td>Skeleton</td>
-                                <td>41.5%</td>
-                                <td>51.3%</td>
+                                <td>79.08%</td>
+                                <td>91.46%</td>
+                                <td>79.08%</td>
+                                <td>84.17%</td>
                             </tr>
                         </tbody>
                     </table>
