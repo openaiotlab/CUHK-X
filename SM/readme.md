@@ -106,10 +106,9 @@ python train_models_cross_multi.py \
   --batch_size 64 \
   --learning_rate 0.001 \
   --split_mode intra \
-  --oversample \
-  --labels "10,30" \
+  --labels "all" \
   --log_dir /path/to/log_dir \
-  --cross_user_id 1
+
 ```
 
 </details>
@@ -142,23 +141,7 @@ bash train_models_multi_intra.sh
 
 ---
 
-### 🎯 Cross-Subject Training (RGB)
-
-```bash
-cd cross_subject
-```
-
-| Script | Description |
-|--------|-------------|
-| `train_supervised_44.sh` | Fast baseline cross-subject training |
-| `train_supervised_lt.sh` | Resampled cross-subject training |
-| `train_contra_all_users_44.sh` | Contrastive learning (all actions) |
-| `train_10_users_contra.sh` | Contrastive learning (resampled actions) |
-| `train_10_users_contra_remove_env.sh` | Contrastive learning (without env variation) |
-
----
-
-### 🦴 Skeleton Training
+### 🦴 Skeleton Cross_trail Training
 
 ```bash
 cd skeleton
@@ -173,7 +156,7 @@ CUDA_VISIBLE_DEVICES=4,6 python train.py \
 
 ---
 
-### 📡 Radar Training
+### 📡 Radar Cross_trail Training
 
 ```bash
 cd radar
@@ -184,7 +167,7 @@ bash ./train_radar_mix.sh
 
 ---
 
-### 📱 IMU Training
+### 📱 IMU Cross_trail Training
 
 ```bash
 cd imu
@@ -193,6 +176,59 @@ bash ./command_accgyrmag_transformer_crosstrail.sh
 ```
 
 > 📖 See `imu/readme.md` for detailed configuration.
+
+---
+
+### cross-trail-remove long tail experiments
+
+#### rgb
+```bash
+cd rgb 
+
+python train_models_cross_multi.py \
+  --dataset_root /path/to/dataset \
+  --data rgb \
+  --epochs 15 \
+  --gpu 0 \
+  --network resnet50 \
+  --weights pretrained \
+  --batch_size 64 \
+  --learning_rate 0.001 \
+  --split_mode intra \
+  --oversample \
+  --labels "10,30" \
+  --log_dir /path/to/log_dir \
+```
+
+#### skeleton
+```bash
+cd skeleton
+
+CUDA_VISIBLE_DEVICES=1,3 python train.py --train_dir cross_subject_train_top20_test1.txt --test_dir cross_subject_test_top20_test1.txt --config ./configs/dstformer.yaml
+```
+
+#### imu
+```bash
+cd imu
+
+bash command_activity20_accgyrmag_resampling_crossuser.sh
+```
+
+
+### 🎯 Cross-Subject Training (RGB)
+
+```bash
+cd rgb
+cd cross_subject
+```
+
+| Script | Description |
+|--------|-------------|
+| `train_supervised_44.sh` | Fast baseline cross-subject training |
+| `train_supervised_lt.sh` | Resampled cross-subject training |
+| `train_contra_all_users_44.sh` | Contrastive learning (all actions) |
+| `train_10_users_contra.sh` | Contrastive learning (resampled actions) |
+| `train_10_users_contra_remove_env.sh` | Contrastive learning (without env variation) |
 
 ---
 

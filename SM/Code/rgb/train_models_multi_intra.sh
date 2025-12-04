@@ -20,8 +20,8 @@ LEARNING_RATE=0.001
 NETWORK="resnet50"
 WEIGHTS="pretrained"
 SPLIT_MODE="intra"  
-OVERSAMPLE_FLAG="--oversample"  # Empty means disabled, set to "--oversample" to enable
-LABELS="10,30"        # Use "all" for all labels or "10,30" for range
+OVERSAMPLE_FLAG=" "  # Empty means disabled, set to "--oversample" to enable
+LABELS="all"        # Use "all" for all labels or "10,30" for range
 
 # =====================
 # Environment Setup
