@@ -115,11 +115,11 @@ The dataset is organized into two main components:
 | Skeleton | 41.5%    | 47.2%         | 51.3%           |
 
 ### HAU Performance (Selected Tasks)
-| Model       | Captioning (BLEU-1) | Emotion Analysis | Sequential Reordering |
-|-------------|---------------------|------------------|-----------------------|
-| QwenVL-7B   | 55.97%             | 77.77%          | 68.5%                |
-| VLLaVA-7B   | 22.32%             | 74.2%           | 66.8%                |
-| InternVL-8B | 0.59%              | 35.35%          | 45.3%                |
+| Model       | Captioning(BLEU-1) | Emotion Analysis(Accuracy) | Sequential Reordering(Accuracy) |
+|-------------|--------------------|----------------------------|---------------------------------|
+| QwenVL-7B   | 18.04%             | 55.03%                     | 60.00%                          |
+| VLLaVA-7B   | 12.86%             | 73.34%                     | 5.29%                           |
+| InternVL-8B | 0.72%              | 31.35%                     | 74.03%                          |
 
 ## 🎯 Applications
 
