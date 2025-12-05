@@ -5,7 +5,7 @@
 This directory contains training scripts for RGB-based cross-subject action recognition, supporting multiple training strategies:
 - **Supervised Learning**: Pure supervised classification training
 - **Contrastive Learning**: SimCLR-based self-supervised + supervised hybrid training
-- **Environment-Aware Training**: Data partitioning strategy considering environmental differences
+- **Environment-Aware Training**: Data partitioning strategy considering environmental differences (As the data statistics for 30 users were completed in two different environments, users 1-15 belong to the first environment, while users 16-30 belong to the second environment)
 
 ## Directory Structure
 
