@@ -56,9 +56,10 @@ The dataset is organized into two main components:
 
 ### 1. Human Action Recognition (HAR)
 **Objective**: Traditional action classification across modalities
+- **Cross-trail evaluation** split data with 80% training 20% testing
 - **Cross-subject evaluation** with Leave-One-Subject-Out (LOSO) protocol
-- **Cross-domain performance** analysis 
-- **Long-tail distribution** handling
+- **Cross-domain performance** analysis different envrionment data distribution and training results
+- **Long-tail distribution** handling 
 - **Multimodal fusion** strategies
 
 ### 2. Human Action Understanding (HAU)  
@@ -107,12 +108,16 @@ The dataset is organized into two main components:
 
 ## 📋 Benchmark Results
 
-### HAR Performance (Cross-subject LOSO)
-| Modality | Baseline | w/ Contrastive | w/o Cross-domain |
-|----------|----------|----------------|------------------|
-| RGB      | 45.2%    | 52.8%         | 56.56%          |
-| IMU      | 38.7%    | 44.3%         | 48.9%           |
-| Skeleton | 41.5%    | 47.2%         | 51.3%           |
+### HAR Overall Cross-trial Performance
+| Modality | Accuracy | F1 score | Precision | Recall |
+|----------|----------|----------|------------|------------|
+| RGB      | 90.89%   | 91.28%   | 92.24%     | 91.02%     |
+| Depth    | 90.46%   | 90.93%   | 91.76%     | 90.75%     |
+| IR       | 90.22%   | 90.46%   | 91.53%     | 89.94%     |
+| Thermal  | 92.57%   | 93.36%   | 93.54%     | 93.50%     |
+| Radar    | 46.63%   | 44.53%   | 48.29%     | 46.63%     |
+| IMU      | 45.52%   | 38.32%   | 40.84%     | 38.00%     |
+| Skeleton | 79.08%   | 84.17%   | 91.46%     | 79.08%     |
 
 ### HAU Performance (Selected Tasks)
 | Model       | Captioning(BLEU-1) | Emotion Analysis(Accuracy) | Sequential Reordering(Accuracy) |
