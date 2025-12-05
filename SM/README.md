@@ -139,7 +139,7 @@ For 'rgb'/'depth'/'ir'/'thermal'
 | `--split_mode` | Data splitting mode | `cross`, `intra` |
 | `--oversample` | Enable minority class oversampling | Flag |
 | `--labels` | Label frequency rank range | String (e.g., "10,30") or "all" |
-| `--cross_user_id` | Test user ID in cross_user mode ｜ specific user id (e.g., "0,29") | 
+| `--cross_user_id` | Test user ID in cross_user mode | specific user id (e.g., "0,29") |
 
 ---
 
