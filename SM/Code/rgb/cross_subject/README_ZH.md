@@ -5,7 +5,7 @@
 本目录包含基于RGB模态的跨用户(cross-subject)动作识别训练脚本,支持多种训练策略:
 - **监督学习(Supervised Learning)**: 纯监督分类训练
 - **对比学习(Contrastive Learning)**: SimCLR框架的自监督+监督混合训练
-- **环境感知训练(Environment-Aware)**: 考虑环境差异的数据划分策略
+- **环境感知训练(Environment-Aware)**: 考虑环境差异的数据划分策略（由于30个user是在两个不同的环境中完成的数据统计，user1-15为第一个环境，user16-30为第二个环境）
 
 ## 目录结构
 

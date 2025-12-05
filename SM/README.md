@@ -32,7 +32,7 @@ This project provides a complete training pipeline for **multi-modal action reco
 
 | Feature | Description |
 |---------|-------------|
-| 🏗️ **Multiple Architectures** | ResNet (18/34/50), Vision Transformer (ViT) |
+| 🏗️ **Multiple Architectures** | ResNet and VIT RGB/DEPTH/IR/THERMAL, PointNet for RADAR, MotionBert for SKELETON, 1D-CNN for IMU|
 | 📊 **Multi-Modal Support** | RGB, Depth, Infrared, Thermal, Skeleton, Radar, IMU |
 | ⚖️ **Class Imbalance Handling** | Optional oversampling for minority classes |
 | 📝 **Comprehensive Logging** | Detailed training process monitoring |
@@ -106,7 +106,7 @@ python train_models_cross_multi.py \
   --batch_size 64 \
   --learning_rate 0.001 \
   --split_mode intra \
-  --labels "all" \
+  --labels "all" \ 
   --log_dir /path/to/log_dir \
 
 ```
@@ -124,6 +124,8 @@ bash train_models_multi_intra.sh
 
 #### 📋 Parameter Reference
 
+For 'rgb'/'depth'/'ir'/'thermal'
+
 | Parameter | Description | Options |
 |-----------|-------------|---------|
 | `--dataset_root` | Root directory of the dataset | Path |
@@ -134,10 +136,10 @@ bash train_models_multi_intra.sh
 | `--weights` | Weight initialization | `pretrained`, `scratch` |
 | `--batch_size` | Batch size for training | Integer (default: 64) |
 | `--learning_rate` | Learning rate | Float (default: 0.001) |
-| `--split_mode` | Data splitting mode | `cross_subject`, `intra` |
+| `--split_mode` | Data splitting mode | `cross`, `intra` |
 | `--oversample` | Enable minority class oversampling | Flag |
 | `--labels` | Label frequency rank range | String (e.g., "10,30") or "all" |
-| `--cross_user_id` | Test user ID in cross_user mode | Integer |
+| `--cross_user_id` | Test user ID in cross_user mode (e.g., "0-29")| 
 
 ---
 
@@ -153,6 +155,8 @@ CUDA_VISIBLE_DEVICES=4,6 python train.py \
 ```
 
 > 📖 See `skeleton/readme.md` for detailed configuration.
+
+
 
 ---
 
