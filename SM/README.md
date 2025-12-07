@@ -66,20 +66,61 @@ pip install -r requirements.txt
 Organize your dataset with the following structure:
 
 ```
-dataset_root/
-├──  RGB/
-│   ├──  label1/
-│   │   ├──  user1/
-│   │   │   ├──  sequence1/
-│   │   │   │   ├──  image1.jpg
-│   │   │   │   └──  image2.jpg
-│   │   │   └──  sequence2/
-│   │   └──  user2/
-│   └──  label2/
-├──  Depth/
-├──  IR/
-├──  Thermal/
-└── ...
+
+SM
+├──Code/
+│   ├── rgb/                                     # multi_intra(trail/subject)  trail for rgb/ir/thermal/depth
+│      ├── cross_subject/                        # Tasks of rgb cross_subject different situations 
+│      │    ├── baseline
+│      │    ├── contrastive learning
+│      │    ├── w/o long tail
+│      │    ├── w/o long tail + contrastive learning
+│      │    ├── w/o environment + w/o long tail + contrastive learning
+│      └── cross_trail/                          # Task of multi_modes trail training analysis
+│   ├── radar/                                   # intra(cross_trail)  training for radar data
+│      ├── train_radar_mix.sh /                       
+│      └── train_models_cross_multi.py/          
+│   ├── skeleton/                                     
+│      ├── checkpoint/                        
+│      ├── configs/                              # For details of configs para traing skeleton data
+│      ├── model/
+│      ├── spilt_data_results/
+│      ├── utils/
+│      ├── wandb/                                # Where you can see the log of skeleton_data_training 
+│      ├── README.md
+│      ├── README_ZH.md
+│      ├── split_data.py                         # in order to preprocess the data 
+│      └── train.py                              # main function for cross_trail and w/o long tail training 
+│   ├── imu/                                     
+│      ├── data_imu/                        
+│      ├── data_utils/                              
+│      ├── dataset/                              # part of processed data
+│      ├── models/
+│      ├── runs/                                 # can see the log of imu data training 
+│      ├── README.md
+│      ├── long_tail_final.ipynb                 # in order to preprocess the data without long tail
+│      ├── data_reader.ipynb                     # in order to preprocess the data 
+│      ├── dataset_maker.ipynb                   # in order to devide and process the data 
+│      ├── train_transformer.py                  # main function for cross_trail and w/o long tail training 
+│      ├── command_accgyrmag_transformer_crosstrail.sh            
+│      └── command_activity20_accgyrmag_resampling_crossuser.sh                               
+├──Data/                                         # You need to download from our website
+|   ├──  RGB/
+│     ├──  label1/
+│     │   ├──  user1/
+│     │   │   ├──  sequence1/
+│     │   │   │   ├──  image1.jpg
+│     │   │   │   └──  image2.jpg
+│     │   │   └──  sequence2/
+│     │   └──  user2/
+│     └──  label2/
+|   ├──  Depth/
+|   ├──  IR/
+|   ├──  Thermal/
+|   └── ... 
+├── requirements.txt
+└── README.md
+
 ```
 
 > 💡 **Note**: Labels correspond to action names.

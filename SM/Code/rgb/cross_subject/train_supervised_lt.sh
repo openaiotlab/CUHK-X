@@ -4,7 +4,7 @@
 
 # parameters for supervised training on specific users and actions
 SCRIPT_PATH="train_supervised_lt.py"  
-DATASET_PATH="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data/RGB"
+DATASET_PATH="/YOUR/PATH/TO/CUHKX/SM/Data/RGB"
 LOG_DIR="supervised_logs_lt"
 NUM_USERS=30
 BATCH_SIZE=64

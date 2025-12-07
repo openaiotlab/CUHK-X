@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 from sklearn.model_selection import train_test_split
 
-root_dir = '/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data/Skeleton'
-save_dir = '/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-example/SM/Code/skeleton/split_data_results'
+root_dir = 'YOUR/PATH/TO/CUHKX/SM/Data/Skeleton'
+save_dir = 'YOUR/PATH/TO/CUHKX/SM/Code/skeleton/split_data_results'
 os.makedirs(save_dir, exist_ok=True)
 
 available_fonts = [f.name for f in fm.fontManager.ttflist]

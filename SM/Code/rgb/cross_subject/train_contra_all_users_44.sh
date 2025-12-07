@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set dataset path (optional, omit if default path in script is correct)
-DATASET_PATH="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data/RGB"
+DATASET_PATH="/YOUR/PATH/TO/CUHKX/SM/Data/RGB"
 
 # userlist for training
 USERS=("user1" "user7" "user13" "user20" "user26")

@@ -7,7 +7,7 @@ export CUDA_DEVICE_MAX_CONNECTIONS=1
 # ======================
 # Configuration Section
 # ======================
-DATASET_ROOT="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data"
+DATASET_ROOT="/YOUR/PATH/TO/CUHKX/SM/Data"
 DATA="rgb" #"rgb", "depth", "ir", "thermal"
 LOG_ROOT="./logs_all"
 SCRIPT_PATH="./train_models_cross_multi.py"
