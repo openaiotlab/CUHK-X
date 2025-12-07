@@ -82,7 +82,7 @@ SM
 │      └── train_models_cross_multi.py/          
 │   ├── skeleton/                                     
 │      ├── checkpoint/                        
-│      ├── configs/                              # For details of configs para traing skeleton data
+│      ├── configs/                              # For details of configs parameters training skeleton data
 │      ├── model/
 │      ├── spilt_data_results/
 │      ├── utils/
