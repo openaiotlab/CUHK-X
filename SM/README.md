@@ -158,7 +158,7 @@ python train_models_cross_multi.py \
 <summary><b>📜 Option 2: Shell Script</b></summary>
 
 ```bash
-# remember to change the data_path in bash file represented as example you need to change parameters according to your downloaded data 
+# remember to change the data_path in bash file. The bash file just represented as an example and you may need to change parameters according to your downloaded data 
 # the following bash files processing them in the same way
 bash train_models_multi_intra.sh
 ```
