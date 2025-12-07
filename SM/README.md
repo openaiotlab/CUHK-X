@@ -158,6 +158,7 @@ python train_models_cross_multi.py \
 <summary><b>📜 Option 2: Shell Script</b></summary>
 
 ```bash
+#remember to change the data_path in bash file 
 bash train_models_multi_intra.sh
 ```
 
