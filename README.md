@@ -170,10 +170,6 @@ For dataset access, questions, or collaborations:
 - **Email**: syjiang [AT] ie.cuhk.edu.hk
 - **Project Page**: [CUHK-X](https://siyang-jiang.github.io/CUHK-X/)
 
-## 🔗 Related Work
-
-- **PGADA**: [Perturbation-Guided Adversarial Alignment](https://github.com/siyang-jiang/PGADA)
-- **ArtFL**: [Federated Learning with Multi-Scale Training](https://github.com/siyang-jiang/ArtFL)
 
 ## 📄 License
 
