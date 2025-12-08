@@ -2,7 +2,7 @@
 
 [![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/your-arxiv-id)
 [![Dataset](https://img.shields.io/badge/Dataset-Available-green)](https://your-dataset-link.com)
-[![Website](https://img.shields.io/badge/Project-Page-blue)](https://siyang-jiang.github.io/CUHK-X/)
+[![Website](https://img.shields.io/badge/Project-Page-blue)](https://openaiotlab.github.io/CUHK-X/)
 
 > **CUHK-X** is a comprehensive multimodal dataset containing **58,445 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
 
