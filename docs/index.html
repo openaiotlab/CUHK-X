@@ -784,7 +784,7 @@
                 </h2>
                 <p class="authors animate-in delay-2">
                     Siyang Jiang, Mu Yuan, Xiang Ji, Bufang Yang, Zeyu Liu, Lilin Xu, Yang Li, Yuting He, Liran Dong, Wenrui Lu,
-                    Janey Grace Xing, Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen.
+                    Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen, Guoliang Xing.
                 </p>
 
                 <div class="affiliation-cards animate-in delay-2">
@@ -804,10 +804,10 @@
                         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/PITT-logo.webp" alt="Pitt University Logo" class="affiliation-image">
                         <span class="affiliation">PITT University</span>
                     </div>
-                    <div class="affiliation-card">
+                    <!-- <div class="affiliation-card">
                         <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/ESF-logo.jpg" alt="ESF Sha Tin College Logo" class="affiliation-image">
                         <span class="affiliation">ESF Sha Tin College</span>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="hero-links animate-in delay-3">
@@ -1110,6 +1110,7 @@
             </div>
             <p class="animate-in delay-1" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
                 This is an example that includes seven modalities: RGB, IR, Thermal, Depth, Skeleton, Radar, and IMU, which were recorded at the same time.
+                We have a 9-axis IMU, but we've only shown these data for simplicity.
             </p>
 
             <div class="media-container animate-in delay-2">
@@ -1135,7 +1136,7 @@
 
             <div class="results-grid">
                 <div class="result-card animate-in">
-                    <h4>🎯 HAR Performance (Cross-Subject)</h4>
+                    <h4>🎯 HAR Performance</h4>
                     <table class="result-table">
                         <thead>
                             <tr>
@@ -1202,12 +1203,21 @@
 
                 <div class="result-card animate-in delay-1">
                     <h4>🧠 HAU Performance Highlights</h4>
+                    These three images represent the results of action selection, emotion analysis, and action sequence, respectively.
                     <ul>
                         <li><strong>QwenVL-7B:</strong> Consistently best performer across tasks</li>
                         <li><strong>VLLaVA-7B:</strong> Strong performance in depth and IR modalities</li>
                         <li><strong>Emotion Analysis:</strong> Up to 77.77% accuracy with thermal imaging</li>
                         <li><strong>Sequential Reordering:</strong> 68.5% accuracy for complex temporal reasoning</li>
                     </ul>
+                    <div class="media-container animate-in delay-3">
+                        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/action_selection.png"
+                        alt="action_selection" style="width: 30%; height: auto;">
+                        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/emotion_analysis.png"
+                        alt="emotion_analysis" style="width: 30%; height: auto;">
+                        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/sequential_action.png"
+                        alt="sequential_action" style="width: 30%; height: auto;">
+                    </div>
                 </div>
 
                 <div class="result-card animate-in delay-2">
@@ -1218,6 +1228,10 @@
                         <li><strong>Model Scale:</strong> Larger models (7B) consistently outperform smaller ones</li>
                         <li><strong>Context Understanding:</strong> Critical for next action prediction accuracy</li>
                     </ul>
+                    <div class="media-container animate-in delay-3">
+                        <img src="https://raw.githubusercontent.com/siyang-jiang/CUHK-X/main/docs/images/HARn.png"
+                        alt="HARn result" style="width: 50%; height: auto;">
+                    </div>
                 </div>
             </div>
         </div>
@@ -1246,7 +1260,7 @@
                 <h3>Contact Information</h3>
                 <p>For dataset access, questions, or collaborations:</p>
                 <ul>
-                    <li><strong>Primary Contact:</strong> <a href="mailto:syjiang@cuhk.edu.hk">syjiang@cuhk.edu.hk</a></li>
+                    <li><strong>Primary Contact:</strong> <a href="mailto:syjiang@ie.cuhk.edu.hk">syjiang@ie.cuhk.edu.hk</a></li>
                     <li><strong>Institution:</strong> The Chinese University of Hong Kong</li>
                     <li><strong>Dataset Request:</strong> Please contact for access information</li>
                 </ul>

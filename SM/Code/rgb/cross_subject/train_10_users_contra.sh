@@ -4,7 +4,7 @@
 # simclr_train_multiple.sh
 
 # setting
-DATASET_PATH="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data/RGB"
+DATASET_PATH="/YOUR/PATH/TO/CUHKX/SM/Data/RGB"
 SCRIPT_PATH="simclr_10.py"  
 LOG_DIR="training_logs_contra_lt"
 NUM_USERS=30

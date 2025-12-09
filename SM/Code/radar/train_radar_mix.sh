@@ -21,7 +21,7 @@ NUM_WORKERS=8           # Data loading workers
 
 # Dataset path (single or multiple)
 
-DATA_ROOT="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-example/SM/Data"
+DATA_ROOT="/YOUR/PATH/TO/CUHKX/SM/Data"
 
 
 # =====================

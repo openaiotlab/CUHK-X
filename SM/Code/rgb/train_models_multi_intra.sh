@@ -7,7 +7,7 @@ export CUDA_DEVICE_MAX_CONNECTIONS=1
 # ======================
 # Configuration Section
 # ======================
-DATASET_ROOT="/aiot-nvme-15T-x2-hk01/siyang/CUHK-X-Final/SM_data"
+DATASET_ROOT="/YOUR/PATH/TO/CUHKX/SM/Data"
 DATA="rgb" #"rgb", "depth", "ir", "thermal"
 LOG_ROOT="./logs_all"
 SCRIPT_PATH="./train_models_cross_multi.py"
@@ -20,8 +20,8 @@ LEARNING_RATE=0.001
 NETWORK="resnet50"
 WEIGHTS="pretrained"
 SPLIT_MODE="intra"  
-OVERSAMPLE_FLAG="--oversample"  # Empty means disabled, set to "--oversample" to enable
-LABELS="10,30"        # Use "all" for all labels or "10,30" for range
+OVERSAMPLE_FLAG=" "  # Empty means disabled, set to "--oversample" to enable
+LABELS="all"        # Use "all" for all labels or "10,30" for range
 
 # =====================
 # Environment Setup
