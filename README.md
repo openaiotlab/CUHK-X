@@ -1,6 +1,6 @@
 # A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning (CUHK-X)
 
-[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://arxiv.org/abs/your-arxiv-id)
+[![Paper](https://img.shields.io/badge/Paper-arXiv-red)](https://www.arxiv.org/abs/2512.07136)
 [![Dataset](https://img.shields.io/badge/Dataset-Available-green)](https://your-dataset-link.com)
 [![Website](https://img.shields.io/badge/Project-Page-blue)](https://openaiotlab.github.io/CUHK-X/)
 
