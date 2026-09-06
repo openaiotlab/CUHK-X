@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Action Atlas · CUHK-X Observatory</title>
+<meta name="description" content="All 40 action classes of CUHK-S on one wall — hover-scrub film strips, dual depth/IR inspection, and coverage instruments (HAR / HARn benchmark).">
+<meta property="og:title" content="Action Atlas — CUHK-X Observatory">
+<meta property="og:description" content="40 classes of everyday actions in depth + infrared. Hover to scrub, click to inspect.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305080c'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%232ee6c8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%232ee6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======================= TOP BAR ======================= -->
+<header class="topbar">
+  <a class="wordmark" href="./">
+    <span class="wordmark-box">CUHK-X</span>
+    <span class="wordmark-sub">OBSERVATORY</span>
+  </a>
+  <nav class="topbar-tabs">
+    <a href="./">OVERVIEW</a>
+    <a href="sequence-lab.html">SEQUENCE LAB</a>
+    <a href="atlas.html" class="active">ATLAS</a>
+    <a href="console.html">CONSOLE</a>
+  </nav>
+  <nav class="topbar-links">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" rel="noopener">Paper</a>
+    <a class="topbar-challenge" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">🏆 CHALLENGE</a>
+    <a class="home-link" href="../index.html">← CUHK-X HOME</a>
+  </nav>
+</header>
+
+<!-- ======================= ACTION ATLAS (HARn) ======================= -->
+<section class="block" id="atlas" style="padding-top: 3rem;">
+  <div class="block-head">
+    <p class="kicker boot boot-1">// STATION 02 · HUMAN ACTION RECOGNITION & REASONING</p>
+    <h2 class="boot boot-2"><span class="idx">01</span> ACTION ATLAS <span class="bench-chip">HAR / HARN BENCHMARK</span></h2>
+    <p class="boot boot-3"><span id="atlas-line">40 classes of everyday actions</span>, in the seven categories defined by the MobiSys ’26 paper, every clip recorded in depth + infrared. <strong>Hover to scrub. Click to inspect.</strong></p>
+  </div>
+  <div class="atlas-grid" id="atlas-grid"><!-- tiles injected --></div>
+</section>
+
+<!-- ======================= INSPECTOR MODAL ======================= -->
+<div class="inspector" id="inspector" hidden>
+  <div class="inspector-card hud">
+    <div class="hud-head">
+      <span class="hud-title" id="insp-title">—</span>
+      <button class="insp-close" id="insp-close" aria-label="close">✕</button>
+    </div>
+    <div class="insp-stage">
+      <figure class="lab-pane" style="--mc: var(--depth)"><video muted playsinline loop preload="metadata" data-mod="depth"></video><figcaption>DEPTH</figcaption></figure>
+      <figure class="lab-pane" style="--mc: var(--ir)"><video muted playsinline loop preload="metadata" data-mod="ir"></video><figcaption>INFRARED</figcaption></figure>
+    </div>
+    <div class="insp-meta" id="insp-meta"></div>
+  </div>
+</div>
+
+<!-- ======================= COVERAGE INSTRUMENTS ======================= -->
+<section class="block" id="instruments">
+  <div class="block-head">
+    <h2><span class="idx">02</span> COVERAGE INSTRUMENTS</h2>
+    <p>Who performed what, and for how long — live readouts from the CUHK-S release manifests.</p>
+  </div>
+  <div class="instr-grid">
+    <div class="instr hud span2">
+      <div class="hud-head"><span class="hud-title">SUBJECT × ACTION MATRIX</span><span class="hud-meta" id="matrix-meta">depth clips per cell</span></div>
+      <canvas id="matrix-canvas" height="320"></canvas>
+      <div class="matrix-tip" id="matrix-tip" hidden></div>
+    </div>
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">CLIP DURATIONS</span><span class="hud-meta" id="dur-meta">sampled</span></div>
+      <div class="dur-charts"><div id="dur-harn"></div><div id="dur-hau"></div></div>
+    </div>
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">STREAM INVENTORY</span><span class="hud-meta" id="inv-meta">—</span></div>
+      <div class="inventory" id="inventory"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PREV / NEXT ======================= -->
+<div class="pn-row">
+  <a href="sequence-lab.html">◂ STATION 01 · SEQUENCE LAB</a>
+  <a href="console.html">STATION 03 · REASONING CONSOLE ▸</a>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <span>CUHK-X OBSERVATORY · AIoT LAB, THE CHINESE UNIVERSITY OF HONG KONG</span>
+  <span id="foot-build">MANIFEST —</span>
+  <a href="../index.html">← PROJECT PAGE</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

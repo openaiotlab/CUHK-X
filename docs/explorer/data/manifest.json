@@ -1,0 +1,1385 @@
+{
+ "hauSets": [
+  {
+   "id": "user18_7-1",
+   "user": "user18",
+   "scene": 7,
+   "env": 1,
+   "trials": [
+    {
+     "trial": 1,
+     "sess": "7-1-1",
+     "pace": "Slowly",
+     "paceCandidates": [
+      "Calmly",
+      "Anxiously"
+     ],
+     "caption": "The user slowly washes his face, carefully brushes his teeth, gently combs his hair, then softly removes his clothes, meticulously drying his hands and changing into casual wear. Standing before the mirror, he leisurely takes cold medicine with warm water, cautiously checks his temperature to assess his physical condition. By the sink, he tenderly massages his wrists to relieve arm fatigue.",
+     "chain": [
+      "washing face",
+      "brushing teeth",
+      "combing hair",
+      "undressing",
+      "wiping hands",
+      "getting dressed",
+      "taking medicine",
+      "measure body temperature",
+      "massaging oneself"
+     ],
+     "dur": 65.1,
+     "clips": {
+      "ir": "clips/hau/user18_7-1/t1/ir.mp4",
+      "depth": "clips/hau/user18_7-1/t1/depth.mp4",
+      "thermal": "clips/hau/user18_7-1/t1/thermal.mp4"
+     },
+     "poster": "clips/hau/user18_7-1/t1/poster.jpg"
+    },
+    {
+     "trial": 2,
+     "sess": "7-1-2",
+     "pace": "Calmly",
+     "paceCandidates": [
+      "Anxiously",
+      "Slowly"
+     ],
+     "caption": "The user calmly washes his face, methodically brushes his teeth, neatly combs his hair, then quickly removes his clothes, efficiently drying his hands and changing into casual wear. Standing before the mirror, he promptly takes cold medicine with warm water, swiftly checks his temperature to assess his physical condition. By the sink, he practically massages his wrists to relieve arm fatigue.",
+     "chain": [
+      "washing face",
+      "brushing teeth",
+      "combing hair",
+      "undressing",
+      "wiping hands",
+      "getting dressed",
+      "taking medicine",
+      "measure body temperature",
+      "massaging oneself"
+     ],
+     "dur": 47.1,
+     "clips": {
+      "ir": "clips/hau/user18_7-1/t2/ir.mp4",
+      "depth": "clips/hau/user18_7-1/t2/depth.mp4",
+      "thermal": "clips/hau/user18_7-1/t2/thermal.mp4"
+     },
+     "poster": "clips/hau/user18_7-1/t2/poster.jpg"
+    },
+    {
+     "trial": 3,
+     "sess": "7-1-3",
+     "pace": "Anxiously",
+     "paceCandidates": [
+      "Slowly",
+      "Calmly"
+     ],
+     "caption": "The user anxiously washes his face, hastily brushes his teeth, carelessly combs his hair, then urgently removes his clothes, hurriedly drying his hands and changing into casual wear. Standing before the mirror, he quickly takes cold medicine with warm water, impatiently checks his temperature to assess his physical condition. By the sink, he perfunctorily massages his wrists to relieve arm fatigue.",
+     "chain": [
+      "washing face",
+      "brushing teeth",
+      "combing hair",
+      "undressing",
+      "wiping hands",
+      "getting dressed",
+      "taking medicine",
+      "measure body temperature",
+      "massaging oneself"
+     ],
+     "dur": 33.7,
+     "clips": {
+      "ir": "clips/hau/user18_7-1/t3/ir.mp4",
+      "depth": "clips/hau/user18_7-1/t3/depth.mp4",
+      "thermal": "clips/hau/user18_7-1/t3/thermal.mp4"
+     },
+     "poster": "clips/hau/user18_7-1/t3/poster.jpg"
+    }
+   ]
+  },
+  {
+   "id": "user20_2-1",
+   "user": "user20",
+   "scene": 2,
+   "env": 1,
+   "trials": [
+    {
+     "trial": 1,
+     "sess": "2-1-1",
+     "pace": "Slowly",
+     "paceCandidates": [
+      "Naturally",
+      "Frantically"
+     ],
+     "caption": "The user walks into the kitchen slowly, gently opens the cabinet, slowly takes out a juice bottle, and pours it leisurely into a glass. Then, calmly opening the drawer, she casually selects a set of utensils and savors her breakfast, occasionally sipping juice at a relaxed pace. After breakfast, she meticulously sweeps and thoroughly mops, leaving the kitchen spotless.",
+     "chain": [
+      "opening storage container",
+      "pouring",
+      "grabbing utensils",
+      "eating",
+      "drinking",
+      "sweeping",
+      "mopping"
+     ],
+     "dur": 56.5,
+     "clips": {
+      "ir": "clips/hau/user20_2-1/t1/ir.mp4",
+      "depth": "clips/hau/user20_2-1/t1/depth.mp4",
+      "thermal": "clips/hau/user20_2-1/t1/thermal.mp4"
+     },
+     "poster": "clips/hau/user20_2-1/t1/poster.jpg"
+    },
+    {
+     "trial": 2,
+     "sess": "2-1-2",
+     "pace": "Naturally",
+     "paceCandidates": [
+      "Frantically",
+      "Slowly"
+     ],
+     "caption": "The user walks into the kitchen peacefully, effortlessly opens the cabinet, naturally grabs a juice bottle, and pours it steadily into a glass. Then, easily opening the drawer, she comfortably picks a set of utensils and enjoys her breakfast, occasionally taking calm sips. After breakfast, she patiently sweeps and carefully mops, refreshing the kitchen completely.",
+     "chain": [
+      "opening storage container",
+      "pouring",
+      "grabbing utensils",
+      "eating",
+      "drinking",
+      "sweeping",
+      "mopping"
+     ],
+     "dur": 48.4,
+     "clips": {
+      "ir": "clips/hau/user20_2-1/t2/ir.mp4",
+      "depth": "clips/hau/user20_2-1/t2/depth.mp4",
+      "thermal": "clips/hau/user20_2-1/t2/thermal.mp4"
+     },
+     "poster": "clips/hau/user20_2-1/t2/poster.jpg"
+    },
+    {
+     "trial": 3,
+     "sess": "2-1-3",
+     "pace": "Frantically",
+     "paceCandidates": [
+      "Slowly",
+      "Naturally"
+     ],
+     "caption": "The user walks into the kitchen hurriedly, swiftly opens the cabinet, hastily grabs a juice bottle, and pours it quickly into a glass. Then, urgently opening the drawer, she rapidly takes a set of utensils and rushes through breakfast, occasionally gulping juice anxiously. After breakfast, she speedily sweeps and hastily mops, making the kitchen presentable again.",
+     "chain": [
+      "opening storage container",
+      "pouring",
+      "grabbing utensils",
+      "eating",
+      "drinking",
+      "sweeping",
+      "mopping"
+     ],
+     "dur": 26.8,
+     "clips": {
+      "ir": "clips/hau/user20_2-1/t3/ir.mp4",
+      "depth": "clips/hau/user20_2-1/t3/depth.mp4",
+      "thermal": "clips/hau/user20_2-1/t3/thermal.mp4"
+     },
+     "poster": "clips/hau/user20_2-1/t3/poster.jpg"
+    }
+   ]
+  },
+  {
+   "id": "user5_1-2",
+   "user": "user5",
+   "scene": 1,
+   "env": 2,
+   "trials": [
+    {
+     "trial": 1,
+     "sess": "1-2-1",
+     "pace": "Leisurely",
+     "paceCandidates": [
+      "Steadily",
+      "Briskly"
+     ],
+     "caption": "Standing up from the living room, the user walks leisurely to the kitchen, pours a drink unhurriedly, stirs it slowly with a spoon, takes a small sip, carefully peels fruit, enjoys it slowly, and finally organizes her outing clothes calmly.",
+     "chain": [
+      "walking",
+      "pouring",
+      "stirring",
+      "drinking",
+      "peeling fruit",
+      "eating"
+     ],
+     "dur": 44.5,
+     "clips": {
+      "ir": "clips/hau/user5_1-2/t1/ir.mp4",
+      "depth": "clips/hau/user5_1-2/t1/depth.mp4",
+      "thermal": "clips/hau/user5_1-2/t1/thermal.mp4"
+     },
+     "poster": "clips/hau/user5_1-2/t1/poster.jpg"
+    },
+    {
+     "trial": 2,
+     "sess": "1-2-2",
+     "pace": "Steadily",
+     "paceCandidates": [
+      "Briskly",
+      "Leisurely"
+     ],
+     "caption": "Standing up from the living room, the user walks steadily to the kitchen, pours a drink evenly, stirs it uniformly with a spoon, takes a calm sip, neatly peels fruit, eats quietly, and finally organizes her outing clothes methodically.",
+     "chain": [
+      "walking",
+      "pouring",
+      "stirring",
+      "drinking",
+      "peeling fruit",
+      "eating"
+     ],
+     "dur": 41.5,
+     "clips": {
+      "ir": "clips/hau/user5_1-2/t2/ir.mp4",
+      "depth": "clips/hau/user5_1-2/t2/depth.mp4",
+      "thermal": "clips/hau/user5_1-2/t2/thermal.mp4"
+     },
+     "poster": "clips/hau/user5_1-2/t2/poster.jpg"
+    },
+    {
+     "trial": 3,
+     "sess": "1-2-3",
+     "pace": "Briskly",
+     "paceCandidates": [
+      "Leisurely",
+      "Steadily"
+     ],
+     "caption": "Standing up from the living room, the user walks briskly to the kitchen, pours a drink quickly, stirs it hastily with a spoon, takes a big gulp, rapidly peels fruit, eats hurriedly, and finally organizes her outing clothes in a fluster.",
+     "chain": [
+      "walking",
+      "pouring",
+      "stirring",
+      "drinking",
+      "peeling fruit",
+      "eating"
+     ],
+     "dur": 27.8,
+     "clips": {
+      "ir": "clips/hau/user5_1-2/t3/ir.mp4",
+      "depth": "clips/hau/user5_1-2/t3/depth.mp4",
+      "thermal": "clips/hau/user5_1-2/t3/thermal.mp4"
+     },
+     "poster": "clips/hau/user5_1-2/t3/poster.jpg"
+    }
+   ]
+  },
+  {
+   "id": "user16_6-2",
+   "user": "user16",
+   "scene": 6,
+   "env": 2,
+   "trials": [
+    {
+     "trial": 1,
+     "sess": "6-2-1",
+     "pace": "Casually",
+     "paceCandidates": [
+      "Impatiently",
+      "Orderly"
+     ],
+     "caption": "The user calmly measures her body temperature and takes medicine, casually checks the time on her phone. She slowly sweeps the floor, meticulously wipes the window, methodically cleans up the surroundings, and finally slowly eats and drinks using utensils.",
+     "chain": [
+      "measure body temperature",
+      "taking medicine",
+      "checking the time",
+      "using mobile phone",
+      "sweeping",
+      "wiping surfaces",
+      "eating",
+      "drinking",
+      "grabbing utensils"
+     ],
+     "dur": 40.6,
+     "clips": {
+      "ir": "clips/hau/user16_6-2/t1/ir.mp4",
+      "depth": "clips/hau/user16_6-2/t1/depth.mp4",
+      "thermal": "clips/hau/user16_6-2/t1/thermal.mp4"
+     },
+     "poster": "clips/hau/user16_6-2/t1/poster.jpg"
+    },
+    {
+     "trial": 2,
+     "sess": "6-2-2",
+     "pace": "Impatiently",
+     "paceCandidates": [
+      "Orderly",
+      "Casually"
+     ],
+     "caption": "The user hurriedly measures her body temperature and takes medicine, quickly checks the time on her phone. She impatiently sweeps the floor, hastily wipes the window, messily cleans up the surroundings, and finally hurriedly eats and drinks using utensils.",
+     "chain": [
+      "measure body temperature",
+      "taking medicine",
+      "checking the time",
+      "using mobile phone",
+      "sweeping",
+      "wiping surfaces",
+      "eating",
+      "drinking",
+      "grabbing utensils"
+     ],
+     "dur": 30.2,
+     "clips": {
+      "ir": "clips/hau/user16_6-2/t2/ir.mp4",
+      "depth": "clips/hau/user16_6-2/t2/depth.mp4",
+      "thermal": "clips/hau/user16_6-2/t2/thermal.mp4"
+     },
+     "poster": "clips/hau/user16_6-2/t2/poster.jpg"
+    },
+    {
+     "trial": 3,
+     "sess": "6-2-3",
+     "pace": "Orderly",
+     "paceCandidates": [
+      "Casually",
+      "Impatiently"
+     ],
+     "caption": "The user carefully measures her body temperature and takes medicine, seriously checks the time on her phone. She orderly sweeps the floor, carefully wipes the window, neatly cleans up the surroundings, and finally calmly eats and drinks using utensils.",
+     "chain": [
+      "measure body temperature",
+      "taking medicine",
+      "checking the time",
+      "using mobile phone",
+      "sweeping",
+      "wiping surfaces",
+      "eating",
+      "drinking",
+      "grabbing utensils"
+     ],
+     "dur": 42.1,
+     "clips": {
+      "ir": "clips/hau/user16_6-2/t3/ir.mp4",
+      "depth": "clips/hau/user16_6-2/t3/depth.mp4",
+      "thermal": "clips/hau/user16_6-2/t3/thermal.mp4"
+     },
+     "poster": "clips/hau/user16_6-2/t3/poster.jpg"
+    }
+   ]
+  }
+ ],
+ "atlas": [
+  {
+   "id": 0,
+   "name": "Wash face",
+   "category": "Personal Care",
+   "user": "user20",
+   "sess": "4-2-3",
+   "dur": 3.4,
+   "clips": {
+    "depth": "clips/harn/a00/depth.mp4",
+    "ir": "clips/harn/a00/ir.mp4"
+   },
+   "poster": "clips/harn/a00/poster.jpg",
+   "strip": "clips/harn/a00/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Washing face",
+    "candidates": [
+     "combing hair",
+     "wiping hands"
+    ]
+   },
+   "stripIr": "clips/harn/a00/strip_ir.jpg"
+  },
+  {
+   "id": 1,
+   "name": "Brush teeth",
+   "category": "Personal Care",
+   "user": "user7",
+   "sess": "1-1-3",
+   "dur": 2.1,
+   "clips": {
+    "depth": "clips/harn/a01/depth.mp4",
+    "ir": "clips/harn/a01/ir.mp4"
+   },
+   "poster": "clips/harn/a01/poster.jpg",
+   "strip": "clips/harn/a01/strip.jpg",
+   "frames": 12,
+   "logic": null,
+   "stripIr": "clips/harn/a01/strip_ir.jpg"
+  },
+  {
+   "id": 2,
+   "name": "Comb hair",
+   "category": "Personal Care",
+   "user": "user20",
+   "sess": "1-1-2",
+   "dur": 2.0,
+   "clips": {
+    "depth": "clips/harn/a02/depth.mp4",
+    "ir": "clips/harn/a02/ir.mp4"
+   },
+   "poster": "clips/harn/a02/poster.jpg",
+   "strip": "clips/harn/a02/strip.jpg",
+   "frames": 12,
+   "logic": null,
+   "stripIr": "clips/harn/a02/strip_ir.jpg"
+  },
+  {
+   "id": 3,
+   "name": "Take off clothes",
+   "category": "Personal Care",
+   "user": "user22",
+   "sess": "7-2-2",
+   "dur": 3.7,
+   "clips": {
+    "depth": "clips/harn/a03/depth.mp4",
+    "ir": "clips/harn/a03/ir.mp4"
+   },
+   "poster": "clips/harn/a03/poster.jpg",
+   "strip": "clips/harn/a03/strip.jpg",
+   "frames": 12,
+   "logic": null,
+   "stripIr": "clips/harn/a03/strip_ir.jpg"
+  },
+  {
+   "id": 4,
+   "name": "Wipe hands",
+   "category": "Personal Care",
+   "user": "user16",
+   "sess": "2-2-3",
+   "dur": 2.4,
+   "clips": {
+    "depth": "clips/harn/a04/depth.mp4",
+    "ir": "clips/harn/a04/ir.mp4"
+   },
+   "poster": "clips/harn/a04/poster.jpg",
+   "strip": "clips/harn/a04/strip.jpg",
+   "frames": 12,
+   "logic": null,
+   "stripIr": "clips/harn/a04/strip_ir.jpg"
+  },
+  {
+   "id": 5,
+   "name": "Put on clothes",
+   "category": "Personal Care",
+   "user": "user9",
+   "sess": "1-1-2",
+   "dur": 3.6,
+   "clips": {
+    "depth": "clips/harn/a05/depth.mp4",
+    "ir": "clips/harn/a05/ir.mp4"
+   },
+   "poster": "clips/harn/a05/poster.jpg",
+   "strip": "clips/harn/a05/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Getting dressed",
+    "candidates": [
+     "undressing",
+     "massaging oneself"
+    ]
+   },
+   "stripIr": "clips/harn/a05/strip_ir.jpg"
+  },
+  {
+   "id": 6,
+   "name": "Drink water",
+   "category": "Eating & Drinking",
+   "user": "user3",
+   "sess": "1-2-2",
+   "dur": 2.0,
+   "clips": {
+    "depth": "clips/harn/a06/depth.mp4",
+    "ir": "clips/harn/a06/ir.mp4"
+   },
+   "poster": "clips/harn/a06/poster.jpg",
+   "strip": "clips/harn/a06/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Drinking water",
+    "candidates": [
+     "grabbing utensils",
+     "wiping surfaces"
+    ]
+   },
+   "stripIr": "clips/harn/a06/strip_ir.jpg"
+  },
+  {
+   "id": 7,
+   "name": "Eat food",
+   "category": "Eating & Drinking",
+   "user": "user6",
+   "sess": "6-2-1",
+   "dur": 2.1,
+   "clips": {
+    "depth": "clips/harn/a07/depth.mp4",
+    "ir": "clips/harn/a07/ir.mp4"
+   },
+   "poster": "clips/harn/a07/poster.jpg",
+   "strip": "clips/harn/a07/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Eating",
+    "candidates": [
+     "washing dishes",
+     "wiping surfaces"
+    ]
+   },
+   "stripIr": "clips/harn/a07/strip_ir.jpg"
+  },
+  {
+   "id": 8,
+   "name": "Take and use tableware",
+   "category": "Eating & Drinking",
+   "user": "user2",
+   "sess": "2-2-1",
+   "dur": 5.8,
+   "clips": {
+    "depth": "clips/harn/a08/depth.mp4",
+    "ir": "clips/harn/a08/ir.mp4"
+   },
+   "poster": "clips/harn/a08/poster.jpg",
+   "strip": "clips/harn/a08/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Grabbing utensils",
+    "candidates": [
+     "pouring",
+     "throwing"
+    ]
+   },
+   "stripIr": "clips/harn/a08/strip_ir.jpg"
+  },
+  {
+   "id": 9,
+   "name": "Pour drinks",
+   "category": "Eating & Drinking",
+   "user": "user22",
+   "sess": "2-1-1",
+   "dur": 2.9,
+   "clips": {
+    "depth": "clips/harn/a09/depth.mp4",
+    "ir": "clips/harn/a09/ir.mp4"
+   },
+   "poster": "clips/harn/a09/poster.jpg",
+   "strip": "clips/harn/a09/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Pouring",
+    "candidates": [
+     "wiping hands",
+     "checking the time"
+    ]
+   },
+   "stripIr": "clips/harn/a09/strip_ir.jpg"
+  },
+  {
+   "id": 10,
+   "name": "Stir drinks",
+   "category": "Eating & Drinking",
+   "user": "user2",
+   "sess": "6-1-1",
+   "dur": 4.5,
+   "clips": {
+    "depth": "clips/harn/a10/depth.mp4",
+    "ir": "clips/harn/a10/ir.mp4"
+   },
+   "poster": "clips/harn/a10/poster.jpg",
+   "strip": "clips/harn/a10/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Stirring",
+    "candidates": [
+     "pouring",
+     "standing up"
+    ]
+   },
+   "stripIr": "clips/harn/a10/strip_ir.jpg"
+  },
+  {
+   "id": 11,
+   "name": "Peel fruits",
+   "category": "Eating & Drinking",
+   "user": "user6",
+   "sess": "1-2-2",
+   "dur": 2.4,
+   "clips": {
+    "depth": "clips/harn/a11/depth.mp4",
+    "ir": "clips/harn/a11/ir.mp4"
+   },
+   "poster": "clips/harn/a11/poster.jpg",
+   "strip": "clips/harn/a11/strip.jpg",
+   "frames": 12,
+   "logic": null,
+   "stripIr": "clips/harn/a11/strip_ir.jpg"
+  },
+  {
+   "id": 12,
+   "name": "Sweep the floor",
+   "category": "Household",
+   "user": "user2",
+   "sess": "3-1-3",
+   "dur": 5.4,
+   "clips": {
+    "depth": "clips/harn/a12/depth.mp4",
+    "ir": "clips/harn/a12/ir.mp4"
+   },
+   "poster": "clips/harn/a12/poster.jpg",
+   "strip": "clips/harn/a12/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Sweeping",
+    "candidates": [
+     "mopping",
+     "walking"
+    ]
+   },
+   "stripIr": "clips/harn/a12/strip_ir.jpg"
+  },
+  {
+   "id": 13,
+   "name": "Mop the floor",
+   "category": "Household",
+   "user": "user4",
+   "sess": "2-2-1",
+   "dur": 4.4,
+   "clips": {
+    "depth": "clips/harn/a13/depth.mp4",
+    "ir": "clips/harn/a13/ir.mp4"
+   },
+   "poster": "clips/harn/a13/poster.jpg",
+   "strip": "clips/harn/a13/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Mopping",
+    "candidates": [
+     "sweeping",
+     "walking"
+    ]
+   },
+   "stripIr": "clips/harn/a13/strip_ir.jpg"
+  },
+  {
+   "id": 14,
+   "name": "Wipe bowls",
+   "category": "Household",
+   "user": "user17",
+   "sess": "3-2-1",
+   "dur": 4.6,
+   "clips": {
+    "depth": "clips/harn/a14/depth.mp4",
+    "ir": "clips/harn/a14/ir.mp4"
+   },
+   "poster": "clips/harn/a14/poster.jpg",
+   "strip": "clips/harn/a14/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Washing dishes",
+    "candidates": [
+     "wiping hands",
+     "grabbing utensils"
+    ]
+   },
+   "stripIr": "clips/harn/a14/strip_ir.jpg"
+  },
+  {
+   "id": 15,
+   "name": "Wipe windows and tables",
+   "category": "Household",
+   "user": "user16",
+   "sess": "6-2-2",
+   "dur": 3.5,
+   "clips": {
+    "depth": "clips/harn/a15/depth.mp4",
+    "ir": "clips/harn/a15/ir.mp4"
+   },
+   "poster": "clips/harn/a15/poster.jpg",
+   "strip": "clips/harn/a15/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Wiping surfaces",
+    "candidates": [
+     "wiping hands",
+     "washing dishes"
+    ]
+   },
+   "stripIr": "clips/harn/a15/strip_ir.jpg"
+  },
+  {
+   "id": 16,
+   "name": "Fold clothes",
+   "category": "Household",
+   "user": "user7",
+   "sess": "6-1-1",
+   "dur": 5.8,
+   "clips": {
+    "depth": "clips/harn/a16/depth.mp4",
+    "ir": "clips/harn/a16/ir.mp4"
+   },
+   "poster": "clips/harn/a16/poster.jpg",
+   "strip": "clips/harn/a16/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Folding clothes",
+    "candidates": [
+     "standing up",
+     "sitting down"
+    ]
+   },
+   "stripIr": "clips/harn/a16/strip_ir.jpg"
+  },
+  {
+   "id": 17,
+   "name": "Tap the keyboard",
+   "category": "Working",
+   "user": "user5",
+   "sess": "4-1-1",
+   "dur": 4.7,
+   "clips": {
+    "depth": "clips/harn/a17/depth.mp4",
+    "ir": "clips/harn/a17/ir.mp4"
+   },
+   "poster": "clips/harn/a17/poster.jpg",
+   "strip": "clips/harn/a17/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Typing on a keyboard",
+    "candidates": [
+     "writing",
+     "reading"
+    ]
+   },
+   "stripIr": "clips/harn/a17/strip_ir.jpg"
+  },
+  {
+   "id": 18,
+   "name": "Write",
+   "category": "Working",
+   "user": "user2",
+   "sess": "4-3-1",
+   "dur": 2.7,
+   "clips": {
+    "depth": "clips/harn/a18/depth.mp4",
+    "ir": "clips/harn/a18/ir.mp4"
+   },
+   "poster": "clips/harn/a18/poster.jpg",
+   "strip": "clips/harn/a18/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Writing",
+    "candidates": [
+     "reading",
+     "turning a page"
+    ]
+   },
+   "stripIr": "clips/harn/a18/strip_ir.jpg"
+  },
+  {
+   "id": 19,
+   "name": "Make a phone call",
+   "category": "Working",
+   "user": "user4",
+   "sess": "6-1-2",
+   "dur": 3.4,
+   "clips": {
+    "depth": "clips/harn/a19/depth.mp4",
+    "ir": "clips/harn/a19/ir.mp4"
+   },
+   "poster": "clips/harn/a19/poster.jpg",
+   "strip": "clips/harn/a19/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Calling",
+    "candidates": [
+     "checking the time",
+     "reading"
+    ]
+   },
+   "stripIr": "clips/harn/a19/strip_ir.jpg"
+  },
+  {
+   "id": 20,
+   "name": "Check the time",
+   "category": "Working",
+   "user": "user20",
+   "sess": "4-1-1",
+   "dur": 2.1,
+   "clips": {
+    "depth": "clips/harn/a20/depth.mp4",
+    "ir": "clips/harn/a20/ir.mp4"
+   },
+   "poster": "clips/harn/a20/poster.jpg",
+   "strip": "clips/harn/a20/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Checking the time",
+    "candidates": [
+     "reading",
+     "turning a page"
+    ]
+   },
+   "stripIr": "clips/harn/a20/strip_ir.jpg"
+  },
+  {
+   "id": 21,
+   "name": "Read documents",
+   "category": "Working",
+   "user": "user9",
+   "sess": "4-1-1",
+   "dur": 4.7,
+   "clips": {
+    "depth": "clips/harn/a21/depth.mp4",
+    "ir": "clips/harn/a21/ir.mp4"
+   },
+   "poster": "clips/harn/a21/poster.jpg",
+   "strip": "clips/harn/a21/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Reading",
+    "candidates": [
+     "writing",
+     "turning a page"
+    ]
+   },
+   "stripIr": "clips/harn/a21/strip_ir.jpg"
+  },
+  {
+   "id": 22,
+   "name": "Turn pages",
+   "category": "Working",
+   "user": "user4",
+   "sess": "4-1-3",
+   "dur": 4.1,
+   "clips": {
+    "depth": "clips/harn/a22/depth.mp4",
+    "ir": "clips/harn/a22/ir.mp4"
+   },
+   "poster": "clips/harn/a22/poster.jpg",
+   "strip": "clips/harn/a22/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Turning a page",
+    "candidates": [
+     "reading",
+     "using mobile phone"
+    ]
+   },
+   "stripIr": "clips/harn/a22/strip_ir.jpg"
+  },
+  {
+   "id": 23,
+   "name": "Listen to music with headphones",
+   "category": "Socializing & Leisure",
+   "user": "user6",
+   "sess": "4-1-1",
+   "dur": 4.5,
+   "clips": {
+    "depth": "clips/harn/a23/depth.mp4",
+    "ir": "clips/harn/a23/ir.mp4"
+   },
+   "poster": "clips/harn/a23/poster.jpg",
+   "strip": "clips/harn/a23/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Listening to the music with headphones",
+    "candidates": [
+     "typing on a keyboard",
+     "calling"
+    ]
+   },
+   "stripIr": "clips/harn/a23/strip_ir.jpg"
+  },
+  {
+   "id": 24,
+   "name": "Use a mobile phone",
+   "category": "Socializing & Leisure",
+   "user": "user23",
+   "sess": "7-3-1",
+   "dur": 4.2,
+   "clips": {
+    "depth": "clips/harn/a24/depth.mp4",
+    "ir": "clips/harn/a24/ir.mp4"
+   },
+   "poster": "clips/harn/a24/poster.jpg",
+   "strip": "clips/harn/a24/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Using mobile phone",
+    "candidates": [
+     "playing games",
+     "taking a selfie"
+    ]
+   },
+   "stripIr": "clips/harn/a24/strip_ir.jpg"
+  },
+  {
+   "id": 25,
+   "name": "Watch TV",
+   "category": "Socializing & Leisure",
+   "user": "user1",
+   "sess": "5-1-3",
+   "dur": 4.0,
+   "clips": {
+    "depth": "clips/harn/a25/depth.mp4",
+    "ir": "clips/harn/a25/ir.mp4"
+   },
+   "poster": "clips/harn/a25/poster.jpg",
+   "strip": "clips/harn/a25/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Watching TV",
+    "candidates": [
+     "sitting down",
+     "reading"
+    ]
+   },
+   "stripIr": "clips/harn/a25/strip_ir.jpg"
+  },
+  {
+   "id": 26,
+   "name": "Play games",
+   "category": "Socializing & Leisure",
+   "user": "user23",
+   "sess": "5-1-2",
+   "dur": 5.2,
+   "clips": {
+    "depth": "clips/harn/a26/depth.mp4",
+    "ir": "clips/harn/a26/ir.mp4"
+   },
+   "poster": "clips/harn/a26/poster.jpg",
+   "strip": "clips/harn/a26/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Playing board games",
+    "candidates": [
+     "using mobile phone",
+     "taking a selfie"
+    ]
+   },
+   "stripIr": "clips/harn/a26/strip_ir.jpg"
+  },
+  {
+   "id": 27,
+   "name": "Take a selfie",
+   "category": "Socializing & Leisure",
+   "user": "user23",
+   "sess": "3-2-3",
+   "dur": 2.9,
+   "clips": {
+    "depth": "clips/harn/a27/depth.mp4",
+    "ir": "clips/harn/a27/ir.mp4"
+   },
+   "poster": "clips/harn/a27/poster.jpg",
+   "strip": "clips/harn/a27/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Taking a selfie",
+    "candidates": [
+     "using mobile phone",
+     "playing games"
+    ]
+   },
+   "stripIr": "clips/harn/a27/strip_ir.jpg"
+  },
+  {
+   "id": 28,
+   "name": "Jog in place",
+   "category": "Sports & Exercises",
+   "user": "user18",
+   "sess": "5-1-1",
+   "dur": 2.6,
+   "clips": {
+    "depth": "clips/harn/a28/depth.mp4",
+    "ir": "clips/harn/a28/ir.mp4"
+   },
+   "poster": "clips/harn/a28/poster.jpg",
+   "strip": "clips/harn/a28/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Running",
+    "candidates": [
+     "standing up",
+     "stretching"
+    ]
+   },
+   "stripIr": "clips/harn/a28/strip_ir.jpg"
+  },
+  {
+   "id": 29,
+   "name": "Do squats",
+   "category": "Sports & Exercises",
+   "user": "user23",
+   "sess": "6-3-2",
+   "dur": 3.1,
+   "clips": {
+    "depth": "clips/harn/a29/depth.mp4",
+    "ir": "clips/harn/a29/ir.mp4"
+   },
+   "poster": "clips/harn/a29/poster.jpg",
+   "strip": "clips/harn/a29/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Squats",
+    "candidates": [
+     "standing up",
+     "stretching"
+    ]
+   },
+   "stripIr": "clips/harn/a29/strip_ir.jpg"
+  },
+  {
+   "id": 30,
+   "name": "Do jumping jacks",
+   "category": "Sports & Exercises",
+   "user": "user2",
+   "sess": "5-1-2",
+   "dur": 3.6,
+   "clips": {
+    "depth": "clips/harn/a30/depth.mp4",
+    "ir": "clips/harn/a30/ir.mp4"
+   },
+   "poster": "clips/harn/a30/poster.jpg",
+   "strip": "clips/harn/a30/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Jumping jacks",
+    "candidates": [
+     "running",
+     "squats"
+    ]
+   },
+   "stripIr": "clips/harn/a30/strip_ir.jpg"
+  },
+  {
+   "id": 31,
+   "name": "Do stretching exercises",
+   "category": "Sports & Exercises",
+   "user": "user20",
+   "sess": "1-2-1",
+   "dur": 3.3,
+   "clips": {
+    "depth": "clips/harn/a31/depth.mp4",
+    "ir": "clips/harn/a31/ir.mp4"
+   },
+   "poster": "clips/harn/a31/poster.jpg",
+   "strip": "clips/harn/a31/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Stretching",
+    "candidates": [
+     "jumping jacks",
+     "one leg balance"
+    ]
+   },
+   "stripIr": "clips/harn/a31/strip_ir.jpg"
+  },
+  {
+   "id": 32,
+   "name": "Stand up",
+   "category": "Sports & Exercises",
+   "user": "user4",
+   "sess": "7-2-2",
+   "dur": 1.9,
+   "clips": {
+    "depth": "clips/harn/a32/depth.mp4",
+    "ir": "clips/harn/a32/ir.mp4"
+   },
+   "poster": "clips/harn/a32/poster.jpg",
+   "strip": "clips/harn/a32/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Standing up",
+    "candidates": [
+     "stretching",
+     "walking"
+    ]
+   },
+   "stripIr": "clips/harn/a32/strip_ir.jpg"
+  },
+  {
+   "id": 33,
+   "name": "Lie down",
+   "category": "Sports & Exercises",
+   "user": "user16",
+   "sess": "5-3-3",
+   "dur": 3.8,
+   "clips": {
+    "depth": "clips/harn/a33/depth.mp4",
+    "ir": "clips/harn/a33/ir.mp4"
+   },
+   "poster": "clips/harn/a33/poster.jpg",
+   "strip": "clips/harn/a33/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Lying down",
+    "candidates": [
+     "standing up",
+     "sitting down"
+    ]
+   },
+   "stripIr": "clips/harn/a33/strip_ir.jpg"
+  },
+  {
+   "id": 34,
+   "name": "Sit down",
+   "category": "Sports & Exercises",
+   "user": "user19",
+   "sess": "5-3-3",
+   "dur": 0.9,
+   "clips": {
+    "depth": "clips/harn/a34/depth.mp4",
+    "ir": "clips/harn/a34/ir.mp4"
+   },
+   "poster": "clips/harn/a34/poster.jpg",
+   "strip": "clips/harn/a34/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Sitting down",
+    "candidates": [
+     "squats",
+     "stretching"
+    ]
+   },
+   "stripIr": "clips/harn/a34/strip_ir.jpg"
+  },
+  {
+   "id": 35,
+   "name": "Do lunges",
+   "category": "Sports & Exercises",
+   "user": "user5",
+   "sess": "6-1-2",
+   "dur": 4.2,
+   "clips": {
+    "depth": "clips/harn/a35/depth.mp4",
+    "ir": "clips/harn/a35/ir.mp4"
+   },
+   "poster": "clips/harn/a35/poster.jpg",
+   "strip": "clips/harn/a35/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Lunges",
+    "candidates": [
+     "running",
+     "jumping jacks"
+    ]
+   },
+   "stripIr": "clips/harn/a35/strip_ir.jpg"
+  },
+  {
+   "id": 36,
+   "name": "Walk",
+   "category": "Sports & Exercises",
+   "user": "user23",
+   "sess": "2-3-2",
+   "dur": 2.1,
+   "clips": {
+    "depth": "clips/harn/a36/depth.mp4",
+    "ir": "clips/harn/a36/ir.mp4"
+   },
+   "poster": "clips/harn/a36/poster.jpg",
+   "strip": "clips/harn/a36/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Walking",
+    "candidates": [
+     "standing up",
+     "stretching"
+    ]
+   },
+   "stripIr": "clips/harn/a36/strip_ir.jpg"
+  },
+  {
+   "id": 37,
+   "name": "Take medicine",
+   "category": "Caring & Helping",
+   "user": "user23",
+   "sess": "7-2-2",
+   "dur": 2.4,
+   "clips": {
+    "depth": "clips/harn/a37/depth.mp4",
+    "ir": "clips/harn/a37/ir.mp4"
+   },
+   "poster": "clips/harn/a37/poster.jpg",
+   "strip": "clips/harn/a37/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Taking medicine",
+    "candidates": [
+     "drinking",
+     "eating"
+    ]
+   },
+   "stripIr": "clips/harn/a37/strip_ir.jpg"
+  },
+  {
+   "id": 38,
+   "name": "Massage oneself",
+   "category": "Caring & Helping",
+   "user": "user23",
+   "sess": "2-2-3",
+   "dur": 2.0,
+   "clips": {
+    "depth": "clips/harn/a38/depth.mp4",
+    "ir": "clips/harn/a38/ir.mp4"
+   },
+   "poster": "clips/harn/a38/poster.jpg",
+   "strip": "clips/harn/a38/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Massaging oneself",
+    "candidates": [
+     "walking",
+     "measure body temperature"
+    ]
+   },
+   "stripIr": "clips/harn/a38/strip_ir.jpg"
+  },
+  {
+   "id": 39,
+   "name": "Take body temperature",
+   "category": "Caring & Helping",
+   "user": "user19",
+   "sess": "6-2-3",
+   "dur": 2.6,
+   "clips": {
+    "depth": "clips/harn/a39/depth.mp4",
+    "ir": "clips/harn/a39/ir.mp4"
+   },
+   "poster": "clips/harn/a39/poster.jpg",
+   "strip": "clips/harn/a39/strip.jpg",
+   "frames": 12,
+   "logic": {
+    "next": "Checking body temperature",
+    "candidates": [
+     "eating",
+     "massaging oneself"
+    ]
+   },
+   "stripIr": "clips/harn/a39/strip_ir.jpg"
+  }
+ ],
+ "quiz": [
+  {
+   "id": "q01",
+   "action": "Sweep the floor",
+   "dur": 7.0,
+   "clip": "clips/quiz/q01/depth.mp4",
+   "poster": "clips/quiz/q01/poster.jpg",
+   "answer": "Sweeping",
+   "candidates": [
+    "walking",
+    "mopping",
+    "Sweeping"
+   ]
+  },
+  {
+   "id": "q02",
+   "action": "Do squats",
+   "dur": 6.1,
+   "clip": "clips/quiz/q02/depth.mp4",
+   "poster": "clips/quiz/q02/poster.jpg",
+   "answer": "Squats",
+   "candidates": [
+    "lunges",
+    "jumping jacks",
+    "Squats"
+   ]
+  },
+  {
+   "id": "q03",
+   "action": "Eat food",
+   "dur": 5.2,
+   "clip": "clips/quiz/q03/depth.mp4",
+   "poster": "clips/quiz/q03/poster.jpg",
+   "answer": "Eating",
+   "candidates": [
+    "peeling fruit",
+    "Eating",
+    "peeling fruit"
+   ]
+  },
+  {
+   "id": "q04",
+   "action": "Listen to music with headphones",
+   "dur": 3.5,
+   "clip": "clips/quiz/q04/depth.mp4",
+   "poster": "clips/quiz/q04/poster.jpg",
+   "answer": "Listening to the music with headphones",
+   "candidates": [
+    "checking the time",
+    "using mobile phone",
+    "Listening to the music with headphones"
+   ]
+  },
+  {
+   "id": "q05",
+   "action": "Turn pages",
+   "dur": 3.7,
+   "clip": "clips/quiz/q05/depth.mp4",
+   "poster": "clips/quiz/q05/poster.jpg",
+   "answer": "Turning a page",
+   "candidates": [
+    "writing",
+    "Turning a page",
+    "reading"
+   ]
+  },
+  {
+   "id": "q06",
+   "action": "Pour drinks",
+   "dur": 3.7,
+   "clip": "clips/quiz/q06/depth.mp4",
+   "poster": "clips/quiz/q06/poster.jpg",
+   "answer": "Pouring",
+   "candidates": [
+    "wiping hands",
+    "Pouring",
+    "checking the time"
+   ]
+  },
+  {
+   "id": "q07",
+   "action": "Tap the keyboard",
+   "dur": 5.5,
+   "clip": "clips/quiz/q07/depth.mp4",
+   "poster": "clips/quiz/q07/poster.jpg",
+   "answer": "Typing on a keyboard",
+   "candidates": [
+    "writing",
+    "Typing on a keyboard",
+    "playing games"
+   ]
+  },
+  {
+   "id": "q08",
+   "action": "Check the time",
+   "dur": 1.5,
+   "clip": "clips/quiz/q08/depth.mp4",
+   "poster": "clips/quiz/q08/poster.jpg",
+   "answer": "Checking the time",
+   "candidates": [
+    "calling",
+    "Checking the time",
+    "reading"
+   ]
+  },
+  {
+   "id": "q09",
+   "action": "Take and use tableware",
+   "dur": 3.3,
+   "clip": "clips/quiz/q09/depth.mp4",
+   "poster": "clips/quiz/q09/poster.jpg",
+   "answer": "Grabbing utensils",
+   "candidates": [
+    "Grabbing utensils",
+    "opening storage container",
+    "wiping surfaces"
+   ]
+  },
+  {
+   "id": "q10",
+   "action": "Stir drinks",
+   "dur": 2.1,
+   "clip": "clips/quiz/q10/depth.mp4",
+   "poster": "clips/quiz/q10/poster.jpg",
+   "answer": "Stirring",
+   "candidates": [
+    "pouring",
+    "writing",
+    "Stirring"
+   ]
+  }
+ ],
+ "hero": {
+  "set": "user18_7-1",
+  "trial": 1
+ }
+}

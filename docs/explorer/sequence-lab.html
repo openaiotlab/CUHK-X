@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sequence Lab · CUHK-X Observatory</title>
+<meta name="description" content="Synchronized depth / infrared / thermal playback of CUHK-S scripted scenes, with captions, pace labels and ordered action chains (HAU benchmark).">
+<meta property="og:title" content="Sequence Lab — CUHK-X Observatory">
+<meta property="og:description" content="One scene, three sensors, three paces. Synced multimodal playback of the HAU benchmark.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305080c'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%232ee6c8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%232ee6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======================= TOP BAR ======================= -->
+<header class="topbar">
+  <a class="wordmark" href="./">
+    <span class="wordmark-box">CUHK-X</span>
+    <span class="wordmark-sub">OBSERVATORY</span>
+  </a>
+  <nav class="topbar-tabs">
+    <a href="./">OVERVIEW</a>
+    <a href="sequence-lab.html" class="active">SEQUENCE LAB</a>
+    <a href="atlas.html">ATLAS</a>
+    <a href="console.html">CONSOLE</a>
+  </nav>
+  <nav class="topbar-links">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" rel="noopener">Paper</a>
+    <a class="topbar-challenge" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">🏆 CHALLENGE</a>
+    <a class="home-link" href="../index.html">← CUHK-X HOME</a>
+  </nav>
+</header>
+
+<!-- ======================= SEQUENCE LAB (HAU) ======================= -->
+<section class="block" id="sequence-lab" style="padding-top: 3rem;">
+  <div class="block-head">
+    <p class="kicker boot boot-1">// STATION 01 · HUMAN ACTION UNDERSTANDING</p>
+    <h2 class="boot boot-2"><span class="idx">01</span> SEQUENCE LAB <span class="bench-chip">HAU BENCHMARK</span></h2>
+    <p class="boot boot-3">Long scripted scenes — each performed <strong>three times by the same person at three paces</strong>. Captions, pace labels and ordered action chains come with every take. All three sensor streams play in sync.</p>
+  </div>
+
+  <div class="lab hud">
+    <aside class="lab-rail" id="lab-rail"><!-- set cards injected --></aside>
+    <div class="lab-main">
+      <div class="lab-toolbar">
+        <div class="pace-tabs" id="pace-tabs" role="tablist"></div>
+        <div class="lab-meta" id="lab-meta">—</div>
+      </div>
+      <div class="lab-stage" id="lab-stage">
+        <figure class="lab-pane" style="--mc: var(--depth)"><video muted playsinline preload="metadata" data-mod="depth"></video><figcaption>DEPTH</figcaption></figure>
+        <figure class="lab-pane" style="--mc: var(--ir)"><video muted playsinline preload="metadata" data-mod="ir"></video><figcaption>INFRARED</figcaption></figure>
+        <figure class="lab-pane" style="--mc: var(--thermal)"><video muted playsinline preload="metadata" data-mod="thermal"></video><figcaption>THERMAL</figcaption></figure>
+      </div>
+      <div class="lab-transport">
+        <button class="t-btn" id="lab-play" aria-label="play / pause">▶</button>
+        <div class="t-rail" id="lab-rail-bar"><div class="t-fill" id="lab-fill"></div></div>
+        <span class="t-time" id="lab-time">00:00 / 00:00</span>
+      </div>
+      <div class="lab-readout">
+        <div class="readout-row"><span class="ro-key">CAPTION</span><p class="ro-caption" id="lab-caption">Loading sample feed…</p></div>
+        <div class="readout-row"><span class="ro-key">ACTION CHAIN</span><div class="chain" id="lab-chain"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= SCENE TELEMETRY ======================= -->
+<section class="block" id="telemetry">
+  <div class="block-head">
+    <h2><span class="idx">02</span> SCENE TELEMETRY</h2>
+    <p>What the 814 scripted takes look like in aggregate — computed live from the release manifests.</p>
+  </div>
+  <div class="instr-grid">
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">PACE OF LIFE</span><span class="hud-meta">3 takes per scene</span></div>
+      <div class="pace-bars" id="pace-bars"></div>
+      <div class="hud-head" style="margin-top:1.4rem"><span class="hud-title">CHAIN STEPS</span><span class="hud-meta" id="chain-meta">actions per scene</span></div>
+      <div class="chainlen-bars" id="chainlen-bars"></div>
+    </div>
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">MOST-CHAINED ATOMIC ACTIONS</span><span class="hud-meta">inside HAU scenes</span></div>
+      <div class="top-chain" id="top-chain"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PREV / NEXT ======================= -->
+<div class="pn-row">
+  <a href="./">◂ OVERVIEW</a>
+  <a href="atlas.html">STATION 02 · ACTION ATLAS ▸</a>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <span>CUHK-X OBSERVATORY · AIoT LAB, THE CHINESE UNIVERSITY OF HONG KONG</span>
+  <span id="foot-build">MANIFEST —</span>
+  <a href="../index.html">← PROJECT PAGE</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

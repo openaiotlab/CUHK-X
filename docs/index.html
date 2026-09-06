@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUHK-X: A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning</title>
+    <meta name="description" content="CUHK-X is a large-scale multimodal dataset (64,267 samples, 7 modalities, 30 subjects) for human action recognition, understanding and reasoning. MobiSys 2026.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <a class="challenge-bar" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">
+        <span class="challenge-bar-text">🏆 The CUHK-X Challenge is LIVE — USD $20K prize pool ·
+        two tracks on Kaggle · finals @ UbiComp 2026, Shanghai</span>
+        <span class="challenge-bar-cta">Register →</span>
+    </a>
+    <script>
+        // legacy deep links: sections that moved to subpages
+        (function () {
+            var map = { hardware: 'dataset.html', dataset: 'dataset.html',
+                        'data-visualization': 'dataset.html',
+                        benchmarks: 'benchmarks.html', results: 'benchmarks.html' };
+            var h = location.hash.slice(1);
+            if (map[h]) location.replace(map[h] + '#' + h);
+        })();
+    </script>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-dot">•</span>CUHK-X</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="active">Home</a>
+                <a href="dataset.html">Dataset</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="publications.html">Publications</a>
+                <a href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener" class="nav-cta nav-challenge">🏆 Challenge</a>
+                <a href="explorer/" class="nav-cta">🛰️ Explorer</a>
+            </div>
+        </div>
+    </nav>
+
+<section class="hero">
+        <div class="container">
+            <div class="hero-content animate-in">
+                <h1 class="animate-in">CUHK-X</h1>
+                <h2 class="hero-subtitle animate-in delay-1">
+                    A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning
+                </h2>
+                <p class="authors animate-in delay-2">
+                    Siyang Jiang, Mu Yuan, Xiang Ji, Bufang Yang, Zeyu Liu, Lilin Xu, Yang Li, Yuting He, Liran Dong, Wenrui Lu,
+                    Zhenyu Yan, Xiaofan Jiang, Wei Gao, Hongkai Chen, Guoliang Xing.
+                </p>
+
+                <div class="affiliation-cards animate-in delay-2">
+                    <div class="affiliation-card">
+                        <img src="./images/CUHK-logo.png" alt="CUHK Logo" class="affiliation-image">
+                        <span class="affiliation">CUHK</span>
+                    </div>
+                    <div class="affiliation-card">
+                        <img src="./images/UIUC-logo.webp" alt="UIUC Logo" class="affiliation-image">
+                        <span class="affiliation">UIUC</span>
+                    </div>
+                    <div class="affiliation-card">
+                        <img src="./images/columbia-logo.png" alt="Columbia University Logo" class="affiliation-image">
+                        <span class="affiliation">Columbia University</span>
+                    </div>
+                    <div class="affiliation-card">
+                        <img src="./images/PITT-logo.webp" alt="Pitt University Logo" class="affiliation-image">
+                        <span class="affiliation">PITT University</span>
+                    </div>
+                    <!-- <div class="affiliation-card">
+                        <img src="./images/ESF-logo.jpg" alt="ESF Sha Tin College Logo" class="affiliation-image">
+                        <span class="affiliation">ESF Sha Tin College</span>
+                    </div> -->
+                </div>
+
+                <div class="hero-links animate-in delay-3">
+                    <a href="explorer/" class="btn btn-primary" style="background: linear-gradient(135deg, #0d9488, #2563eb);">🛰️ Dataset Explorer</a>
+                    <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" class="btn btn-primary">📄 Paper</a>
+                    <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/" class="btn btn-secondary"> 🗂️ CUHK-X</a>
+                    <a href="https://github.com/openaiotlab/CUHK-X/" class="btn btn-secondary"> Code</a>
+                    <a href="assets/awards/20251104ACPBest_pre.pdf" target="_blank" class="btn btn-accent">🏆 Best Presentation Award</a>
+                </div>
+
+                <div class="challenge-spotlight animate-in delay-3">
+                    <h3>🏆 CUHK-X Multimodal Human Activity Challenge</h3>
+                    <p class="cs-subtitle">The first RGB-free international competition · built on the CUHK-X benchmark</p>
+                    <div class="cs-stats">
+                        <span>$20K Prize Pool</span>
+                        <span>2 Tracks</span>
+                        <span>6 Modalities</span>
+                        <span>40 Actions</span>
+                    </div>
+                    <p class="cs-timeline">Jun 20 – Sep 15, 2026 · Finals @ UbiComp 2026, Shanghai</p>
+                    <div class="cs-buttons">
+                        <a href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener" class="btn btn-challenge">🏆 Join on Kaggle →</a>
+                        <a href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener" class="btn btn-challenge-outline">Rules &amp; Details</a>
+                    </div>
+                </div>
+
+                <p style="color: red; font-size: 0.9rem">
+                    The CUHK-X Multimodal Human Activity Challenge is now <strong>LIVE on Kaggle</strong>, and the full CUHK-X dataset will be released after the competition concludes.
+                    CUHK-S (a sample subset of CUHK-X) includes only 18 users and excludes the RGB modality. We welcome the community to use it and share feedback.
+                </p>
+
+            </div>
+        </div>
+    </section>
+
+<section id="abstract" class="section-light">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Abstract</h2>
+            </div>
+            <div class="animate-in delay-1">
+                <p>
+                    <strong>CUHK-X</strong> is a comprehensive multimodal dataset containing <strong>64,267 samples</strong> of <strong>40 actions</strong> across <strong>seven modalities</strong> designed for human activity recognition, understanding, and reasoning. Unlike existing datasets that focus primarily on recognition tasks, CUHK-X addresses critical gaps by providing the first multimodal dataset specifically designed for Human Action Understanding (HAU) and Human Action Reasoning (HARn).
+                </p>
+                <p>
+                    The dataset was collected from <strong>30 participants</strong> across two indoor environments covering diverse daily scenarios, using a prompt-based scene creation approach that leverages Large Language Models (LLMs) to generate logical and spatio-temporal activity descriptions. This ensures both consistency and ecological validity in the collected data.
+                </p>
+                <p>
+                    CUHK-X provides three comprehensive benchmarks: <strong>HAR</strong> (Human Action Recognition), <strong>HAU</strong> (Human Action Understanding), and <strong>HARn</strong> (Human Action Reasoning), encompassing six distinct evaluation tasks. Our extensive experiments demonstrate significant challenges in cross-subject and cross-domain scenarios, highlighting the dataset's value for advancing robust multimodal human activity analysis.
+                </p>
+
+                <div class="media-container animate-in delay-2">
+                    <img src="./images/multi-room.png"
+                     alt="Background" style="width: 50%; height: auto">
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Explore Section -->
+    <section id="explore" class="section-gray">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Explore CUHK-X</h2>
+            </div>
+            <div class="explore-grid">
+                <a class="explore-card animate-in" href="dataset.html">
+                    <div class="ec-icon">📦</div>
+                    <h3>Dataset</h3>
+                    <p>Hardware and environment setup, seven synchronized modalities, 40 action categories and their real-world distribution.</p>
+                    <span class="ec-go">View the data →</span>
+                </a>
+                <a class="explore-card animate-in delay-1" href="benchmarks.html">
+                    <div class="ec-icon">🏁</div>
+                    <h3>Benchmarks &amp; Results</h3>
+                    <p>Three benchmarks — HAR, HAU and HARn — with full experimental results across modalities and models.</p>
+                    <span class="ec-go">See the numbers →</span>
+                </a>
+                <a class="explore-card animate-in delay-2" href="explorer/">
+                    <div class="ec-icon">🛰️</div>
+                    <h3>Interactive Explorer</h3>
+                    <p>Stream real CUHK-S clips in the browser: synced depth/IR/thermal playback, a 44-action atlas and a reasoning quiz.</p>
+                    <span class="ec-go">Open the observatory →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+<section id="citation" class="section-light">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Citation</h2>
+            </div>
+
+            <p class="animate-in delay-1" style="text-align: center; margin-bottom: 2rem;">
+                If you use CUHK-X in your research, please cite our paper:
+            </p>
+
+            <div class="citation-box animate-in delay-2">
+                <pre>
+@inproceedings{10.1145/3745756.3809209,
+  author={Jiang, Siyang and Yuan, Mu and Ji, Xiang and Yang, Bufang and Liu, Zeyu and Xu, Lilin and Li, Yang and He, Yuting and Dong, Liran and Lu, Wenrui and Yan, Zhenyu and Jiang, Xiaofan and Gao, Wei and Chen, Hongkai and Xing, Guoliang},
+  title={A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning},
+  year={2026},
+  isbn={9798400720277},
+  publisher={Association for Computing Machinery},
+  address={New York, NY, USA},
+  url={https://dl.acm.org/doi/epdf/10.1145/3745756.3809209},
+  doi={10.1145/3745756.3809209},
+  booktitle={Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services},
+  pages={352--370},
+  numpages={19},
+  keywords={human action understanding, large language models, datasets},
+  location={University of Cambridge, Cambridge, United Kingdom},
+  series={MobiSys '26}
+}
+</pre>
+            </div>
+
+            <div class="animate-in delay-3">
+                <h3>Contact Information</h3>
+                <p>For dataset access, questions, or collaborations:</p>
+                <ul>
+                    <li><strong>Primary Contact:</strong> <a href="mailto:syjiang@ie.cuhk.edu.hk">syjiang@ie.cuhk.edu.hk</a></li>
+                    <li><strong>Institution:</strong> The Chinese University of Hong Kong</li>
+                    <li><strong>Dataset Request:</strong> Please contact for access information</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<section id="acknowledgments" class="section-light">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Acknowledgments</h2>
+            </div>
+
+            <div class="animate-in delay-1" style="max-width: 900px; margin: 0 auto;">
+                <div style="background: white; border-radius: var(--radius-lg); padding: 3rem; box-shadow: var(--shadow-md); margin-bottom: 2rem;">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem; margin-bottom: 2rem;">
+                        <div style="background: var(--primary); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span style="font-size: 1.8rem;">🙏</span>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--primary); margin-top: 0;">Our Gratitude</h3>
+                            <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+                                We thank all participants who contributed to the CUHK-X dataset collection. Special acknowledgments to
+                                the CUHK research team and collaborators who made this comprehensive multimodal dataset possible.
+                                The hardware setup and synchronization infrastructure were crucial for achieving the quality and scale of
+                                CUHK-X. The CUHK-X dataset creators obtained approval from an Institutional Review Board (IRB) to conduct their study and collect data from human subjects.
+                            </p>
+                            <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+                                We gratefully acknowledge Dr. Jamie Du, Zhijiang Chen, Runju Fan, Yajing Feng, Peipei Li, Yutang Wei,
+                                Jiamin Wu, Yixin Xu, and Danni Yuanyong from Huizhou University, as well as Dr. Yunqi Guo from The Chinese
+                                University of Hong Kong, for their assistance in collecting the dataset. We also thank Ruijun Xia, Bohan Liu,
+                                and Guangyu Chen from The Chinese University of Hong Kong for their help with the paper artifacts.
+                            </p>
+                            <p style="color: var(--gray-dark); margin-bottom: 0;">
+                                All datasets used in this study were accessed and used under explicit authorization from their respective owners.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="background: linear-gradient(135deg, #f8fafc 0%, #e6f7ff 100%); border-radius: var(--radius-lg); padding: 3rem; box-shadow: var(--shadow-md); border: 2px solid #e6f7ff;">
+                    <div style="display: flex; align-items: flex-start; gap: 1.5rem;">
+                        <div style="background: var(--accent); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                            <span style="font-size: 1.8rem;">🌍</span>
+                        </div>
+                        <div>
+                            <h3 style="color: var(--accent); margin-top: 0;">Broader Impact</h3>
+                            <p style="color: var(--gray-dark); margin-bottom: 1.5rem;">
+                                CUHK-X aims to advance research in healthcare monitoring, smart environments,
+                                and privacy-preserving human activity understanding. We hope this dataset serves as a valuable resource for
+                                the research community to develop more robust and practical human activity recognition systems.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div>
+                    <div class="footer-logo">CUHK-X</div>
+                    <p>A comprehensive multimodal dataset for human action recognition, understanding and reasoning.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#abstract">Abstract</a></li>
+                        <li><a href="dataset.html#hardware">Hardware</a></li>
+                        <li><a href="benchmarks.html">Benchmarks</a></li>
+                        <li><a href="dataset.html">Dataset</a></li>
+                        <li><a href="index.html#citation">Citation</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="explorer/">🛰️ Explorer</a></li>
+                        <li><a href="index.html#acknowledgments">Acknowledgments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank">Paper</a></li>
+                        <li><a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/">Dataset</a></li>
+                        <li><a href="https://github.com/openaiotlab/CUHK-X">Code</a></li>
+                        <li><a href="assets/awards/20251104ACPBest_pre.pdf" target="_blank">Award</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 CUHK-X Research Team. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">The Chinese University of Hong Kong</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+    <script>
+        // Keep the navbar offset in sync with the (possibly wrapping) challenge bar
+        // so the sticky bar never overlaps the navbar or hero on any screen width.
+        (function () {
+            var bar = document.querySelector('.challenge-bar');
+            var nav = document.querySelector('.navbar');
+            if (!bar || !nav) return;
+            function sync() {
+                var root = document.documentElement;
+                root.style.setProperty('--bar-h', bar.offsetHeight + 'px');
+                root.style.setProperty('--nav-h', nav.offsetHeight + 'px');
+            }
+            sync();
+            window.addEventListener('load', sync);
+            window.addEventListener('resize', sync);
+        })();
+    </script>
+</body>
+</html>

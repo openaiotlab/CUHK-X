@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dataset · CUHK-X</title>
+    <meta name="description" content="Hardware setup, seven synchronized modalities, action categories and distribution of the CUHK-X multimodal human activity dataset.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <a class="challenge-bar" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">
+        <span class="challenge-bar-text">🏆 The CUHK-X Challenge is LIVE — USD $20K prize pool ·
+        two tracks on Kaggle · finals @ UbiComp 2026, Shanghai</span>
+        <span class="challenge-bar-cta">Register →</span>
+    </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-dot">•</span>CUHK-X</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="dataset.html" class="active">Dataset</a>
+                <a href="benchmarks.html">Benchmarks</a>
+                <a href="publications.html">Publications</a>
+                <a href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener" class="nav-cta nav-challenge">🏆 Challenge</a>
+                <a href="explorer/" class="nav-cta">🛰️ Explorer</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>The Dataset</h1>
+            <p class="animate-in">How CUHK-X was captured — the multi-room sensor rig, the seven synchronized
+            modalities, 40 everyday action categories, and what one recording looks like across every stream.</p>
+        </div>
+    </header>
+
+<section id="hardware" class="section-gray">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Hardware and Environment Setup</h2>
+            </div>
+
+
+            <p>
+                We spans a multi-room home and supports three tasks: HAR, HAU (captioning task), and HARn (question
+                answering task), integrating diverse modalities, including RGB, depth, thermal, infrared, IMU, skeleton, and
+                mmWave, to enable robust perception and reasoning in complex indoor contexts.
+            </p>
+            
+            <div class="animate-in delay-1">
+                <p>
+                    CUHK-X was collected using a sophisticated multi-sensor setup ensuring synchronized data capture across all modalities:
+                </p>
+
+                <div class="hardware-grid">
+                    <div class="hardware-item">
+                        <h4>Vzense NYX 650</h4>
+                        <p>RGB-D camera providing color and depth information</p>
+                    </div>
+                    <div class="hardware-item">
+                        <h4>Texas Instruments Radar</h4>
+                        <p>mmWave sensing for privacy-preserving motion detection</p>
+                    </div>
+                    <div class="hardware-item">
+                        <h4>IMU Sensors</h4>
+                        <p>Motion and orientation tracking with high temporal resolution</p>
+                    </div>
+                    <div class="hardware-item">
+                        <h4>Thermal Cameras</h4>
+                        <p>Heat signature analysis for environmental robustness</p>
+                    </div>
+                    <div class="hardware-item">
+                        <h4>Synchronized Recording</h4>
+                        <p>Temporal alignment across all modalities for consistent analysis</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="media-container animate-in delay-2">
+                <img src="./images/hardware.png"
+                     alt="Hardware setup showing the multi-sensor configuration">
+            </div>
+
+
+            <p>
+                Layout with room-wise visual annotations (Bedroom, Kitchen, Bathroom, and Living Room) showing corresponding
+                example images and sensor placements. The icon indicates the location of the ambient sensor:
+            </p>
+            <div class="media-container animate-in delay-2">
+                <img src="./images/room-env.png"
+                     alt="Background">
+            </div>
+        </div>
+    </section>
+
+<section id="dataset" class="section-light">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Dataset Overview</h2>
+            </div>
+            <div class="animate-in delay-1">
+                <p>
+                    CUHK-X represents a significant advancement in multimodal human activity datasets, featuring:
+                </p>
+                <ul>
+                    <li><strong>Seven Synchronized Modalities:</strong> RGB, Infrared (IR), Depth, Thermal, IMU, mmWave Radar, and Skeleton data</li>
+                    <li><strong>Large-Scale:</strong> 64,267 annotated action samples from 30 diverse participants</li>
+                    <li><strong>Dual Data Structure:</strong> Both singular actions (30,000+ samples) and sequential activities for temporal reasoning</li>
+                    <li><strong>Rich Annotations:</strong> LLM-generated captions with human-in-the-loop validation</li>
+                    <li><strong>Environmental Diversity:</strong> Two indoor environments with varying conditions</li>
+                </ul>
+
+                <h3 class="animate-in delay-2">Modality Specifications</h3>
+                <div class="modalities-grid animate-in delay-2">
+                    <div class="modality-card">
+                        <div class="modality-icon">🎥</div>
+                        <div><strong>RGB Video</strong><br>Standard color video recordings</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">📏</div>
+                        <div><strong>Depth</strong><br>3D spatial information from depth cameras</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">🔥</div>
+                        <div><strong>Thermal</strong><br>Heat signature analysis</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">🌡️</div>
+                        <div><strong>Infrared (IR)</strong><br>Thermal imaging for lighting robustness</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">📡</div>
+                        <div><strong>mmWave Radar</strong><br>Privacy-preserving motion detection</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">🦴</div>
+                        <div><strong>Skeleton</strong><br>3D pose estimation and joint tracking</div>
+                    </div>
+                    <div class="modality-card">
+                        <div class="modality-icon">📱</div>
+                        <div><strong>IMU</strong><br>Inertial Measurement Unit for motion</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dataset Overview Image -->
+            <div class="media-container animate-in delay-3">
+                <img src="./images/download.png"
+                     alt="Dataset overview showing modality examples" style="width: 70%; height: auto;">
+            </div>
+
+            <!-- Action Categories and Distribution -->
+            <div class="animate-in delay-4">
+                <h3>Action Categories and Distribution</h3>
+
+                <div style="background: white; border-radius: var(--radius-lg); padding: 2rem; margin: 2rem 0; box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--primary); margin-bottom: 1.5rem;">Categories</h4>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem;">
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Personal Care (6 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Washing face, Brushing teeth, Combing hair, Undressing, Wiping hands, Getting Dressed</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Eating and Drinking (6 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Drinking, Eating, Grabbing utensils, Pouring, Stirring, Peeling fruit</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Household (5 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Sweeping, Mopping, Washing dishes, Wiping surface, Folding clothes</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Working (6 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Typing on a keyboard, Writing, Calling, Checking the time, Reading, Turning a page</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Socializing and Leisure (5 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Taking a selfie, Playing board games, Watching TV, Using a phone, Listening to the music with headphones</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Sports and Exercises (9 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Walking, Lunges, Sitting down, Lying down, Standing up, Stretching, Jumping jacks, Squats, Running</div>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--primary); margin-bottom: 0.5rem;">Caring and Helping (3 actions)</div>
+                            <div style="color: var(--gray-dark); font-size: 0.95rem;">Taking medicine, Checking body temperature, Massaging oneself</div>
+                        </div>
+                    </div>
+
+                    <!-- Action Categories Image -->
+                    <div class="media-container animate-in">
+                        <img src="./images/action.png"
+                             alt="Action categories and distribution" style="width: 50%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- Distribution Section -->
+                <div style="background: white; border-radius: var(--radius-lg); padding: 2rem; margin: 2rem 0; box-shadow: var(--shadow-md);">
+                    <h4 style="color: var(--primary); margin-bottom: 1.5rem;">Distribution</h4>
+
+                    <ul>
+                        <li><strong>Distribution Feature:</strong>> The dataset follows a long-tail distribution (a small number of actions account for a large proportion of occurrences, while most are infrequent), consistent with the common imbalance of real-world datasets.</li>
+                        <li><strong>Category Diversity:</strong> Covers basic daily activities, work-related tasks, household chores, and physical exercises, providing a rich foundation for human activity recognition.</li>
+                        <li><strong>Data Scale</strong>:
+                            <ul>
+                                <li>Each participant contributes over 30 minutes of footage with more than 100 samples.</li>
+                                <li>Vision modality includes 4,029 clips (total duration: 19 hours and 29 minutes).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <!-- Action Frequency Image -->
+                    <div class="media-container animate-in">
+                        <img src="./images/action_frequency.png"
+                             alt="Action frequency">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="data-visualization" class="section-gray">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Data Visualization</h2>
+            </div>
+            <p class="animate-in delay-1" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                This is an example that includes seven modalities: RGB, IR, Thermal, Depth, Skeleton, Radar, and IMU, which were recorded at the same time.
+                We have a 9-axis IMU, but we've only shown these data for simplicity.
+            </p>
+
+            <div class="media-container animate-in delay-2">
+                <video controls preload="metadata" style="width: 100%; height: auto; display: block;">
+                    <source src="./videos/all_modality.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div>
+                    <div class="footer-logo">CUHK-X</div>
+                    <p>A comprehensive multimodal dataset for human action recognition, understanding and reasoning.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#abstract">Abstract</a></li>
+                        <li><a href="dataset.html#hardware">Hardware</a></li>
+                        <li><a href="benchmarks.html">Benchmarks</a></li>
+                        <li><a href="dataset.html">Dataset</a></li>
+                        <li><a href="index.html#citation">Citation</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="explorer/">🛰️ Explorer</a></li>
+                        <li><a href="index.html#acknowledgments">Acknowledgments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank">Paper</a></li>
+                        <li><a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/">Dataset</a></li>
+                        <li><a href="https://github.com/openaiotlab/CUHK-X">Code</a></li>
+                        <li><a href="assets/awards/20251104ACPBest_pre.pdf" target="_blank">Award</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 CUHK-X Research Team. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">The Chinese University of Hong Kong</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>

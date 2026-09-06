@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CUHK-X Observatory · Multimodal Dataset Explorer</title>
+<meta name="description" content="Interactive explorer for CUHK-S, the public subset of CUHK-X — a large-scale multimodal dataset for human action recognition, understanding and reasoning.">
+<meta property="og:title" content="CUHK-X Observatory — Seven Ways of Seeing a Human Action">
+<meta property="og:description" content="Walk through depth, infrared and thermal streams of CUHK-S: synced multimodal playback, 40-action atlas, next-action reasoning console.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305080c'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%232ee6c8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%232ee6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======================= TOP BAR ======================= -->
+<header class="topbar">
+  <a class="wordmark" href="./">
+    <span class="wordmark-box">CUHK-X</span>
+    <span class="wordmark-sub">OBSERVATORY</span>
+  </a>
+  <nav class="topbar-tabs">
+    <a href="./" class="active">OVERVIEW</a>
+    <a href="sequence-lab.html">SEQUENCE LAB</a>
+    <a href="atlas.html">ATLAS</a>
+    <a href="console.html">CONSOLE</a>
+  </nav>
+  <nav class="topbar-links">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" rel="noopener">Paper</a>
+    <a class="topbar-challenge" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">🏆 CHALLENGE</a>
+    <a class="home-link" href="../index.html">← CUHK-X HOME</a>
+  </nav>
+</header>
+
+<!-- ======================= SUBSET ADVISORY ======================= -->
+<aside class="advisory">
+  <span class="adv-tag">⚠ SUBSET ADVISORY</span>
+  <p><strong>CUHK-S is a public subset of CUHK-X.</strong> The CUHK-X Challenge is now live, and
+  this release covers <strong>18 of 30 subjects</strong> and withholds the RGB stream — depth, infrared and
+  thermal only. The full seven-modality CUHK-X (64,267 samples) will be released after the competition.</p>
+</aside>
+
+<!-- ======================= HERO ======================= -->
+<section class="hero">
+  <div class="hero-left">
+    <p class="kicker boot boot-1">// MOBISYS 2026 · MULTIMODAL HUMAN ACTION DATASET</p>
+    <h1 class="boot boot-2">SEVEN WAYS<br>OF SEEING<br><span class="hollow">A HUMAN ACTION</span></h1>
+    <p class="hero-copy boot boot-3">
+      CUHK-X records people living ordinary moments — brushing teeth, folding clothes,
+      doing squats — through <strong>seven synchronized sensor streams</strong>.
+      This observatory lets you walk through <strong>CUHK-S</strong>, the public,
+      privacy-preserving subset: depth, infrared and thermal video with
+      captions, pace labels, action chains and next-action logic.
+    </p>
+    <div class="hero-ctas boot boot-4">
+      <a class="cta cta-primary" href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" rel="noopener">READ THE PAPER ↗</a>
+    </div>
+    <p class="hero-foot boot boot-5">PARENT DATASET CUHK-X — <span id="parent-line">64,267 samples · 7 modalities · 30 subjects</span> — available under DUA</p>
+  </div>
+
+  <div class="hero-right boot boot-3">
+    <div class="sweep-panel hud" id="sweep-panel">
+      <div class="hud-head">
+        <span class="hud-title">SPECTRAL SWEEP</span>
+        <span class="hud-meta"><span class="rec-dot" aria-hidden="true"></span>SYNC ×3 · <span id="sweep-session">—</span></span>
+      </div>
+      <div class="sweep-stage" id="sweep-stage">
+        <div class="sweep-layer" data-mod="depth"><video muted playsinline loop preload="metadata"></video></div>
+        <div class="sweep-layer" data-mod="ir"><video muted playsinline loop preload="metadata"></video></div>
+        <div class="sweep-layer" data-mod="thermal"><video muted playsinline loop preload="metadata"></video></div>
+        <div class="sweep-handle" data-handle="0" role="slider" aria-label="depth / infrared divider" tabindex="0"><span></span></div>
+        <div class="sweep-handle" data-handle="1" role="slider" aria-label="infrared / thermal divider" tabindex="0"><span></span></div>
+        <div class="sweep-tag tag-depth">DEPTH</div>
+        <div class="sweep-tag tag-ir">INFRARED</div>
+        <div class="sweep-tag tag-thermal">THERMAL</div>
+        <div class="sweep-tc" id="sweep-tc">00:00.0</div>
+        <button class="sweep-play" id="sweep-play" aria-label="play / pause">▶</button>
+        <div class="sweep-offline" id="sweep-offline" hidden>SAMPLE FEED OFFLINE</div>
+      </div>
+      <p class="sweep-hint">⟷ DRAG THE DIVIDERS — ONE MOMENT, THREE SENSORS</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= STAT GAUGES ======================= -->
+<section class="gauges" id="gauges">
+  <div class="gauge"><span class="gauge-num" data-stat="clips">—</span><span class="gauge-label">VIDEO CLIPS</span></div>
+  <div class="gauge"><span class="gauge-num" data-stat="sensorHours">—</span><span class="gauge-label">SENSOR-STREAM HOURS</span></div>
+  <div class="gauge"><span class="gauge-num" data-stat="users">—</span><span class="gauge-label">SUBJECTS</span></div>
+  <div class="gauge"><span class="gauge-num" data-stat="actions">—</span><span class="gauge-label">ACTION CLASSES</span></div>
+  <div class="gauge"><span class="gauge-num" data-stat="scenes">—</span><span class="gauge-label">SCRIPTED SCENES</span></div>
+  <div class="gauge"><span class="gauge-num" data-stat="labelRows">—</span><span class="gauge-label">LABEL ROWS</span></div>
+</section>
+
+<!-- ======================= ACTION TICKER ======================= -->
+<div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker-track"></div></div>
+
+<!-- ======================= STATION DIRECTORY ======================= -->
+<section class="block" id="stations">
+  <div class="block-head">
+    <h2><span class="idx">01</span> STATIONS</h2>
+    <p>Three instruments, one per benchmark. Pick a station to start exploring.</p>
+  </div>
+  <div class="stations">
+    <a class="station-card" href="sequence-lab.html" style="--sc: var(--depth)">
+      <span class="station-thumb" style="background-image:url('data/clips/hau/user18_7-1/t1/poster.jpg')"></span>
+      <span class="st-idx">STATION 01 · HAU</span>
+      <span class="st-name">Sequence Lab</span>
+      <span class="st-desc">Long scripted scenes played back in depth ⊕ infrared ⊕ thermal sync — with captions, pace labels and ordered action chains.</span>
+      <span class="st-stat"><span data-fill="lab">814 TAKES · 7 SCENES · 3 SYNCED STREAMS</span><span class="st-enter">ENTER ▸</span></span>
+    </a>
+    <a class="station-card" href="atlas.html" style="--sc: var(--thermal)">
+      <span class="station-thumb" style="background-image:url('data/clips/harn/a30/strip.jpg')"></span>
+      <span class="st-idx">STATION 02 · HAR / HARN</span>
+      <span class="st-name">Action Atlas</span>
+      <span class="st-desc">Every action class on one wall. Hover to scrub film strips, click to inspect dual-stream clips, read the coverage instruments.</span>
+      <span class="st-stat"><span data-fill="atlas">40 CLASSES · DEPTH ⊕ IR</span><span class="st-enter">ENTER ▸</span></span>
+    </a>
+    <a class="station-card" href="console.html" style="--sc: var(--ir)">
+      <span class="station-thumb" style="background-image:url('data/clips/quiz/q01/poster.jpg')"></span>
+      <span class="st-idx">STATION 03 · HARN</span>
+      <span class="st-name">Reasoning Console</span>
+      <span class="st-desc">Watch a depth clip and predict the next action. Real ground truth, real distractors — score yourself against the VLM baselines.</span>
+      <span class="st-stat"><span data-fill="console">1,492 LOGIC LABELS · BEAT THE VLM BASELINE</span><span class="st-enter">ENTER ▸</span></span>
+    </a>
+  </div>
+</section>
+
+<!-- ======================= MODALITY RAIL ======================= -->
+<section class="block" id="modalities">
+  <div class="block-head">
+    <h2><span class="idx">02</span> SENSOR ARRAY</h2>
+    <p>Every sample in CUHK-X is captured simultaneously by seven instruments. Three privacy-preserving streams ship in the public CUHK-S subset.</p>
+  </div>
+  <div class="mod-rail">
+    <article class="mod-card on" style="--mc: var(--depth)"><h3>DEPTH</h3><p>3-D structure from a Vzense NYX 650 — bodies as geometry, not identity.</p><span class="mod-status">● IN CUHK-S</span></article>
+    <article class="mod-card on" style="--mc: var(--ir)"><h3>INFRARED</h3><p>Active IR video that keeps seeing when the lights go out.</p><span class="mod-status">● IN CUHK-S</span></article>
+    <article class="mod-card on" style="--mc: var(--thermal)"><h3>THERMAL</h3><p>Heat signatures of the body — robust, anonymous, always-on.</p><span class="mod-status">● IN CUHK-S</span></article>
+    <article class="mod-card" style="--mc: var(--rgbc)"><h3>RGB</h3><p>Reference color video for grounding and annotation.</p><span class="mod-status">FULL CUHK-X</span></article>
+    <article class="mod-card" style="--mc: var(--radar)"><h3>MMWAVE</h3><p>TI radar point clouds — motion sensing through privacy.</p><span class="mod-status">FULL CUHK-X</span></article>
+    <article class="mod-card" style="--mc: var(--imu)"><h3>IMU</h3><p>On-body inertial traces of every gesture.</p><span class="mod-status">FULL CUHK-X</span></article>
+    <article class="mod-card" style="--mc: var(--skel)"><h3>SKELETON</h3><p>3-D pose sequences distilled from the cameras.</p><span class="mod-status">FULL CUHK-X</span></article>
+  </div>
+</section>
+
+<!-- ======================= ACCESS ======================= -->
+<section class="block" id="access">
+  <div class="block-head">
+    <h2><span class="idx">03</span> ACCESS PROTOCOL</h2>
+  </div>
+  <div class="access-grid">
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">DOWNLOAD</span><span class="hud-meta">CUHK-S · open</span></div>
+      <pre class="tree">CUHK-S/
+├── HAU/        <span class="tc">sequential scenes · depth+IR+thermal</span>
+│   ├── data/   <span class="tc">user/​scene-env-trial/​*.mp4</span>
+│   └── GT/     <span class="tc">captions · emotion · ordered chains</span>
+└── HARn/       <span class="tc">single actions · depth+IR</span>
+    ├── data/   <span class="tc">40 action classes (+4 extra)</span>
+    └── GT/     <span class="tc">next-action logic + candidates</span></pre>
+      <p class="access-note">Full CUHK-X (7 modalities, 64,267 samples) is available for non-commercial research under a <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/" target="_blank" rel="noopener">Data Use Agreement</a>. Collection was IRB-approved; public clips are de-identified sensor streams.</p>
+    </div>
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">CITE</span><button class="copy-btn" id="copy-bib">COPY</button></div>
+      <pre class="bibtex" id="bibtex">@inproceedings{jiang2026cuhkx,
+  title     = {CUHK-X: A Large-Scale Multimodal Dataset
+               and Benchmark for Human Action Recognition,
+               Understanding and Reasoning},
+  author    = {Jiang, Siyang and others},
+  booktitle = {Proc. ACM MobiSys},
+  year      = {2026}
+}</pre>
+      <p class="access-note">Questions & collaborations — <span class="mono">syjiang [at] ie.cuhk.edu.hk</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <span>CUHK-X OBSERVATORY · AIoT LAB, THE CHINESE UNIVERSITY OF HONG KONG</span>
+  <span id="foot-build">MANIFEST —</span>
+  <a href="../index.html">← PROJECT PAGE</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

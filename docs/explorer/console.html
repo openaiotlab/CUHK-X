@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reasoning Console · CUHK-X Observatory</title>
+<meta name="description" content="Play the CUHK-X next-action reasoning benchmark yourself: watch a depth clip, predict what happens next, compare against VLM baselines (HARn).">
+<meta property="og:title" content="Reasoning Console — CUHK-X Observatory">
+<meta property="og:description" content="Watch a depth clip, predict the next action. Real ground truth, real distractors.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305080c'/%3E%3Crect x='3' y='3' width='26' height='26' fill='none' stroke='%232ee6c8' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%232ee6c8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ======================= TOP BAR ======================= -->
+<header class="topbar">
+  <a class="wordmark" href="./">
+    <span class="wordmark-box">CUHK-X</span>
+    <span class="wordmark-sub">OBSERVATORY</span>
+  </a>
+  <nav class="topbar-tabs">
+    <a href="./">OVERVIEW</a>
+    <a href="sequence-lab.html">SEQUENCE LAB</a>
+    <a href="atlas.html">ATLAS</a>
+    <a href="console.html" class="active">CONSOLE</a>
+  </nav>
+  <nav class="topbar-links">
+    <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank" rel="noopener">Paper</a>
+    <a class="topbar-challenge" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">🏆 CHALLENGE</a>
+    <a class="home-link" href="../index.html">← CUHK-X HOME</a>
+  </nav>
+</header>
+
+<!-- ======================= REASONING CONSOLE ======================= -->
+<section class="block" id="console" style="padding-top: 3rem;">
+  <div class="block-head">
+    <p class="kicker boot boot-1">// STATION 03 · HUMAN ACTION REASONING</p>
+    <h2 class="boot boot-2"><span class="idx">01</span> REASONING CONSOLE <span class="bench-chip">HARN BENCHMARK</span></h2>
+    <p class="boot boot-3">The hardest task in CUHK-X: watch a depth clip, infer what the person will do <strong>next</strong>. Play the benchmark yourself — the labels are real.</p>
+  </div>
+  <div class="quiz hud">
+    <div class="quiz-stage">
+      <video id="quiz-video" muted playsinline loop preload="metadata"></video>
+      <div class="quiz-scan" aria-hidden="true"></div>
+    </div>
+    <div class="quiz-panel">
+      <p class="quiz-progress" id="quiz-progress">ROUND — / —</p>
+      <p class="quiz-q">&gt; OBSERVED ACTION — <span id="quiz-action">…</span><br>&gt; PREDICT WHAT THE SUBJECT DOES NEXT:</p>
+      <div class="quiz-options" id="quiz-options"></div>
+      <p class="quiz-verdict" id="quiz-verdict"></p>
+      <div class="quiz-foot">
+        <span id="quiz-score">SCORE 0/0</span>
+        <span class="quiz-ref">QWENVL-7B BASELINE · 60.0% REORDERING ACC</span>
+        <button class="t-btn" id="quiz-next">NEXT ▸</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= MACHINE BASELINES ======================= -->
+<section class="block" id="benchmarks">
+  <div class="block-head">
+    <h2><span class="idx">02</span> MACHINE BASELINES</h2>
+    <p>How models score on the full CUHK-X (MobiSys ’26 paper). Beat the table above, then try beating it with your own model.</p>
+  </div>
+  <div class="bench-grid">
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">HAR · CROSS-TRIAL ACCURACY</span><span class="hud-meta">per modality</span></div>
+      <div class="bench-bars" id="bench-har"></div>
+    </div>
+    <div class="instr hud">
+      <div class="hud-head"><span class="hud-title">HAU · VISION-LANGUAGE MODELS</span><span class="hud-meta">selected tasks</span></div>
+      <table class="bench-table">
+        <thead><tr><th>MODEL</th><th>CAPTION BLEU-1</th><th>EMOTION ACC</th><th>REORDER ACC</th></tr></thead>
+        <tbody>
+          <tr><td>QWENVL-7B</td><td>18.04</td><td>55.03</td><td>60.00</td></tr>
+          <tr><td>VLLAVA-7B</td><td>12.86</td><td class="hi">73.34</td><td>5.29</td></tr>
+          <tr><td>INTERNVL-8B</td><td>0.72</td><td>31.35</td><td class="hi">74.03</td></tr>
+        </tbody>
+      </table>
+      <p class="bench-note">Even 7-8B VLMs struggle with ordering and intent — that gap is the benchmark.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================= PREV / NEXT ======================= -->
+<div class="pn-row">
+  <a href="atlas.html">◂ STATION 02 · ACTION ATLAS</a>
+  <a href="./">OVERVIEW ▸</a>
+</div>
+
+<!-- ======================= FOOTER ======================= -->
+<footer class="footer">
+  <span>CUHK-X OBSERVATORY · AIoT LAB, THE CHINESE UNIVERSITY OF HONG KONG</span>
+  <span id="foot-build">MANIFEST —</span>
+  <a href="../index.html">← PROJECT PAGE</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
