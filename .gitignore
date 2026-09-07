@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
+wandb/
+SM/Code/imu/runs/
+SM/Code/skeleton/split_data_results/
+checkpoint/
+*.tfevents.*

@@ -1,0 +1,179 @@
+# CUHK-X License
+
+Version 2.0
+
+This License governs **all** components of the CUHK-X project, including the
+source code, the CUHK-X dataset, derived annotations, data splits, benchmark
+definitions, and accompanying documentation (collectively, the "Materials").
+It replaces all prior license terms for this project.
+
+---
+
+## 1. Intellectual Property and Ownership
+
+All intellectual property rights in and to the Materials — including copyright,
+database rights, and any related rights — are owned by
+
+> **The Chinese University of Hong Kong (CUHK) — AIoT Lab,
+> Department of Information Engineering**
+
+(the "Owner"). The AIoT Lab is the originating research group within CUHK.
+
+**All rights not expressly granted in this License are reserved by the Owner.**
+Nothing in this License transfers ownership of any Materials, or any
+intellectual property therein, to any user.
+
+---
+
+## 2. Grant of Rights — Non-Commercial Use Only
+
+Subject to the terms of this License, the Owner grants you a worldwide,
+royalty-free, non-exclusive, non-transferable, and revocable license to
+access, use, reproduce, and modify the Materials **solely for non-commercial
+research, academic, and educational purposes.**
+
+This grant applies to all components of the Materials, subject to the stricter
+dataset terms in Section 5.
+
+---
+
+## 3. Commercial Rights — Reserved to the Owner
+
+**All commercial rights in the Materials are reserved exclusively to the Owner.**
+
+3.1  No person or entity other than the Owner may use, reproduce, modify,
+distribute, sublicense, or otherwise exploit any part of the Materials for any
+Commercial Purpose without a separate, prior, written commercial license
+granted by the Owner.
+
+3.2  The Owner — and any party expressly authorized by the Owner under a
+written agreement — may use and commercialize the Materials. This License does
+not restrict the Owner's own use of, or right to license, the Materials to any
+third party of its choosing.
+
+3.3  "Commercial Purpose" means any use primarily intended for or directed
+toward commercial advantage or monetary compensation, including but not limited
+to: incorporating the Materials into a product or service that is sold or
+offered as part of a paid offering; using the Materials to provide a paid
+service; using the Materials in the development, training, or evaluation of a
+commercial product; or any use by or on behalf of a for-profit entity in the
+ordinary course of its business.
+
+3.4  To request a commercial license, contact the Owner using the details in
+Section 9.
+
+---
+
+## 4. Source Code Terms
+
+The source code in this repository is licensed under the non-commercial grant
+in Section 2. You may use, modify, and build upon the code for non-commercial
+research and education, provided that:
+
+(a) the copyright and license notice below is retained in all copies or
+    substantial portions of the code;
+(b) you do not use the code, in whole or in part, for any Commercial Purpose
+    (Section 3); and
+(c) you comply with the attribution requirement in Section 7.
+
+Copyright (c) 2025-2026 The Chinese University of Hong Kong (AIoT Lab).
+All rights reserved.
+
+THE CODE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE OWNER OR THE
+AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION
+WITH THE CODE OR THE USE OR OTHER DEALINGS IN THE CODE.
+
+---
+
+## 5. Dataset Terms — Data Use Agreement (Non-Commercial Research Only)
+
+The CUHK-X dataset is made available under a Data Use Agreement (DUA) for
+non-commercial research only, and is **NOT redistributable**.
+
+1. **Non-Commercial Use Only** — The dataset may be used solely for
+   non-commercial research and educational purposes, and never for any
+   Commercial Purpose (Section 3).
+
+2. **No Redistribution** — You may not redistribute, share, mirror, sublicense,
+   or make the dataset publicly available in any form, in whole or in part.
+
+3. **Attribution Required** — Any research or publication using the dataset must
+   comply with Section 7.
+
+4. **Research Purpose** — The dataset is intended solely for academic research
+   in human action recognition, understanding, and reasoning.
+
+5. **Access Control** — You must obtain explicit written permission from the
+   Owner before accessing the data.
+
+6. **Compliance** — You must comply with your institution's ethics guidelines
+   and IRB/REC requirements when using human-activity data.
+
+7. **No Derivative IP Claims** — You may not claim ownership of, or assert any
+   intellectual property right in, the dataset or any direct extraction from it.
+
+---
+
+## 6. Derived Annotations, Splits, and Metadata
+
+The Owner's derived annotations, data splits, and metadata are licensed under
+the **Creative Commons Attribution-NonCommercial 4.0 International License
+(CC BY-NC 4.0)**.
+
+You are free to:
+
+- **Share** — copy and redistribute these materials in any medium or format;
+- **Adapt** — remix, transform, and build upon these materials,
+
+**for non-commercial purposes only**, under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the
+  license, and indicate if changes were made.
+- **NonCommercial** — You may not use these materials for any Commercial
+  Purpose. Commercial use remains subject to Section 3.
+
+For the full CC BY-NC 4.0 license text, visit:
+https://creativecommons.org/licenses/by-nc/4.0/
+
+---
+
+## 7. Attribution
+
+Any publication, presentation, model, or other work that uses any part of the
+Materials must cite the original CUHK-X paper and acknowledge the AIoT Lab,
+Department of Information Engineering, CUHK, as the creator of the dataset.
+
+‹Optional: paste your preferred BibTeX citation here.›
+
+---
+
+## 8. Termination and Disclaimer of Warranty
+
+8.1  This License, and all rights granted under it, terminate automatically and
+without notice upon any breach, including any unauthorized use for a Commercial
+Purpose. Upon termination you must immediately cease all use of the Materials
+and destroy all copies in your possession or control.
+
+8.2  THE MATERIALS ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+OR IMPLIED. IN NO EVENT SHALL THE OWNER OR THE AUTHORS BE LIABLE FOR ANY CLAIM,
+DAMAGES, OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE MATERIALS OR
+THEIR USE.
+
+---
+
+## 9. Contact
+
+- **Owner / commercial licensing / dataset access:** syjiang [AT] ie.cuhk.edu.hk
+- **Dataset URL:** https://aiot-public-dataset-cuhk-x.cuhkaiot.com/
+- **AIoT Lab:** https://github.com/openaiotlab
+
+---
+
+**Important Note:** Different components of this project were historically
+released under different terms (code under MIT; derived annotations under
+CC BY 4.0). Both of those permitted commercial use. This License supersedes
+those terms and restricts all third-party use to non-commercial purposes, with
+commercial rights reserved to the Owner.
