@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmarks & Results · CUHK-X</title>
+    <meta name="description" content="HAR, HAU and HARn benchmark definitions and full experimental results of the CUHK-X multimodal dataset.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <a class="challenge-bar" href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener">
+        <span class="challenge-bar-text">🏆 The CUHK-X Challenge is LIVE — USD $20K prize pool ·
+        two tracks on Kaggle · finals @ UbiComp 2026, Shanghai</span>
+        <span class="challenge-bar-cta">Register →</span>
+    </a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-dot">•</span>CUHK-X</a>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="dataset.html">Dataset</a>
+                <a href="benchmarks.html" class="active">Benchmarks</a>
+                <a href="publications.html">Publications</a>
+                <a href="https://openaiotlab.github.io/CUHK-X-Challenge/" target="_blank" rel="noopener" class="nav-cta nav-challenge">🏆 Challenge</a>
+                <a href="explorer/" class="nav-cta">🛰️ Explorer</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Benchmarks &amp; Results</h1>
+            <p class="animate-in">Three benchmarks of increasing difficulty — recognition (HAR), understanding (HAU)
+            and reasoning (HARn) — and how today's models score on each.</p>
+        </div>
+    </header>
+
+<section id="benchmarks" class="section-light">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Benchmarks & Tasks</h2>
+            </div>
+            <p class="animate-in delay-1" style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                CUHK-X provides three comprehensive benchmarks that progressively increase in complexity, from basic recognition to advanced reasoning:
+            </p>
+
+            <div class="benchmark-grid">
+                <div class="benchmark-card har animate-in">
+                    <div class="benchmark-icon">🎯</div>
+                    <h3>HAR - Human Action Recognition</h3>
+                    <p><strong>Objective:</strong> Traditional action classification across modalities</p>
+                    <ul>
+                        <li>Cross-subject evaluation (LOSO protocol)</li>
+                        <li>Cross-domain performance analysis</li>
+                        <li>Long-tail distribution handling</li>
+                        <li>Multimodal fusion strategies</li>
+                    </ul>
+                </div>
+
+                <div class="benchmark-card hau animate-in delay-1">
+                    <div class="benchmark-icon">🧠</div>
+                    <h3>HAU - Human Action Understanding</h3>
+                    <p><strong>Objective:</strong> Comprehend actions through contextual integration</p>
+                    <ul>
+                        <li><strong>Action Captioning:</strong> Generate natural language descriptions</li>
+                        <li><strong>Emotion Analysis:</strong> Identify emotional states</li>
+                        <li><strong>Sequential Reordering:</strong> Organize actions chronologically</li>
+                        <li><strong>Action Selection:</strong> Choose relevant actions from candidates</li>
+                    </ul>
+                </div>
+
+                <div class="benchmark-card harn animate-in delay-2">
+                    <div class="benchmark-icon">🔮</div>
+                    <h3>HARn - Human Action Reasoning</h3>
+                    <p><strong>Objective:</strong> Infer intentions and causal relationships</p>
+                    <ul>
+                        <li><strong>Next Action Prediction:</strong> Predict likely subsequent actions</li>
+                        <li><strong>Temporal Reasoning:</strong> Understand action progression logic</li>
+                        <li><strong>Contextual Inference:</strong> Consider environmental factors</li>
+                        <li><strong>Causal Understanding:</strong> Link actions to intentions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 新增的Novel ActScene Framework部分 -->
+            <div class="animate-in delay-3" style="max-width: 800px; margin: 4rem auto 0;">
+                <h3>Novel Data Collection Framework</h3>
+                <p>
+                    Leveraging Large Language Models to generate consistent,
+                    logical activity descriptions that participants then perform. This approach ensures:
+                </p>
+                <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.5rem; margin-top: 1.5rem;">
+                    <div style="background: #f0f9ff; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                        <strong>Logical Consistency:</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0; color: var(--gray-dark);">Activities follow natural progression and causality</p>
+                    </div>
+                    <div style="background: #f0f9ff; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                        <strong>Spatio-temporal Coherence:</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0; color: var(--gray-dark);">Actions are contextually appropriate</p>
+                    </div>
+                    <div style="background: #f0f9ff; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                        <strong>Human-in-the-Loop Validation:</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0; color: var(--gray-dark);">Quality assurance for generated scenarios</p>
+                    </div>
+                    <div style="background: #f0f9ff; padding: 1.5rem; border-radius: var(--radius-md); border-left: 4px solid var(--accent);">
+                        <strong>Scalable Annotation:</strong>
+                        <p style="margin-top: 0.5rem; margin-bottom: 0; color: var(--gray-dark);">Efficient generation of diverse scenarios</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section id="results" class="section-gray">
+        <div class="container">
+            <div class="section-header animate-in">
+                <h2>Experimental Results</h2>
+            </div>
+
+            <div class="animate-in delay-1">
+                <h3>Key Findings</h3>
+                <p>Our comprehensive evaluation across the three benchmarks reveals several important insights:</p>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card animate-in">
+                    <h4>🎯 HAR Performance</h4>
+                    <table class="result-table">
+                        <thead>
+                            <tr>
+                                <th>Modality</th>
+                                <th>Accuracy</th>
+                                <th>Precision</th>
+                                <th>Recall</th>
+                                <th>F1-Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RGB</td>
+                                <td>90.89%</td>
+                                <td>92.24%</td>
+                                <td>91.02%</td>
+                                <td>91.28%</td>
+                            </tr>
+                            <tr>
+                                <td>Depth</td>
+                                <td>90.46%</td>
+                                <td>91.76%</td>
+                                <td>90.75%</td>
+                                <td>90.93%</td>
+                            </tr>
+                            <tr>
+                                <td>IR</td>
+                                <td>90.22%</td>
+                                <td>91.53%</td>
+                                <td>89.94%</td>
+                                <td>90.46%</td>
+                            </tr>
+                            <tr>
+                                <td>Thermal</td>
+                                <td>92.57%</td>
+                                <td>93.54%</td>
+                                <td>93.50%</td>
+                                <td>93.36%</td>
+                            </tr>
+                            <tr>
+                                <td>mmWave</td>
+                                <td>46.63%</td>
+                                <td>48.29%</td>
+                                <td>46.63%</td>
+                                <td>44.53%</td>
+                            </tr>
+                            <tr>
+                                <td>IMU</td>
+                                <td>45.52%</td>
+                                <td>40.84%</td>
+                                <td>38.00%</td>
+                                <td>38.32%</td>
+                            </tr>
+                            <tr>
+                                <td>Skeleton</td>
+                                <td>79.08%</td>
+                                <td>91.46%</td>
+                                <td>79.08%</td>
+                                <td>84.17%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="result-card animate-in delay-1">
+                    <h4>🧠 HAU Performance Highlights</h4>
+                    These three images represent the results of action selection, emotion analysis, and action sequence, respectively.
+                    <ul>
+                        <li><strong>QwenVL-7B:</strong> Consistently best performer across tasks</li>
+                        <li><strong>VLLaVA-7B:</strong> Strong performance in depth and IR modalities</li>
+                        <li><strong>Emotion Analysis:</strong> Up to 77.77% accuracy with thermal imaging</li>
+                        <li><strong>Sequential Reordering:</strong> 68.5% accuracy for complex temporal reasoning</li>
+                    </ul>
+                    <div class="media-container animate-in delay-3">
+                        <img src="./images/action_selection.png"
+                        alt="action_selection" style="width: 30%; height: auto;">
+                        <img src="./images/emotion_analysis.png"
+                        alt="emotion_analysis" style="width: 30%; height: auto;">
+                        <img src="./images/sequential_action.png"
+                        alt="sequential_action" style="width: 30%; height: auto;">
+                    </div>
+                </div>
+
+                <div class="result-card animate-in delay-2">
+                    <h4>🔮 HARn Insights</h4>
+                    <ul>
+                        <li><strong>Reasoning vs Captioning:</strong> Reasoning models significantly outperform captioning models</li>
+                        <li><strong>Modality Impact:</strong> Depth and IR often superior to RGB for reasoning tasks</li>
+                        <li><strong>Model Scale:</strong> Larger models (7B) consistently outperform smaller ones</li>
+                        <li><strong>Context Understanding:</strong> Critical for next action prediction accuracy</li>
+                    </ul>
+                    <div class="media-container animate-in delay-3">
+                        <img src="./images/HARn.png"
+                        alt="HARn result" style="width: 50%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+        <div class="container">
+            <div class="footer-content">
+
+                <div>
+                    <div class="footer-logo">CUHK-X</div>
+                    <p>A comprehensive multimodal dataset for human action recognition, understanding and reasoning.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html#abstract">Abstract</a></li>
+                        <li><a href="dataset.html#hardware">Hardware</a></li>
+                        <li><a href="benchmarks.html">Benchmarks</a></li>
+                        <li><a href="dataset.html">Dataset</a></li>
+                        <li><a href="index.html#citation">Citation</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="explorer/">🛰️ Explorer</a></li>
+                        <li><a href="index.html#acknowledgments">Acknowledgments</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209" target="_blank">Paper</a></li>
+                        <li><a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/">Dataset</a></li>
+                        <li><a href="https://github.com/openaiotlab/CUHK-X">Code</a></li>
+                        <li><a href="assets/awards/20251104ACPBest_pre.pdf" target="_blank">Award</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>© 2025 CUHK-X Research Team. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">The Chinese University of Hong Kong</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+</body>
+</html>
