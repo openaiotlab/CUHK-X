@@ -49,7 +49,7 @@ The dataset is organized into two main components:
 ### Small Model Data
 - **Focus**: Singular, well-defined actions (similar to traditional datasets)
 - **Actions**: 40+ different action categories
-- **Samples**: 30,000+ individual action instances
+- **Samples**: 30,000+ individual action instances (a subset of the 64,267 total samples; the remainder belongs to the sequential Large Model Data)
 - **Purpose**: Traditional HAR evaluation and baseline comparison
 
 ### Large Model Data  
