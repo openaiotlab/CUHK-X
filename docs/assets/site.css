@@ -187,7 +187,7 @@
         }
 
         .logo-lockup {
-            height: 34px;
+            height: 30px;
             width: auto;
             display: block;
             transition: var(--transition);
@@ -198,7 +198,7 @@
         }
 
         .navbar.scrolled .logo-lockup {
-            height: 30px;
+            height: 26px;
         }
 
         .hero-brand {
@@ -207,15 +207,15 @@
         }
 
         .hero-lockup {
-            width: 460px;
-            max-width: 82%;
+            width: 400px;
+            max-width: 80%;
             height: auto;
             display: inline-block;
             filter: drop-shadow(0 14px 28px rgba(91, 44, 132, 0.18));
         }
 
         .footer-lockup {
-            height: 34px;
+            height: 30px;
             width: auto;
             display: block;
         }
@@ -692,12 +692,12 @@
             }
 
             .hero-lockup {
-                width: 320px;
-                max-width: 88%;
+                width: 280px;
+                max-width: 86%;
             }
 
             .logo-lockup {
-                height: 28px;
+                height: 26px;
             }
 
             h2 {
