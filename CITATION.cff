@@ -1,0 +1,79 @@
+cff-version: 1.2.0
+message: "If you use CUHK-X, please cite the MobiSys '26 paper below."
+title: "CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning"
+type: dataset
+repository-code: "https://github.com/openaiotlab/CUHK-X"
+url: "https://openaiotlab.github.io/CUHK-X/"
+license: MIT
+version: 1.0.0
+date-released: 2026-09-07
+authors:
+  - family-names: Jiang
+    given-names: Siyang
+  - family-names: Yuan
+    given-names: Mu
+  - family-names: Ji
+    given-names: Xiang
+  - family-names: Yang
+    given-names: Bufang
+  - family-names: Liu
+    given-names: Zeyu
+  - family-names: Xu
+    given-names: Lilin
+  - family-names: Li
+    given-names: Yang
+  - family-names: He
+    given-names: Yuting
+  - family-names: Dong
+    given-names: Liran
+  - family-names: Lu
+    given-names: Wenrui
+  - family-names: Yan
+    given-names: Zhenyu
+  - family-names: Jiang
+    given-names: Xiaofan
+  - family-names: Gao
+    given-names: Wei
+  - family-names: Chen
+    given-names: Hongkai
+  - family-names: Xing
+    given-names: Guoliang
+preferred-citation:
+  type: conference-paper
+  title: "A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning"
+  collection-title: "Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services (MobiSys '26)"
+  publisher:
+    name: ACM
+  year: 2026
+  doi: 10.1145/3745756.3809209
+  authors:
+    - family-names: Jiang
+      given-names: Siyang
+    - family-names: Yuan
+      given-names: Mu
+    - family-names: Ji
+      given-names: Xiang
+    - family-names: Yang
+      given-names: Bufang
+    - family-names: Liu
+      given-names: Zeyu
+    - family-names: Xu
+      given-names: Lilin
+    - family-names: Li
+      given-names: Yang
+    - family-names: He
+      given-names: Yuting
+    - family-names: Dong
+      given-names: Liran
+    - family-names: Lu
+      given-names: Wenrui
+    - family-names: Yan
+      given-names: Zhenyu
+    - family-names: Jiang
+      given-names: Xiaofan
+    - family-names: Gao
+      given-names: Wei
+    - family-names: Chen
+      given-names: Hongkai
+    - family-names: Xing
+      given-names: Guoliang
