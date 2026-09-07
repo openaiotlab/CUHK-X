@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/images/cuhk-x-logo.png" width="140" alt="CUHK-X logo">
+</p>
+
 # A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning (CUHK-X)
 
 [![Paper](https://img.shields.io/badge/Paper-ACM-red)](https://dl.acm.org/doi/epdf/10.1145/3745756.3809209)
