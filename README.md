@@ -22,7 +22,7 @@
 <p align="center">
   <img src="docs/images/cuhk-x-modalities.gif" width="100%" alt="Seven synchronized modalities from one CUHK-X recording: RGB, infrared, thermal, depth, mmWave radar, skeleton and IMU">
 </p>
-<p align="center"><sub>One recording, seven time-aligned streams: RGB · IR · Thermal · Depth · mmWave Radar · Skeleton · IMU. Regenerate with <code>scripts/make_modality_gif.sh</code>.</sub></p>
+<p align="center"><sub>One recording, seven time-aligned streams: RGB · IR · Thermal · Depth · mmWave Radar · Skeleton · IMU</sub></p>
 
 <p align="center">
   <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/"><b>📥 Get the data</b></a> &nbsp;·&nbsp;
