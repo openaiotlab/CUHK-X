@@ -2,18 +2,50 @@
   <img src="docs/images/cuhk-x-lockup.png" width="360" alt="CUHK-X">
 </p>
 
-# A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning (CUHK-X)
+<h1 align="center">A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning</h1>
 
-[![Paper](https://img.shields.io/badge/Paper-ACM-red)](https://dl.acm.org/doi/epdf/10.1145/3745756.3809209)
-[![Dataset](https://img.shields.io/badge/Dataset-Available-green)](https://aiot-public-dataset-cuhk-x.cuhkaiot.com/)
-[![Website](https://img.shields.io/badge/Project-Page-blue)](https://openaiotlab.github.io/CUHK-X/)
-[![Explorer](https://img.shields.io/badge/🛰️%20Observatory-Explore%20the%20Data-teal)](https://openaiotlab.github.io/CUHK-X/explorer/)
-[![Challenge](https://img.shields.io/badge/🏆%20Challenge-Kaggle-orange)](https://openaiotlab.github.io/CUHK-X-Challenge/)
+<p align="center">
+  <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209"><img src="https://img.shields.io/badge/MobiSys'26-Accepted-8A2BE2?logo=acm&logoColor=white" alt="MobiSys'26"></a>
+  <a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><img src="https://img.shields.io/badge/Kaggle%20Challenge-%2420K%20Prize%20Pool-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle Challenge, USD 20K prize pool"></a>
+  <a href="docs/assets/awards/20251104ACPBest_pre.pdf"><img src="https://img.shields.io/badge/Best%20Presentation-ANAI%20%40%20MobiCom'25-FFB000" alt="Best Presentation Award, ANAI Workshop @ MobiCom 2025"></a>
+</p>
+
+<p align="center">
+  <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209"><img src="https://img.shields.io/badge/Paper-ACM-red" alt="Paper"></a>
+  <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/"><img src="https://img.shields.io/badge/Dataset-Available-green" alt="Dataset"></a>
+  <a href="https://openaiotlab.github.io/CUHK-X/"><img src="https://img.shields.io/badge/Project-Page-blue" alt="Project page"></a>
+  <a href="https://openaiotlab.github.io/CUHK-X/explorer/"><img src="https://img.shields.io/badge/🛰️%20Observatory-Explore%20the%20Data-teal" alt="Observatory"></a>
+  <a href="https://github.com/openaiotlab/CUHK-X/releases"><img src="https://img.shields.io/github/v/release/openaiotlab/CUHK-X?label=Release&color=0A7BFF" alt="Latest release"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-lightgrey" alt="MIT license"></a>
+</p>
+
+<p align="center">
+  <img src="docs/images/cuhk-x-modalities.gif" width="100%" alt="Seven synchronized modalities from one CUHK-X recording: RGB, infrared, thermal, depth, mmWave radar, skeleton and IMU">
+</p>
+<p align="center"><sub>One recording, seven time-aligned streams: RGB · IR · Thermal · Depth · mmWave Radar · Skeleton · IMU. Regenerate with <code>scripts/make_modality_gif.sh</code>.</sub></p>
+
+<p align="center">
+  <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/"><b>📥 Get the data</b></a> &nbsp;·&nbsp;
+  <a href="https://openaiotlab.github.io/CUHK-X/explorer/"><b>🛰️ Explore it in your browser</b></a> &nbsp;·&nbsp;
+  <a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><b>🏆 Join the $20K Kaggle challenge</b></a>
+</p>
 
 > **CUHK-X** is a comprehensive multimodal dataset containing **64,267 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
 
+## 🧭 What's in this repo
+
+| Path | What it is |
+|------|------------|
+| [`SM/`](SM/) | Small-model HAR baselines for RGB, IMU, mmWave radar and skeleton (PyTorch training and evaluation pipelines). |
+| [`LM/`](LM/) | CUHK-X-VLM: large-model benchmark code for HAU and HARn tasks (action selection, captioning, emotion analysis, sequential reordering, next-action prediction) with QwenVL, InternVL, Video-LLaVA and Video-Chat. |
+| [`docs/`](docs/) | Project website and the in-browser [Observatory](https://openaiotlab.github.io/CUHK-X/explorer/) with curated depth / IR / thermal clips. |
+| [`scripts/`](scripts/) | Asset build scripts for the Observatory and the README banner. |
+
+Dataset files are distributed separately under a Data Use Agreement. Request access on the [dataset portal](https://aiot-public-dataset-cuhk-x.cuhkaiot.com/).
+
 ## 🎉 News
 
+- **[Sep 2026]** 📦 **[v1.0.0](https://github.com/openaiotlab/CUHK-X/releases/tag/v1.0.0) is out** — first tagged release of the baseline code (SM + LM), project website and Observatory. GitHub now shows a "Cite this repository" button via `CITATION.cff`.
 - **[Jun 2026]** 🏆 **The [CUHK-X Challenge](https://openaiotlab.github.io/CUHK-X-Challenge/) is live on Kaggle!** USD \$20K prize pool across two tracks (Small Model · Large Model), built on CUHK-X — finals at UbiComp 2026, Shanghai. Pre-register your team.
 - **[Jun 2026]** 🛰️ **The [CUHK-X Observatory](https://openaiotlab.github.io/CUHK-X/explorer/) is live!** Stream real CUHK-S clips in the browser: synchronized depth ⊕ infrared ⊕ thermal playback, a 40-action atlas organized by the paper's seven categories, and a playable next-action reasoning quiz with real ground truth.
 - **[Jun 2026]** **The [project website](https://openaiotlab.github.io/CUHK-X/) got a full redesign** — now organized into Home, [Dataset](https://openaiotlab.github.io/CUHK-X/dataset.html), [Benchmarks & Results](https://openaiotlab.github.io/CUHK-X/benchmarks.html) and [Publications](https://openaiotlab.github.io/CUHK-X/publications.html) pages.
@@ -165,14 +197,18 @@ CUHK-X aims to advance research in:
 
 If you use CUHK-X in your research, please cite our paper:
 
-<!-- ```bibtex
-@inproceedings{jiang2025cuhkx,
-  title={CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning},
-  author={Jiang, Siyang and others},
-  booktitle={Proceedings of the 26th International Conference on Sensing, Communication, and Networking (SenSys)},
-  year={2025}
+```bibtex
+@inproceedings{jiang2026cuhkx,
+  title     = {A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning},
+  author    = {Jiang, Siyang and Yuan, Mu and Ji, Xiang and Yang, Bufang and Liu, Zeyu and Xu, Lilin and Li, Yang and He, Yuting and Dong, Liran and Lu, Wenrui and Yan, Zhenyu and Jiang, Xiaofan and Gao, Wei and Chen, Hongkai and Xing, Guoliang},
+  booktitle = {Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services (MobiSys '26)},
+  year      = {2026},
+  publisher = {ACM},
+  doi       = {10.1145/3745756.3809209}
 }
-``` -->
+```
+
+A machine-readable version lives in [`CITATION.cff`](CITATION.cff); GitHub's "Cite this repository" button uses it.
 
 ## 👥 Contact
 
