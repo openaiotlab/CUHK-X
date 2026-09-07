@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/images/cuhk-x-logo.png" width="140" alt="CUHK-X logo">
+  <img src="docs/images/cuhk-x-lockup.png" width="360" alt="CUHK-X">
 </p>
 
 # A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning (CUHK-X)
