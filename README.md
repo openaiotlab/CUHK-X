@@ -2,7 +2,7 @@
   <img src="docs/images/cuhk-x-lockup.png" width="360" alt="CUHK-X">
 </p>
 
-<h1 align="center">A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning</h1>
+<h1 align="center">A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning</h1>
 
 <p align="center">
   <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209"><img src="https://img.shields.io/badge/MobiSys'26-Accepted-8A2BE2?logo=acm&logoColor=white" alt="MobiSys'26"></a>
@@ -198,13 +198,21 @@ CUHK-X aims to advance research in:
 If you use CUHK-X in your research, please cite our paper:
 
 ```bibtex
-@inproceedings{jiang2026cuhkx,
-  title     = {A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning},
+@inproceedings{10.1145/3745756.3809209,
   author    = {Jiang, Siyang and Yuan, Mu and Ji, Xiang and Yang, Bufang and Liu, Zeyu and Xu, Lilin and Li, Yang and He, Yuting and Dong, Liran and Lu, Wenrui and Yan, Zhenyu and Jiang, Xiaofan and Gao, Wei and Chen, Hongkai and Xing, Guoliang},
-  booktitle = {Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services (MobiSys '26)},
+  title     = {A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning},
+  booktitle = {Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services},
+  series    = {MobiSys '26},
   year      = {2026},
-  publisher = {ACM},
-  doi       = {10.1145/3745756.3809209}
+  pages     = {352--370},
+  numpages  = {19},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  location  = {University of Cambridge, Cambridge, United Kingdom},
+  isbn      = {9798400720277},
+  doi       = {10.1145/3745756.3809209},
+  url       = {https://dl.acm.org/doi/epdf/10.1145/3745756.3809209},
+  keywords  = {human action understanding, large language models, datasets}
 }
 ```
 

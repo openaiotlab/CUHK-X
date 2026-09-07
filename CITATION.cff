@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "If you use CUHK-X, please cite the MobiSys '26 paper below."
-title: "CUHK-X: A Large-Scale Multimodal Dataset and Benchmark for Human Action Recognition, Understanding and Reasoning"
+title: "CUHK-X: A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning"
 type: dataset
 repository-code: "https://github.com/openaiotlab/CUHK-X"
 url: "https://openaiotlab.github.io/CUHK-X/"
@@ -42,10 +42,23 @@ preferred-citation:
   type: conference-paper
   title: "A Large-Scale Multimodal Dataset and Benchmarks for Human Activity Scene Understanding and Reasoning"
   collection-title: "Proceedings of the 24th Annual International Conference on Mobile Systems, Applications and Services (MobiSys '26)"
+  conference:
+    name: "MobiSys '26"
+    location: "University of Cambridge, Cambridge, United Kingdom"
   publisher:
-    name: ACM
+    name: Association for Computing Machinery
+    city: New York
+    country: US
   year: 2026
+  start: 352
+  end: 370
+  isbn: "9798400720277"
   doi: 10.1145/3745756.3809209
+  url: "https://dl.acm.org/doi/epdf/10.1145/3745756.3809209"
+  keywords:
+    - human action understanding
+    - large language models
+    - datasets
   authors:
     - family-names: Jiang
       given-names: Siyang
