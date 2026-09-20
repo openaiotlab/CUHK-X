@@ -911,10 +911,35 @@
     margin-bottom: 0.4rem;
     color: #b45309;
 }
+.challenge-spotlight .cs-status {
+    display: inline-block;
+    margin-bottom: 0.9rem;
+    padding: 0.28rem 0.85rem;
+    border-radius: 999px;
+    background: #fef3c7;
+    border: 1px solid #fcd34d;
+    color: #92400e;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
 .challenge-spotlight .cs-subtitle {
     font-size: 1rem;
     color: var(--gray-dark);
     margin-bottom: 1.25rem;
+}
+.challenge-spotlight .cs-subtitle a {
+    color: #b45309;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.challenge-spotlight .cs-links {
+    margin: 1rem 0 0;
+    font-size: 0.88rem;
+    color: var(--gray-dark);
+}
+.challenge-spotlight .cs-links a {
+    color: #b45309;
+    font-weight: 600;
 }
 .challenge-spotlight .cs-stats {
     display: flex;

@@ -6,7 +6,8 @@
 
 <p align="center">
   <a href="https://dl.acm.org/doi/epdf/10.1145/3745756.3809209"><img src="https://img.shields.io/badge/MobiSys'26-Accepted-8A2BE2?logo=acm&logoColor=white" alt="MobiSys'26"></a>
-  <a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><img src="https://img.shields.io/badge/Kaggle%20Challenge-%2420K%20Prize%20Pool-20BEFF?logo=kaggle&logoColor=white" alt="Kaggle Challenge, USD 20K prize pool"></a>
+  <a href="https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/"><img src="https://img.shields.io/badge/UbiComp%2FISWC'26-Official%20Competition-0F766E" alt="Official competition of UbiComp/ISWC 2026"></a>
+  <a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><img src="https://img.shields.io/badge/CUHK--X%20Challenge-%2420K%20Prize%20Pool-20BEFF?logo=kaggle&logoColor=white" alt="CUHK-X Challenge on Kaggle, USD 20K prize pool"></a>
   <a href="docs/assets/awards/20251104ACPBest_pre.pdf"><img src="https://img.shields.io/badge/Best%20Presentation-ANAI%20%40%20MobiCom'25-FFB000" alt="Best Presentation Award, ANAI Workshop @ MobiCom 2025"></a>
 </p>
 
@@ -27,7 +28,7 @@
 <p align="center">
   <a href="https://aiot-public-dataset-cuhk-x.cuhkaiot.com/"><b>📥 Get the data</b></a> &nbsp;·&nbsp;
   <a href="https://openaiotlab.github.io/CUHK-X/explorer/"><b>🛰️ Explore it in your browser</b></a> &nbsp;·&nbsp;
-  <a href="https://openaiotlab.github.io/CUHK-X-Challenge/"><b>🏆 Join the $20K Kaggle challenge</b></a>
+  <a href="https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/"><b>🏆 CUHK-X Challenge @ UbiComp/ISWC 2026 · Grand Finals Oct 12</b></a>
 </p>
 
 > **CUHK-X** is a comprehensive multimodal dataset containing **64,267 samples** across **seven modalities** designed for human activity recognition, understanding, and reasoning. It addresses critical gaps in existing HAR datasets by providing synchronized multimodal sensor data with detailed annotations for complex reasoning tasks.
@@ -46,12 +47,40 @@ Dataset files are distributed separately under a Data Use Agreement. Request acc
 ## 🎉 News
 
 - **[Sep 2026]** 📦 **[v1.0.0](https://github.com/openaiotlab/CUHK-X/releases/tag/v1.0.0) is out** — first tagged release of the baseline code (SM + LM), project website and Observatory. GitHub now shows a "Cite this repository" button via `CITATION.cff`.
-- **[Jun 2026]** 🏆 **The [CUHK-X Challenge](https://openaiotlab.github.io/CUHK-X-Challenge/) is live on Kaggle!** USD \$20K prize pool across two tracks (Small Model · Large Model), built on CUHK-X — finals at UbiComp 2026, Shanghai. Pre-register your team.
+- **[Sep 2026]** 🏆 **The CUHK-X Challenge is an official competition of [UbiComp/ISWC 2026](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/).** The Kaggle phase closed on Sep 15; shortlisted teams are now in verification and private-data evaluation (Sep 19–30). The Top 6 per track will be announced Oct 1 and present at the **Grand Finals on Oct 12 in Shanghai**. Details in the [challenge section](#-cuhk-x-challenge--ubicompiswc-2026) below.
+- **[Jun 2026]** 🏆 **The [CUHK-X Challenge](https://openaiotlab.github.io/CUHK-X-Challenge/) went live on Kaggle.** USD \$20K prize pool across two tracks (Small Model · Large Model), built on CUHK-X — finals at UbiComp 2026, Shanghai.
 - **[Jun 2026]** 🛰️ **The [CUHK-X Observatory](https://openaiotlab.github.io/CUHK-X/explorer/) is live!** Stream real CUHK-S clips in the browser: synchronized depth ⊕ infrared ⊕ thermal playback, a 40-action atlas organized by the paper's seven categories, and a playable next-action reasoning quiz with real ground truth.
 - **[Jun 2026]** **The [project website](https://openaiotlab.github.io/CUHK-X/) got a full redesign** — now organized into Home, [Dataset](https://openaiotlab.github.io/CUHK-X/dataset.html), [Benchmarks & Results](https://openaiotlab.github.io/CUHK-X/benchmarks.html) and [Publications](https://openaiotlab.github.io/CUHK-X/publications.html) pages.
 - **[Feb 2026]** **CUHK-X is accepted by MobiSys 2026!** 
 - **[Nov 2025]** 🏆 **CUHK-X wins the Best Presentation Award at ANAI Workshop @ MobiCom 2025!** 
 <!-- We are honored to receive this recognition for our work on multimodal human action recognition, understanding, and reasoning. -->
+
+## 🏆 CUHK-X Challenge @ UbiComp/ISWC 2026
+
+The **CUHK-X Multimodal Human Activity Challenge** is an official competition of [UbiComp/ISWC 2026](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/) and the first RGB-free international HAR competition. It runs on Kaggle in two parallel tracks built on CUHK-X, each with an independent USD $10K prize pool (USD $20K total). The baselines in this repository are the reference implementations for both tracks.
+
+| Track | Task | Modalities | Constraints | Kaggle | Baselines here |
+|-------|------|------------|-------------|--------|----------------|
+| **Small Model** | 40-class cross-subject HAR | Depth · IMU · mmWave radar · skeleton · IR · thermal | CNN / RNN / Transformer only · ≤ 100 MB · no large pretrained backbones, closed-source APIs or LLMs | [Small Model Track](https://www.kaggle.com/competitions/cuhk-x-competition-small-model-track) | [`SM/`](SM/) |
+| **Large Model** | VQA for action understanding (HAU) and reasoning (HARn) | Depth · thermal · IR · skeleton · IMU · mmWave radar | No parameter limit · LVLMs, closed-source APIs and LLM pseudo-labeling allowed | [Large Model Track](https://www.kaggle.com/competitions/cuhk-x-competition-large-model-track) | [`LM/`](LM/) |
+
+Both tracks train on users 1–9 and 16–24 and are scored cross-subject on Kaggle test users 10–11 and 25–26; finalists are additionally evaluated on organizer-held private data. RGB is excluded from the challenge.
+
+**Timeline**
+
+| Stage | Date (UTC) | Status |
+|-------|------------|--------|
+| Kaggle competition open | Jun 20 – Sep 15, 2026 | ✅ Closed |
+| Submission package due (Top 15 per track) | Sep 18, 2026 | ✅ Closed |
+| Verification & private-data evaluation | Sep 19 – 30, 2026 | 🔄 In progress |
+| Technical report due · Top 6 per track announced | Oct 1, 2026 | 📅 Upcoming |
+| **Grand Finals @ UbiComp/ISWC 2026, Shanghai** | **Oct 12, 2026** | 📅 Upcoming |
+
+**Grand Finals.** Yangtze River Hall, 5F, Shanghai International Convention Center. Large Model Track 09:45–12:30 and Small Model Track 14:30–17:20 (Shanghai time); each team gives a 5-minute talk followed by 5 minutes of Q&A, with remote participation via Zoom. Finalist scores combine the Kaggle private leaderboard (20%), organizer private-data evaluation (30%), reproducibility (10%), technical report (20%), presentation (10%) and model efficiency (10%). Finalist solutions are open-sourced under Apache 2.0 within 30 days of the finals.
+
+**Challenge data** (as published on the challenge site; RGB excluded, test labels withheld). Small Model Track: [Hugging Face](https://huggingface.co/datasets/Kevin-Pal/CUHK-X_Small_Model_Track) · [Google Drive](https://drive.google.com/drive/folders/1wZOPpTFLqDKjBLJGjMdOZyuJygLHbwCZ?usp=sharing) · [Baidu Netdisk](https://pan.baidu.com/s/10uVVQiWr5gXiiReXQxUkdQ?pwd=huxi). Large Model Track: [Hugging Face](https://huggingface.co/datasets/Kevin-Pal/CUHK-X_Large_Model_Track) · [Google Drive](https://drive.google.com/drive/folders/1USLiJKosAyA7oSuxU27d-s_lxJyKKjya?usp=sharing) · [Baidu Netdisk](https://pan.baidu.com/s/1uvaN88D8oHKkaa5O_b4x5g?pwd=5855).
+
+Full rules, prizes and certificate tiers: [UbiComp/ISWC 2026 competition page](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/) · [challenge website](https://openaiotlab.github.io/CUHK-X-Challenge/) · questions to cuhkx.competition@gmail.com.
 
 ## 🎯 Key Contributions
 
@@ -222,6 +251,7 @@ A machine-readable version lives in [`CITATION.cff`](CITATION.cff); GitHub's "Ci
 
 For dataset access, questions, or collaborations:
 - **Email**: syjiang [AT] ie.cuhk.edu.hk
+- **Challenge**: cuhkx.competition [AT] gmail.com · [UbiComp/ISWC 2026 competition page](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/)
 - **Project Page**: [CUHK-X](https://openaiotlab.github.io/CUHK-X/)
 
 
