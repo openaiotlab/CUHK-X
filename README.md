@@ -47,7 +47,7 @@ Dataset files are distributed separately under a Data Use Agreement. Request acc
 ## 🎉 News
 
 - **[Sep 2026]** 📦 **[v1.0.0](https://github.com/openaiotlab/CUHK-X/releases/tag/v1.0.0) is out** — first tagged release of the baseline code (SM + LM), project website and Observatory. GitHub now shows a "Cite this repository" button via `CITATION.cff`.
-- **[Sep 2026]** 🏆 **The CUHK-X Challenge is an official competition of [UbiComp/ISWC 2026](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/).** The Kaggle phase closed on Sep 15; shortlisted teams are now in verification and private-data evaluation (Sep 19–30). The Top 6 per track will be announced Oct 1 and present at the **Grand Finals on Oct 12 in Shanghai**. Details in the [challenge section](#-cuhk-x-challenge--ubicompiswc-2026) below.
+- **[Sep 2026]** 🏆 **The CUHK-X Challenge is an official competition of [UbiComp/ISWC 2026](https://www.ubicomp.org/ubicomp-iswc-2026/cuhk-x-competition/).** The Kaggle phase closed on Sep 15; verification and private-data evaluation were scheduled for Sep 19–30. The **Grand Finals are scheduled for Oct 12 in Shanghai**. See the [challenge website](https://openaiotlab.github.io/CUHK-X-Challenge/) for organizer updates. Details in the [challenge section](#-cuhk-x-challenge--ubicompiswc-2026) below.
 - **[Jun 2026]** 🏆 **The [CUHK-X Challenge](https://openaiotlab.github.io/CUHK-X-Challenge/) went live on Kaggle.** USD \$20K prize pool across two tracks (Small Model · Large Model), built on CUHK-X — finals at UbiComp 2026, Shanghai.
 - **[Jun 2026]** 🛰️ **The [CUHK-X Observatory](https://openaiotlab.github.io/CUHK-X/explorer/) is live!** Stream real CUHK-S clips in the browser: synchronized depth ⊕ infrared ⊕ thermal playback, a 40-action atlas organized by the paper's seven categories, and a playable next-action reasoning quiz with real ground truth.
 - **[Jun 2026]** **The [project website](https://openaiotlab.github.io/CUHK-X/) got a full redesign** — now organized into Home, [Dataset](https://openaiotlab.github.io/CUHK-X/dataset.html), [Benchmarks & Results](https://openaiotlab.github.io/CUHK-X/benchmarks.html) and [Publications](https://openaiotlab.github.io/CUHK-X/publications.html) pages.
@@ -72,11 +72,11 @@ Both tracks train on users 1–9 and 16–24 and are scored cross-subject on Kag
 |-------|------------|--------|
 | Kaggle competition open | Jun 20 – Sep 15, 2026 | ✅ Closed |
 | Submission package due (Top 15 per track) | Sep 18, 2026 | ✅ Closed |
-| Verification & private-data evaluation | Sep 19 – 30, 2026 | 🔄 In progress |
-| Technical report due · Top 6 per track announced | Oct 1, 2026 | 📅 Upcoming |
+| Verification & private-data evaluation | Sep 19 – 30, 2026 | Scheduled period ended |
+| Technical report deadline · scheduled Top 6 announcement | Oct 1, 2026 | Scheduled date passed; see organizer updates |
 | **Grand Finals @ UbiComp/ISWC 2026, Shanghai** | **Oct 12, 2026** | 📅 Upcoming |
 
-**Grand Finals.** Yangtze River Hall, 5F, Shanghai International Convention Center. Large Model Track 09:45–12:30 and Small Model Track 14:30–17:20 (Shanghai time); each team gives a 5-minute talk followed by 5 minutes of Q&A, with remote participation via Zoom. Finalist scores combine the Kaggle private leaderboard (20%), organizer private-data evaluation (30%), reproducibility (10%), technical report (20%), presentation (10%) and model efficiency (10%). Finalist solutions are open-sourced under Apache 2.0 within 30 days of the finals.
+**Grand Finals.** Yangtze River Hall, 5F, Shanghai International Convention Center. Small Model Track 09:45–12:30 and Large Model Track 14:30–17:20 (Shanghai time); each team gives a 5-minute talk followed by 5 minutes of Q&A, with remote participation via Zoom. Finalist scores combine the Kaggle private leaderboard (20%), organizer private-data evaluation (30%), reproducibility (10%), technical report (20%), presentation (10%) and model efficiency (10%). Finalist solutions are open-sourced under Apache 2.0 within 30 days of the finals.
 
 **Challenge data** (as published on the challenge site; RGB excluded, test labels withheld). Small Model Track: [Hugging Face](https://huggingface.co/datasets/Kevin-Pal/CUHK-X_Small_Model_Track) · [Google Drive](https://drive.google.com/drive/folders/1wZOPpTFLqDKjBLJGjMdOZyuJygLHbwCZ?usp=sharing) · [Baidu Netdisk](https://pan.baidu.com/s/10uVVQiWr5gXiiReXQxUkdQ?pwd=huxi). Large Model Track: [Hugging Face](https://huggingface.co/datasets/Kevin-Pal/CUHK-X_Large_Model_Track) · [Google Drive](https://drive.google.com/drive/folders/1USLiJKosAyA7oSuxU27d-s_lxJyKKjya?usp=sharing) · [Baidu Netdisk](https://pan.baidu.com/s/1uvaN88D8oHKkaa5O_b4x5g?pwd=5855).
 
